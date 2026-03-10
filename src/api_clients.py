@@ -63,28 +63,38 @@ def call_gemini(system_prompt, user_prompt):
             )
         )
         
-        response = client.models.generate_content(
-            model=model,
-            contents=contents,
-            config=generate_content_config,
-        )
-        
-        # Convert response to match the OpenRouter format for compatibility
-        return {
-            "choices": [{
-                "message": {
-                    "role": "assistant",
-                    "content": response.text
+        import time
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                response = client.models.generate_content(
+                    model=model,
+                    contents=contents,
+                    config=generate_content_config,
+                )
+                
+                # Convert response to match the OpenRouter format for compatibility
+                return {
+                    "choices": [{
+                        "message": {
+                            "role": "assistant",
+                            "content": response.text
+                        }
+                    }],
+                    "model": model,
+                    "usage": {
+                        "prompt_tokens": response.usage_metadata.prompt_token_count if response.usage_metadata else 0,
+                        "completion_tokens": response.usage_metadata.candidates_token_count if response.usage_metadata else 0,
+                        "total_tokens": response.usage_metadata.total_token_count if response.usage_metadata else 0
+                    }
                 }
-            }],
-            "model": model,
-            "usage": {
-                "prompt_tokens": 0,  # Or parse from response.usage_metadata if available
-                "completion_tokens": 0,
-                "total_tokens": 0
-            }
-        }
-        
+            except Exception as api_e:
+                if "429" in str(api_e) and attempt < max_retries - 1:
+                    print(f"Rate limited by Gemini. Waiting 30 seconds before retry {attempt + 1}/{max_retries}...")
+                    time.sleep(30)
+                else:
+                    raise api_e
+
     except Exception as e:
         print(f"Error calling Gemini: {e}")
         return None
