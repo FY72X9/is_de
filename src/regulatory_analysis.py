@@ -1,0 +1,66 @@
+import os
+import re
+from pathlib import Path
+import sys
+import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).parent))
+import config
+
+def analyze_corpus():
+    """Analyze the regulatory corpus for gaps."""
+    docs_dir = config.DOCS_DIR / "regulatory_corpus"
+    results = []
+
+    # Keywords to search
+    keywords = {
+        "API": ["API", "Application Programming Interface", "endpoint"],
+        "Developer": ["developer", "pengembang", "pengembang AI"],
+        "Safety": ["keamanan", "safety", "aman", "bahaya"],
+        "Deployment": ["deployment", "penempatan", "implementasi"]
+    }
+
+    print("=== Regulatory Gap Analysis ===\n")
+
+    for file in docs_dir.glob("*.txt"):
+        with open(file, "r", encoding="utf-8") as f:
+            text = f.read()
+            word_count = len(text.split())
+
+        # Check for keyword presence
+        coverage = {}
+        for category, terms in keywords.items():
+            count = sum(1 for term in terms if term.lower() in text.lower())
+            coverage[category] = count
+
+        # Calculate density (mentions per 1000 words)
+        density = {k: (v / word_count) * 1000 for k, v in coverage.items()}
+
+        print(f"Document: {file.name}")
+        print(f"Word Count: {word_count}")
+        print(f"Keyword Density (per 1000 words):")
+        for k, v in density.items():
+            print(f"  - {k}: {v:.2f}")
+
+        # Determine if "API" is covered
+        has_api = "API" in text or "Application Programming Interface" in text
+
+        results.append({
+            "document": file.name,
+            "word_count": word_count,
+            "has_api_mention": has_api,
+            "api_density": density.get("API", 0),
+            "developer_density": density.get("Developer", 0)
+        })
+        print()
+
+    # Gap Conclusion
+    print("=== Gap Assessment ===")
+    api_coverage = [r['has_api_mention'] for r in results]
+    if not any(api_coverage):
+        print("CRITICAL FINDING: No Indonesian regulatory documents explicitly mention 'API' or 'Application Programming Interface' in the context of AI safety.")
+    else:
+        print("API mentioned in some documents.")
+
+if __name__ == "__main__":
+    analyze_corpus()
