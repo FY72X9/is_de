@@ -23,8 +23,8 @@ MODELS = [
     "stepfun/step-3.5-flash:free",
     "arcee-ai/trinity-large-preview:free",
     # Custom Models
-    "gemini-3.1-pro-preview",
-    "gemini-3.1-flash-lite-preview"
+    "gemini-3-pro-preview",
+    "gemini-3-flash-lite-preview",
     "mistral-small-latest",
 ]
 
