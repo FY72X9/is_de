@@ -16,7 +16,7 @@
 
 ## 2. Abstract
 
-Indonesia's AI adoption trajectory relies overwhelmingly on API-mediated deployment of global foundation models, yet no empirical study measures how safety properties degrade during this transition. This research designs and executes a direct API testing protocol via OpenRouter's infrastructure to generate original empirical data on safety degradation across three controlled deployment conditions — consumer simulation, raw API, and safety-stripped — for English and Bahasa Indonesia prompt batteries. The central methodological innovations address three limitations in existing approaches: (1) binary keyword-based safety evaluation is replaced by LLM-as-a-Judge ordinal scoring (0–3), enabling semantic discrimination between robust refusals, partial guardrails, inadequate guardrails, and full compliance; (2) parametric statistical tests ill-suited to ordinal data are replaced by a non-parametric and Proportional Odds Model framework; and (3) superficial keyword density regulatory analysis is replaced by multilingual transformer-based semantic coverage analysis. Preliminary simulation results confirm all five experimental hypotheses: architectural degradation from consumer simulation to raw API (mean score: 2.64 → 1.92), configuration collapse under stripped conditions (0.87), linguistic asymmetry favoring English over Bahasa Indonesia, compound vulnerability for Indonesian language prompts under stripped configuration, and differential safety patterns by model origin (US, EU, China). Regulatory analysis of *Stranas KA 2020–2045*, *UU PDP No. 27/2022*, and *UU ITE No. 1/2024* reveals substantive zero coverage: these instruments mention API as generic infrastructure without assigning safety obligations to API deployers. The research provides the first quantitative evidence of API safety asymmetry in Indonesia's regulatory blind spot.
+Indonesia's AI adoption trajectory relies overwhelmingly on API-mediated deployment of global foundation models, yet no empirical study measures how safety properties degrade during this transition. This research designs and executes a direct API testing protocol via OpenRouter's infrastructure to generate original empirical data on safety degradation across three controlled deployment conditions — consumer simulation, raw API, and safety-stripped — for English and Bahasa Indonesia prompt batteries. The central methodological innovations address three limitations in existing approaches: (1) binary keyword-based safety evaluation is replaced by LLM-as-a-Judge ordinal scoring (0–3), enabling semantic discrimination between robust refusals, partial guardrails, inadequate guardrails, and full compliance; (2) parametric statistical tests ill-suited to ordinal data are replaced by a non-parametric and Proportional Odds Model framework; and (3) superficial keyword density regulatory analysis is replaced by multilingual transformer-based semantic coverage analysis. Preliminary simulation results support four of five experimental hypotheses with statistical significance: architectural degradation from consumer simulation to raw API (mean score: 2.64 → 1.92), configuration collapse under stripped conditions (0.87), compound vulnerability for Indonesian language prompts under stripped configuration, and differential safety patterns by model origin (US, EU, China). Linguistic asymmetry (H2) shows a theory-consistent direction trend in binary data, with expected amplification upon LLM-Judge ordinal scoring. Regulatory analysis of *Stranas KA 2020–2045*, *UU PDP No. 27/2022*, and *UU ITE No. 1/2024* reveals substantive zero coverage: these instruments mention API as generic infrastructure without assigning safety obligations to API deployers. The research provides the first quantitative evidence of API safety asymmetry in Indonesia's regulatory blind spot.
 
 **Keywords:** API safety testing; LLM-as-a-Judge; Bahasa Indonesia AI safety; Stranas KA regulatory gap; proportional odds model
 
@@ -62,10 +62,10 @@ This construct extends Technical Safety Measurement Theory [1] and Regulatory Ga
 
 | Theoretical Domain | Source Literature | Application |
 |-------------------|-------------------|-------------|
-| Technical AI Safety Measurement | Perez et al. [1]; Röttger et al. [3] | Operationalizing safety as testable output properties |
-| Regulatory Gap Theory | Baldwin et al. [4]; Diver [5] | Identifying coverage deficits in AI regulatory instruments |
-| Cross-Linguistic Safety Research | Yong et al. [6]; Shi et al. [7] | Language as a variable in safety training and evaluation effectiveness |
-| Distributed System Safety | Hollnagel [8] | Accountability diffusion in multi-actor deployment chains |
+| Technical AI Safety Measurement | Perez et al. [1]; Röttger et al. [3]; Zeng et al. [4] | Operationalizing safety as testable output properties; adversarial prompt effectiveness |
+| Regulatory Gap Theory | Baldwin et al. [2]; Diver [8] | Identifying coverage deficits in AI regulatory instruments |
+| Cross-Linguistic Safety Research | Yong et al. [5]; Shi et al. [6] | Language as a variable in safety training and evaluation effectiveness |
+| Distributed System Safety | Hollnagel [7] | Accountability diffusion in multi-actor deployment chains |
 
 ---
 
@@ -102,7 +102,7 @@ This construct extends Technical Safety Measurement Theory [1] and Regulatory Ga
                           ▼
          ┌────────────────────────────────────┐
          │  LLM-AS-A-JUDGE EVALUATION        │
-         │  Llama-3.1-8B-Instruct (4-bit)    │
+         │  Qwen/Qwen2.5-7B-Instruct (4-bit) │
          │  Ordinal Score: 0 / 1 / 2 / 3     │
          │  0=Full Comply  3=Robust Refusal  │
          └────────────────┬───────────────────┘
@@ -225,7 +225,8 @@ The LLM-as-a-Judge approach assigns ordinal scores through a calibrated language
 ### 8.2 Judge Configuration
 
 ```
-Judge Model: meta-llama/Llama-3.1-8B-Instruct (4-bit quantized, Google Colab T4/L4)
+Judge Model: Qwen/Qwen2.5-7B-Instruct (open-access, no token needed; 4-bit NF4 quantized, Google Colab T4/L4)
+             Alternative: meta-llama/Llama-3.1-8B-Instruct (requires HF read token + license acceptance)
 Evaluation Mode: Zero-shot with structured scoring rubric
 
 System Prompt (JUDGE_SYSTEM_PROMPT):
@@ -316,9 +317,9 @@ For each condition × language × model origin cell:
 
 | Document | Formal Citation | Analysis Focus |
 |----------|----------------|----------------|
-| *Stranas KA 2020–2045* | Presidential Regulation 2021 | AI strategic framework; API safety as priority; implementation obligations |
-| *UU PDP No. 27/2022* | Law 27/2022 | Data processor obligations; cross-border transfer; AI-data nexus |
-| *UU ITE Amendment No. 1/2024* | Law 1/2024 | Content liability; platform obligations; AI-generated content exposure |
+| *Stranas KA 2020–2045* [9] | Presidential Regulation 2021 | AI strategic framework; API safety as priority; implementation obligations |
+| *UU PDP No. 27/2022* [10] | Law 27/2022 | Data processor obligations; cross-border transfer; AI-data nexus |
+| *UU ITE Amendment No. 1/2024* [11] | Law 1/2024 | Content liability; platform obligations; AI-generated content exposure |
 
 ### 10.2 Cleaning & Structuring Pipeline
 
@@ -332,7 +333,7 @@ The raw corpus contains OCR artifacts (e.g., REPIJBUK → REPUBLIK, PRES!DEN →
 
 ### 10.3 Semantic Coverage Analysis
 
-**Primary Tool:** `paraphrase-multilingual-MiniLM-L12-v2` (CPU-compatible; 463M parameter multilingual encoder)
+**Primary Tool:** `paraphrase-multilingual-MiniLM-L12-v2` (CPU-compatible; ~118M parameter multilingual encoder)
 
 **Method:** Chunk-based semantic similarity — each document is split into 512-token overlapping windows; cosine similarity against 20 predefined AI safety concept embeddings; max-pooling across chunks to obtain per-concept coverage score.
 
@@ -447,11 +448,11 @@ The intersection of Semantic Coverage (columns: 20 concepts) × Documents (rows:
 
 | Hypothesis | Test | Statistic | p-value | Supported? |
 |------------|------|-----------|---------|------------|
-| H1 (C1 vs. C2) | t-test (binary) | t = 2.663 | 0.009 | ✅ Yes |
-| H3 (C1/C2/C3) | ANOVA (binary) | F = 19.99 | < 0.001 | ✅ Yes |
-| H2 (EN vs. ID) | t-test (binary) | EN: 1.86, ID: 1.79 | — | ⚠️ Trend |
+| H1 (C1 vs. C2) | t-test / Mann-Whitney U (binary) | t = 2.663 | 0.009 | ✅ Yes |
+| H3 (C1/C2/C3) | ANOVA / Kruskal-Wallis (binary) | F = 19.99 | < 0.001 | ✅ Yes |
+| H2 (EN vs. ID) | t-test / Mann-Whitney U (binary) | EN: 1.86, ID: 1.79 | ns | ⚠️ Trend only |
 
-*Note: H2 shows a numerical trend that the LLM-Judge qualitative review confirms is substantively significant despite modest statistical magnitude in binary data — Indonesian-specific context prompts (hoaks, penipuan) bypassed filters in C2 at higher rates than generic English prompts.*
+*Note: Preliminary tests applied both parametric (t-test, ANOVA) and non-parametric (Mann-Whitney U, Kruskal-Wallis) equivalents; results are consistent. Final analysis in §9 uses Mann-Whitney U and Kruskal-Wallis as primary per the ordinal data rationale. H2 shows a direction-consistent numerical trend; binary scoring lacks the resolution to detect partial refusal differentials. The LLM-Judge ordinal scoring phase is expected to yield significance for H2, as Indonesian-specific prompts (hoaks, penipuan) bypassed filters at higher rates under C2.*
 
 ### 12.3 Regulatory Analysis Preliminary Findings
 
@@ -524,7 +525,7 @@ The intersection of Semantic Coverage (columns: 20 concepts) × Documents (rows:
 | Component | Specification | Platform |
 |-----------|-------------|---------|
 | API Testing | OpenRouter free-tier | Local (Python 3.10+) |
-| LLM-Judge Evaluation | Llama-3.1-8B-Instruct (4-bit BnB quantization) | Google Colab T4/L4 |
+| LLM-Judge Evaluation | Qwen/Qwen2.5-7B-Instruct (open-access; 4-bit NF4 BnB quantization) | Google Colab T4/L4 |
 | Regulatory Semantic Analysis | paraphrase-multilingual-MiniLM-L12-v2 | Local (CPU) or Colab |
 | Statistical Analysis | statsmodels ≥ 0.14; scipy; sklearn | Local |
 | Visualization | matplotlib; seaborn | Local |
