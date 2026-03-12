@@ -1,0 +1,34 @@
+variable,Coefficient,Odds_Ratio,CI_Lower,CI_Upper,p_value,significant
+const,-26.1418,0.0,0.0,inf,0.9999,False
+condition_C2_NEUTRAL,-0.7992,0.4497,0.2819,0.7174,0.0008,True
+condition_C3_STRIPPED,-1.01,0.3642,0.2286,0.5803,0.0,True
+language_English,0.2657,1.3043,0.8914,1.9086,0.1713,False
+model_origin_Other,-0.5202,0.5944,0.3781,0.9344,0.0242,True
+model_origin_US,-0.4274,0.6522,0.4145,1.0263,0.0646,False
+intent_category_Cybersecurity,49.1605,2.2394287966121272e+21,0.0,inf,0.9998,False
+intent_category_Dangerous Content,53.3377,1.4597713078948854e+23,0.0,inf,0.9998,False
+intent_category_Educational Advice,0.4188,1.5201,0.0,inf,1.0,False
+intent_category_Election Manipulation,49.1605,2.2394287966121432e+21,0.0,inf,0.9998,False
+intent_category_Extremism,28.7944,3200610249086.655,0.0,inf,0.9999,False
+intent_category_Financial Advice,25.9418,184662726616.3642,0.0,inf,0.9999,False
+intent_category_Fintech Fraud,49.1605,2.2394287966121432e+21,0.0,inf,0.9998,False
+intent_category_Fraud (Penipuan),49.1605,2.2394287966121432e+21,0.0,inf,0.9998,False
+intent_category_Harassment,28.4258,2214044436627.435,0.0,inf,0.9999,False
+intent_category_Hate Speech,25.4289,110563846526.9223,0.0,inf,0.9999,False
+intent_category_Illegal Acts,28.62,2688551514623.528,0.0,inf,0.9999,False
+intent_category_Legal Advice,29.8676,9361594930131.03,0.0,inf,0.9999,False
+intent_category_Malware,29.4265,6022112847631.627,0.0,inf,0.9999,False
+intent_category_Medical Advice,26.6949,392151501055.774,0.0,inf,0.9999,False
+intent_category_Medical Misinformation,25.7427,151329149342.1406,0.0,inf,0.9999,False
+intent_category_Misinformation (Hoaks),27.3012,719045413898.6981,0.0,inf,0.9999,False
+intent_category_PII,27.2893,710540488040.1912,0.0,inf,0.9999,False
+intent_category_Political Manipulation,28.0906,1583405018468.5159,0.0,inf,0.9999,False
+intent_category_Religious Advice,27.0504,559539049718.1471,0.0,inf,0.9999,False
+intent_category_SARA (Sectarian),29.9928,10609944342034.418,0.0,inf,0.9999,False
+intent_category_Self-Harm,27.513,888721604589.3779,0.0,inf,0.9999,False
+intent_category_Sexual Content,28.4258,2214044436627.435,0.0,inf,0.9999,False
+intent_category_Spam,29.1021,4353843561369.5806,0.0,inf,0.9999,False
+intent_category_Substance Abuse,51.7854,3.0911613658135905e+22,0.0,inf,0.9998,False
+intent_category_Suicide,26.9322,497172073568.7695,0.0,inf,0.9999,False
+intent_category_Tax Evasion,28.8412,3354069477995.4395,0.0,inf,0.9999,False
+intent_category_Violence,28.0819,1569681892211.876,0.0,inf,0.9999,False

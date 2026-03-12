@@ -1,0 +1,344 @@
+{
+  "analysis_date": "2026-03-12T04:32:38.869569",
+  "method": "semantic_embedding",
+  "model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "coverage_threshold": 0.35,
+  "gap_analysis": [
+    {
+      "Concept": "Impact Assessment",
+      "Max_Similarity": 0.671,
+      "Avg_Similarity": 0.471,
+      "Covered_In": "Stranas KA, UU ITE 2024, UU PDP 2022",
+      "Coverage_Count": 3,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Regulatory Sandbox",
+      "Max_Similarity": 0.632,
+      "Avg_Similarity": 0.439,
+      "Covered_In": "Stranas KA, UU ITE 2024",
+      "Coverage_Count": 2,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Foundation Model Provider",
+      "Max_Similarity": 0.628,
+      "Avg_Similarity": 0.453,
+      "Covered_In": "Stranas KA, UU ITE 2024, UU PDP 2022",
+      "Coverage_Count": 3,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Data Privacy",
+      "Max_Similarity": 0.624,
+      "Avg_Similarity": 0.482,
+      "Covered_In": "Stranas KA, UU ITE 2024, UU PDP 2022",
+      "Coverage_Count": 3,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Developer Accountability",
+      "Max_Similarity": 0.624,
+      "Avg_Similarity": 0.492,
+      "Covered_In": "Stranas KA, UU ITE 2024, UU PDP 2022",
+      "Coverage_Count": 3,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Algorithm Transparency",
+      "Max_Similarity": 0.552,
+      "Avg_Similarity": 0.409,
+      "Covered_In": "Stranas KA, UU PDP 2022",
+      "Coverage_Count": 2,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Cross-border AI Governance",
+      "Max_Similarity": 0.539,
+      "Avg_Similarity": 0.427,
+      "Covered_In": "Stranas KA, UU ITE 2024, UU PDP 2022",
+      "Coverage_Count": 3,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Indonesian AI Governance",
+      "Max_Similarity": 0.508,
+      "Avg_Similarity": 0.458,
+      "Covered_In": "Stranas KA, UU ITE 2024, UU PDP 2022",
+      "Coverage_Count": 3,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "API Developer Liability",
+      "Max_Similarity": 0.505,
+      "Avg_Similarity": 0.388,
+      "Covered_In": "Stranas KA",
+      "Coverage_Count": 1,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Incident Monitoring",
+      "Max_Similarity": 0.49,
+      "Avg_Similarity": 0.407,
+      "Covered_In": "Stranas KA, UU ITE 2024, UU PDP 2022",
+      "Coverage_Count": 3,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "API Safety Obligation",
+      "Max_Similarity": 0.485,
+      "Avg_Similarity": 0.372,
+      "Covered_In": "Stranas KA",
+      "Coverage_Count": 1,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Penipuan Online",
+      "Max_Similarity": 0.469,
+      "Avg_Similarity": 0.438,
+      "Covered_In": "Stranas KA, UU ITE 2024, UU PDP 2022",
+      "Coverage_Count": 3,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "AI Safety Mechanism",
+      "Max_Similarity": 0.446,
+      "Avg_Similarity": 0.396,
+      "Covered_In": "Stranas KA, UU ITE 2024, UU PDP 2022",
+      "Coverage_Count": 3,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Content Moderation",
+      "Max_Similarity": 0.44,
+      "Avg_Similarity": 0.423,
+      "Covered_In": "Stranas KA, UU ITE 2024, UU PDP 2022",
+      "Coverage_Count": 3,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Liability Framework",
+      "Max_Similarity": 0.422,
+      "Avg_Similarity": 0.342,
+      "Covered_In": "Stranas KA",
+      "Coverage_Count": 1,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Safety Testing / Red-teaming",
+      "Max_Similarity": 0.422,
+      "Avg_Similarity": 0.327,
+      "Covered_In": "Stranas KA",
+      "Coverage_Count": 1,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Hoaks / Misinformation",
+      "Max_Similarity": 0.416,
+      "Avg_Similarity": 0.373,
+      "Covered_In": "Stranas KA, UU PDP 2022",
+      "Coverage_Count": 2,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "SARA Content",
+      "Max_Similarity": 0.405,
+      "Avg_Similarity": 0.272,
+      "Covered_In": "Stranas KA",
+      "Coverage_Count": 1,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Safety Guardrail Stripping",
+      "Max_Similarity": 0.394,
+      "Avg_Similarity": 0.345,
+      "Covered_In": "Stranas KA",
+      "Coverage_Count": 1,
+      "Is_Critical_Gap": false
+    },
+    {
+      "Concept": "Third-party Deployment",
+      "Max_Similarity": 0.35,
+      "Avg_Similarity": 0.173,
+      "Covered_In": "Stranas KA",
+      "Coverage_Count": 1,
+      "Is_Critical_Gap": false
+    }
+  ],
+  "actor_analysis": [
+    {
+      "Document": "Stranas KA",
+      "Actor": "Foundation Model Provider",
+      "Mentions": 0,
+      "Liability_Context": 0
+    },
+    {
+      "Document": "Stranas KA",
+      "Actor": "API Developer (Domestic)",
+      "Mentions": 7,
+      "Liability_Context": 2
+    },
+    {
+      "Document": "Stranas KA",
+      "Actor": "End User",
+      "Mentions": 20,
+      "Liability_Context": 0
+    },
+    {
+      "Document": "Stranas KA",
+      "Actor": "Government / Regulator",
+      "Mentions": 12,
+      "Liability_Context": 2
+    },
+    {
+      "Document": "UU ITE 2024",
+      "Actor": "Foundation Model Provider",
+      "Mentions": 0,
+      "Liability_Context": 0
+    },
+    {
+      "Document": "UU ITE 2024",
+      "Actor": "API Developer (Domestic)",
+      "Mentions": 33,
+      "Liability_Context": 11
+    },
+    {
+      "Document": "UU ITE 2024",
+      "Actor": "End User",
+      "Mentions": 4,
+      "Liability_Context": 2
+    },
+    {
+      "Document": "UU ITE 2024",
+      "Actor": "Government / Regulator",
+      "Mentions": 0,
+      "Liability_Context": 0
+    },
+    {
+      "Document": "UU PDP 2022",
+      "Actor": "Foundation Model Provider",
+      "Mentions": 0,
+      "Liability_Context": 0
+    },
+    {
+      "Document": "UU PDP 2022",
+      "Actor": "API Developer (Domestic)",
+      "Mentions": 0,
+      "Liability_Context": 0
+    },
+    {
+      "Document": "UU PDP 2022",
+      "Actor": "End User",
+      "Mentions": 68,
+      "Liability_Context": 14
+    },
+    {
+      "Document": "UU PDP 2022",
+      "Actor": "Government / Regulator",
+      "Mentions": 1,
+      "Liability_Context": 0
+    }
+  ],
+  "coverage_matrix": {
+    "API Safety Obligation": {
+      "Stranas KA": 0.4849,
+      "UU ITE 2024": 0.301,
+      "UU PDP 2022": 0.331
+    },
+    "API Developer Liability": {
+      "Stranas KA": 0.5052,
+      "UU ITE 2024": 0.31,
+      "UU PDP 2022": 0.349
+    },
+    "Foundation Model Provider": {
+      "Stranas KA": 0.6277,
+      "UU ITE 2024": 0.3693,
+      "UU PDP 2022": 0.363
+    },
+    "Third-party Deployment": {
+      "Stranas KA": 0.3501,
+      "UU ITE 2024": 0.1109,
+      "UU PDP 2022": 0.0579
+    },
+    "Safety Guardrail Stripping": {
+      "Stranas KA": 0.3937,
+      "UU ITE 2024": 0.3154,
+      "UU PDP 2022": 0.3272
+    },
+    "AI Safety Mechanism": {
+      "Stranas KA": 0.4463,
+      "UU ITE 2024": 0.3759,
+      "UU PDP 2022": 0.3657
+    },
+    "Content Moderation": {
+      "Stranas KA": 0.426,
+      "UU ITE 2024": 0.4396,
+      "UU PDP 2022": 0.4041
+    },
+    "Safety Testing / Red-teaming": {
+      "Stranas KA": 0.4215,
+      "UU ITE 2024": 0.2786,
+      "UU PDP 2022": 0.2822
+    },
+    "Incident Monitoring": {
+      "Stranas KA": 0.4901,
+      "UU ITE 2024": 0.352,
+      "UU PDP 2022": 0.3792
+    },
+    "Liability Framework": {
+      "Stranas KA": 0.4216,
+      "UU ITE 2024": 0.3103,
+      "UU PDP 2022": 0.2941
+    },
+    "Regulatory Sandbox": {
+      "Stranas KA": 0.6316,
+      "UU ITE 2024": 0.3886,
+      "UU PDP 2022": 0.2983
+    },
+    "Cross-border AI Governance": {
+      "Stranas KA": 0.5387,
+      "UU ITE 2024": 0.3786,
+      "UU PDP 2022": 0.3645
+    },
+    "Indonesian AI Governance": {
+      "Stranas KA": 0.5066,
+      "UU ITE 2024": 0.5079,
+      "UU PDP 2022": 0.3581
+    },
+    "Hoaks / Misinformation": {
+      "Stranas KA": 0.4158,
+      "UU ITE 2024": 0.337,
+      "UU PDP 2022": 0.3673
+    },
+    "Penipuan Online": {
+      "Stranas KA": 0.4693,
+      "UU ITE 2024": 0.3962,
+      "UU PDP 2022": 0.4477
+    },
+    "SARA Content": {
+      "Stranas KA": 0.4054,
+      "UU ITE 2024": 0.213,
+      "UU PDP 2022": 0.1972
+    },
+    "Data Privacy": {
+      "Stranas KA": 0.4705,
+      "UU ITE 2024": 0.3525,
+      "UU PDP 2022": 0.6237
+    },
+    "Developer Accountability": {
+      "Stranas KA": 0.6235,
+      "UU ITE 2024": 0.4625,
+      "UU PDP 2022": 0.3896
+    },
+    "Algorithm Transparency": {
+      "Stranas KA": 0.5518,
+      "UU ITE 2024": 0.3102,
+      "UU PDP 2022": 0.3636
+    },
+    "Impact Assessment": {
+      "Stranas KA": 0.6713,
+      "UU ITE 2024": 0.3796,
+      "UU PDP 2022": 0.3613
+    }
+  }
+}

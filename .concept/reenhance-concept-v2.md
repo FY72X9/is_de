@@ -521,7 +521,7 @@ for name, text in documents.items():
 # Define safety-related concept embeddings
 safety_concepts = [
     # Core safety terms
-    "keamanan人工智能 (keamanan AI)",
+    "keamanan kecerdasan buatan(keamanan AI)",
     "penjaminan keamanan",
     "perlindungan dari konten berbahaya",
     "penolakan konten",
