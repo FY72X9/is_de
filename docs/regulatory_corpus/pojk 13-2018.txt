@@ -1,0 +1,1215 @@
+OTORITAS JASA KEUANGAN
+REPUBLIK INDONESIA
+SALINAN
+PERATURAN OTORITAS JASA KEUANGAN
+REPUBLIK INDONESIA
+NOMOR 13 /POJK.02/2018
+TENTANG
+INOVASI KEUANGAN DIGITAL DI SEKTOR JASA KEUANGAN
+DENGAN RAHMAT TUHAN YANG MAHA ESA
+DEWAN KOMISIONER OTORITAS JASA KEUANGAN,
+Menimbang : a. bahwa seiring kemajuan teknologi, inovasi keuangan
+digital tidak dapat diabaikan dan perlu dikelola agar dapat
+memberikan manfaat sebesar-besarnya untuk
+kepentingan masyarakat;
+b. bahwa inovasi keuangan digital perlu diarahkan agar
+menghasilkan inovasi keuangan digital yang bertanggung
+jawab, aman, mengedepankan perlindungan konsumen
+dan memiliki risiko yang terkelola dengan baik;
+c. bahwa berdasarkan pertimbangan sebagaimana dimaksud
+dalam huruf a dan huruf b, perlu menetapkan Peraturan
+Otoritas Jasa Keuangan tentang Inovasi Keuangan Digital
+di Sektor Jasa Keuangan;
+Mengingat : Undang-Undang Nomor 21 Tahun 2011 tentang Otoritas Jasa
+Keuangan (Lembaran Negara Republik Indonesia Tahun 2011
+Nomor 111, Tambahan Lembaran Negara Republik Indonesia
+Nomor 5253);
+- 2 -
+MEMUTUSKAN:
+Menetapkan : PERATURAN OTORITAS JASA KEUANGAN TENTANG INOVASI
+KEUANGAN DIGITAL DI SEKTOR JASA KEUANGAN.
+BAB I
+KETENTUAN UMUM
+Pasal 1
+Dalam Peraturan Otoritas Jasa Keuangan ini yang dimaksud
+dengan:
+1. Inovasi Keuangan Digital yang selanjutnya disingkat IKD
+adalah aktivitas pembaruan proses bisnis, model bisnis,
+dan instrumen keuangan yang memberikan nilai tambah
+baru di sektor jasa keuangan dengan melibatkan
+ekosistem digital.
+2. Lembaga Jasa Keuangan adalah lembaga yang
+melaksanakan kegiatan di sektor Perbankan, Pasar Modal,
+Perasuransian, Dana Pensiun, Lembaga Pembiayaan, dan
+Lembaga Jasa Keuangan Lainnya sebagaimana dimaksud
+dalam Undang-Undang Nomor 21 Tahun 2011 tentang
+Otoritas Jasa Keuangan.
+3. Penyelenggara adalah setiap pihak yang
+menyelenggarakan IKD.
+4. Regulatory Sandbox adalah mekanisme pengujian yang
+dilakukan oleh Otoritas Jasa Keuangan untuk menilai
+keandalan proses bisnis, model bisnis, instrumen
+keuangan, dan tata kelola Penyelenggara.
+5. Ekosistem IKD adalah komunitas yang terdiri dari otoritas,
+Penyelenggara, konsumen, dan/atau pihak lain yang
+memanfaatkan platform digital secara bersama untuk
+mendorong IKD yang bermanfaat bagi masyarakat.
+- 3 -
+BAB II
+TUJUAN, RUANG LINGKUP
+DAN KRITERIA IKD
+Bagian Kesatu
+Tujuan IKD
+Pasal 2
+(1) IKD dilaksanakan oleh Penyelenggara secara bertanggung
+jawab.
+(2) Pengaturan IKD dilakukan dengan tujuan untuk:
+a. mendukung pengembangan IKD yang bertanggung
+jawab;
+b. mendukung pemantauan IKD yang efektif; dan
+c. mendorong sinergi di dalam ekosistem digital jasa
+keuangan.
+Bagian Kedua
+Ruang Lingkup dan Kriteria IKD
+Pasal 3
+Ruang lingkup IKD meliputi:
+a. penyelesaian transaksi;
+b. penghimpunan modal;
+c. pengelolaan investasi;
+d. penghimpunan dan penyaluran dana;
+e. perasuransian;
+f. pendukung pasar;
+g. pendukung keuangan digital lainnya; dan/atau
+h. aktivitas jasa keuangan lainnya.
+Pasal 4
+Kriteria IKD meliputi:
+a. bersifat inovatif dan berorientasi ke depan;
+b. menggunakan teknologi informasi dan komunikasi
+sebagai sarana utama pemberian layanan kepada
+konsumen di sektor jasa keuangan;
+- 4 -
+c. mendukung inklusi dan literasi keuangan;
+d. bermanfaat dan dapat dipergunakan secara luas;
+e. dapat diintegrasikan pada layanan keuangan yang
+telah ada;
+f. menggunakan pendekatan kolaboratif; dan
+g. memperhatikan aspek perlindungan konsumen dan
+perlindungan data.
+BAB III
+PENCATATAN
+Bagian Kesatu
+Bentuk Badan Hukum Penyelenggara
+Pasal 5
+(1) Penyelenggara terdiri dari:
+a. Lembaga Jasa Keuangan; dan/atau
+b. pihak lain yang melakukan kegiatan di sektor jasa
+keuangan.
+(2) Penyelenggara sebagaimana dimaksud pada ayat (1) huruf
+b harus berbentuk badan hukum perseroan terbatas atau
+koperasi.
+(3) Penyelenggara sebagaimana dimaksud pada ayat (1) huruf
+b tidak diperkenankan mengelola portofolio atau exposure.
+Bagian Kedua
+Permohonan Pencatatan
+Pasal 6
+(1) Penyelenggara yang akan atau telah melakukan kegiatan
+dalam ruang lingkup sebagaimana dimaksud dalam Pasal
+3 dan memenuhi kriteria sebagaimana dimaksud dalam
+Pasal 4 wajib mengajukan permohonan pencatatan
+kepada Otoritas Jasa Keuangan dengan menggunakan
+formulir tercantum dalam Lampiran yang merupakan
+bagian tidak terpisahkan dari Peraturan Otoritas Jasa
+Keuangan ini.
+- 5 -
+(2) Kewajiban pencatatan sebagaimana dimaksud pada ayat
+(1) dikecualikan bagi Penyelenggara yang telah terdaftar
+dan/atau telah memperoleh izin dari Otoritas Jasa
+Keuangan.
+(3) Otoritas Jasa Keuangan melakukan pencatatan atas
+permohonan pencatatan yang diajukan oleh
+Penyelenggara dengan mempertimbangkan kelengkapan
+dokumen yang disampaikan oleh Penyelenggara meliputi:
+a. salinan akta pendirian badan hukum Penyelenggara
+beserta identitas kelengkapan data pengurus;
+b. penjelasan singkat secara tertulis mengenai produk;
+c. data dan informasi lainnya yang terkait dengan
+kegiatan IKD; dan
+d. rencana bisnis.
+(4) Dalam hal Otoritas Jasa Keuangan telah menyediakan
+sistem pencatatan secara elektronik untuk pencatatan
+IKD maka permohonan pencatatan disampaikan kepada
+Otoritas Jasa Keuangan secara elektronik melalui sistem
+pencatatan Otoritas Jasa Keuangan.
+BAB IV
+REGULATORY SANDBOX
+Bagian Kesatu
+Prinsip Dasar Regulatory Sandbox
+Pasal 7
+(1) Otoritas Jasa Keuangan menyelenggarakan Regulatory
+Sandbox untuk memastikan IKD memenuhi kriteria
+sebagaimana dimaksud dalam Pasal 4.
+(2) Penyelenggara yang sedang dalam proses Regulatory
+Sandbox dapat memperoleh persetujuan Otoritas Jasa
+Keuangan untuk dikecualikan sementara dari Peraturan
+Otoritas Jasa Keuangan tertentu.
+(3) Pengecualian sementara sebagaimana dimaksud pada
+ayat (2) dapat dilakukan sepanjang memenuhi hal sebagai
+berikut:
+- 6 -
+a. selama Penyelenggara berada di dalam Regulatory
+Sandbox;
+b. mendapat persetujuan satuan kerja pengawas terkait
+di Otoritas Jasa Keuangan; dan
+c. pengecualian sementara hanya berlaku terhadap
+Peraturan Otoritas Jasa Keuangan yang bersifat non
+prudensial.
+Bagian Kedua
+Persyaratan Penyelenggara sebagai
+Peserta Regulatory Sandbox
+Pasal 8
+(1) Otoritas Jasa Keuangan menetapkan Penyelenggara untuk
+diuji coba dalam Regulatory Sandbox.
+(2) Penetapan sebagaimana dimaksud pada ayat (1)
+dilakukan terhadap Penyelenggara yang memenuhi
+persyaratan paling sedikit:
+a. tercatat sebagai IKD di Otoritas Jasa Keuangan atau
+berdasarkan surat permohonan yang diajukan
+satuan kerja pengawas terkait di Otoritas Jasa
+Keuangan;
+b. merupakan bisnis model yang baru;
+c. memiliki skala usaha dengan cakupan pasar yang
+luas;
+d. terdaftar di asosiasi Penyelenggara; dan
+e. kriteria lain yang ditetapkan oleh Otoritas Jasa
+Keuangan.
+Bagian Ketiga
+Penyelenggaraan Regulatory Sandbox
+Pasal 9
+Regulatory Sandbox dilaksanakan dalam jangka waktu paling
+lama 1 (satu) tahun dan dapat diperpanjang selama 6 (enam)
+bulan apabila diperlukan.
+- 7 -
+Pasal 10
+Selama pelaksanaan Regulatory Sandbox, Penyelenggara wajib
+memenuhi ketentuan sebagai berikut:
+a. memberitahukan setiap perubahan IKD yang dimiliki;
+b. berkomitmen untuk membuka setiap informasi yang
+berkaitan dengan pelaksanaan Regulatory Sandbox;
+c. mengikuti edukasi dan konseling yang diperlukan untuk
+pengembangan bisnis sektor jasa keuangan;
+d. mengikuti setiap pelaksanaan koordinasi dan kerja sama
+dengan otoritas atau kementerian/lembaga lain; dan
+e. berkolaborasi dengan Lembaga Jasa Keuangan atau pihak
+yang melakukan kegiatan di sektor jasa keuangan.
+Pasal 11
+(1) Hasil Regulatory Sandbox terhadap Penyelenggara
+dinyatakan dengan status:
+a. direkomendasikan;
+b. perbaikan; atau
+c. tidak direkomendasikan.
+(2) Dalam hal Penyelenggara berstatus direkomendasikan
+sebagaimana dimaksud pada ayat (1) huruf a, Otoritas
+Jasa Keuangan akan memberikan rekomendasi
+pendaftaran sesuai dengan aktivitas usaha dari
+Penyelenggara.
+(3) Dalam hal hasil uji coba berstatus perbaikan, Otoritas
+Jasa Keuangan dapat memberikan perpanjangan waktu
+dengan jangka waktu paling lama 6 (enam) bulan sejak
+tanggal penetapan status.
+(4) Dalam hal hasil uji coba berstatus tidak
+direkomendasikan, Penyelenggara tidak dapat
+mengajukan kembali IKD yang sama.
+(5) Penyelenggara yang berstatus tidak direkomendasikan
+sebagaimana dimaksud pada ayat (4) dikeluarkan dari
+pencatatan sebagai Penyelenggara.
+- 8 -
+Pasal 12
+(1) Dalam hal hasil uji coba menunjukkan keterkaitan dengan
+kewenangan otoritas lain, Otoritas Jasa Keuangan akan
+berkoordinasi dengan otoritas tersebut.
+(2) Dalam pelaksanaan Regulatory Sandbox, Penyelenggara
+dapat berkoordinasi dengan Lembaga Jasa Keuangan dan
+pihak terkait lainnya dengan tetap berada di bawah
+koordinasi Otoritas Jasa Keuangan.
+(3) Peraturan pelaksanaan terkait tata cara pelaksanaan
+Regulatory Sandbox diatur lebih lanjut dalam Surat
+Edaran Otoritas Jasa Keuangan.
+Bagian Keempat
+Keterbukaan Informasi
+Pasal 13
+(1) Penyelenggara wajib mengungkapkan informasi penting
+dan relevan selama pelaksanaan uji coba di Regulatory
+Sandbox serta menyampaikannya kepada satuan kerja
+yang membidangi penelitian dan pengembangan IKD di
+Otoritas Jasa Keuangan.
+(2) Otoritas Jasa Keuangan dapat meminta informasi
+tambahan kepada Penyelenggara selama pelaksanaan
+Regulatory Sandbox.
+BAB V
+PENDAFTARAN
+Pasal 14
+(1) Penyelenggara yang berstatus direkomendasikan berhak
+mengajukan permohonan pendaftaran kepada Otoritas
+Jasa Keuangan.
+(2) Penyelenggara yang memiliki jenis IKD yang sama dengan
+Penyelenggara sebagaimana dimaksud pada ayat (1)
+memiliki hak yang sama untuk mengajukan permohonan
+pendaftaran kepada Otoritas Jasa Keuangan.
+- 9 -
+(3) Penyelenggara harus mengajukan permohonan
+pendaftaran kepada Otoritas Jasa Keuangan paling lambat
+6 (enam) bulan sejak penetapan status direkomendasikan.
+(4) Dalam hal Penyelenggara tidak mengajukan permohonan
+pendaftaran hingga melewati batas waktu pendaftaran
+yang diberikan maka status rekomendasi pendaftaran
+dicabut dan dinyatakan tidak berlaku.
+(5) Otoritas Jasa Keuangan memberikan surat tanda bukti
+terdaftar bagi Penyelenggara yang telah menyelesaikan
+proses pendaftaran.
+(6) Penyelenggara yang bukan merupakan Lembaga Jasa
+Keuangan dan sudah memiliki status terdaftar dapat
+mencantumkan nomor tanda bukti terdaftar dalam setiap
+penawaran atau promosi produk atau layanannya.
+(7) Penyelenggara dengan status direkomendasikan yang
+telah mengajukan pendaftaran kepada Otoritas Jasa
+Keuangan namun tidak dapat memenuhi ketentuan
+pendaftaran hingga akhir jangka waktu yang diberikan,
+status direkomendasikan dan pencatatan dicabut dan
+dinyatakan tidak berlaku.
+Pasal 15
+(1) Penyelenggara mengajukan permohonan pendaftaran
+dengan disertai dokumen sebagaimana dimaksud dalam
+Pasal 6 ayat (3) sepanjang terdapat perubahan atas
+dokumen dimaksud.
+(2) Persetujuan atas permohonan pendaftaran dilakukan
+dalam jangka waktu paling lama 30 (tiga puluh) hari sejak
+dokumen permohonan pendaftaran sebagaimana
+dimaksud pada ayat (1) diterima secara lengkap.
+Pasal 16
+Dalam hal Penyelenggara yang menerima status perbaikan
+sebagaimana dimaksud dalam Pasal 11 ayat (1) huruf b namun
+tidak melakukan perbaikan yang memadai hingga
+perpanjangan waktu berakhir maka status hasil uji coba
+Regulatory Sandbox akan diubah menjadi berstatus tidak
+- 10 -
+direkomendasikan sebagaimana dimaksud dalam Pasal 11
+ayat (1) huruf c.
+BAB VI
+PEMANTAUAN
+Pasal 17
+(1) Otoritas Jasa Keuangan berwenang melakukan
+pemantauan terhadap Penyelenggara yang telah tercatat
+dan terdaftar di Otoritas Jasa Keuangan.
+(2) Untuk melengkapi mekanisme pemantauan oleh Otoritas
+Jasa Keuangan, Penyelenggara diwajibkan untuk
+menerapkan prinsip pemantauan secara mandiri.
+(3) Pemantauan sebagaimana dimaksud pada ayat (1)
+mencakup pemantauan atas laporan self assessment,
+pemantauan on-site, dan/atau metode pemantauan
+lainnya.
+(4) Peraturan pelaksanaan terkait pedoman pemantauan
+Otoritas Jasa Keuangan diatur lebih lanjut dalam Surat
+Edaran Otoritas Jasa Keuangan.
+Bagian Kesatu
+Prinsip Pemantauan Secara Mandiri
+Pasal 18
+(1) Penyelenggara wajib menerapkan prinsip pemantauan
+secara mandiri paling sedikit meliputi:
+a. prinsip tata kelola teknologi informasi dan
+komunikasi sesuai dengan peraturan perundang-
+undangan;
+b. perlindungan konsumen sesuai dengan ketentuan
+Peraturan Otoritas Jasa Keuangan ini;
+c. edukasi dan sosialisasi kepada konsumen;
+d. kerahasiaan data dan/atau informasi konsumen
+termasuk data dan/atau informasi transaksi;
+e. prinsip manajemen risiko dan kehati-hatian;
+- 11 -
+f. prinsip anti pencucian uang dan pencegahan
+pendanaan terorisme sesuai dengan ketentuan
+peraturan perundang-undangan; dan
+g. inklusif dan prinsip keterbukaan informasi.
+(2) Untuk melaksanakan pemantauan, Penyelenggara wajib
+menginventarisasi risiko utama yang paling sedikit
+mencakup:
+a. risiko strategis;
+b. risiko operasional sistemik;
+c. risiko operasional individual;
+d. risiko pencucian uang dan pendanaan terorisme;
+e. risiko perlindungan data konsumen;
+f. risiko penggunaan jasa pihak ketiga;
+g. risiko siber; dan
+h. risiko likuiditas.
+Pasal 19
+Penyelenggara wajib memiliki perangkat yang dapat
+meningkatkan efisiensi dan kepatuhan atas proses
+pemantauan yang akan dilakukan oleh Otoritas Jasa
+Keuangan.
+Bagian Kedua
+Pemantauan oleh Otoritas Jasa Keuangan dan Pihak Lain
+Pasal 20
+Otoritas Jasa Keuangan melakukan pemantauan terhadap
+Penyelenggara.
+Pasal 21
+(1) Penyelenggara membentuk asosiasi Penyelenggara.
+(2) Penyelenggara yang tercatat atau terdaftar untuk
+menjalani uji coba di Regulatory Sandbox menjadi anggota
+asosiasi yang ditunjuk oleh Otoritas Jasa Keuangan.
+(3) Asosiasi sebagaimana dimaksud pada ayat (2)
+menetapkan standar dengan mempergunakan
+- 12 -
+pendekatan disiplin pasar yang berlaku bagi anggotanya
+yang paling sedikit meliputi:
+a. merumuskan aturan operasi, standar industri dan
+kode etik, sesuai dengan jenis bisnis yang berbeda;
+b. menerima dan meneruskan laporan serta menerima
+keluhan;
+c. menyusun statistik keuangan dan memantau risiko
+serta penelitian tentang isu makro dan mikro
+keuangan;
+d. menjadi penghubung antara Otoritas Jasa Keuangan
+dan Penyelenggara untuk meningkatkan dukungan
+pengaturan dan pertukaran informasi;
+e. menetapkan mekanisme pengaturan diri dan sanksi
+atas pelanggaran anggota terhadap aturan dan kode
+etik; dan
+f. melaksanakan pendidikan, pelatihan, dan
+perlindungan konsumen serta kerja sama domestik
+dan internasional.
+(4) Standar sebagaimana dimaksud pada ayat (3) mengacu
+pada standar yang ditetapkan oleh Otoritas Jasa
+Keuangan.
+(5) Peraturan pelaksanaan terkait penunjukan Asosiasi
+Penyelenggara diatur lebih lanjut dalam Surat Edaran
+Otoritas Jasa Keuangan.
+Pasal 22
+(1) Pengawasan IKD mencakup prinsip:
+a. pengawasan berbasis risiko dan teknologi; dan
+b. pengawasan berbasis disiplin pasar.
+(2) Penyelenggara wajib menerapkan prinsip pengawasan
+berbasis risiko dan teknologi terhadap IKD.
+(3) Prinsip pengawasan berbasis risiko dan teknologi
+sebagaimana dimaksud pada ayat (2) paling sedikit
+meliputi:
+a. pendekatan yg berimbang antara aspek prudensial
+dengan dukungan terhadap inovasi;
+- 13 -
+b. kolaboratif dengan otoritas dan lembaga lain dalam
+melakukan pengawasan, pengaturan, serta
+penentuan standar pada layanan keuangan digital;
+c. menekankan pada aspek tata kelola dan manajemen
+risiko yang handal dalam memanfaatkan teknologi
+dan mengendalikan ekosistem digitalnya; dan
+d. meneliti penerapan proses yang baik terkait
+pengenalan konsumen, manajemen risiko, dan
+pengawasan operasional yang dilaksanakan oleh
+pihak ketiga.
+(4) Pengawasan berbasis disiplin pasar sebagaimana
+dimaksud pada ayat (1) huruf b harus memperhatikan:
+a. standar profesi dan etika pasar;
+b. transparansi produk dan layanan;
+c. pasar yang kompetitif dan inklusif;
+d. kesesuaian dengan kebutuhan konsumen;
+e. penanganan mekanisme keluhan yang segera;
+f. aspek keamanan dan kerahasiaan data konsumen
+dan transaksi;
+g. aspek kepatuhan terhadap peraturan;
+h. aspek standar dan keamanan platform;
+i. aspek tata kelola teknologi informasi;
+j. risiko pasar;
+k. risiko counter-party dan clearing agency;
+l. aspek edukasi online; dan
+m. aspek sertifikat elektronik.
+BAB VII
+PELAPORAN
+Pasal 23
+Penyelenggara yang sedang dalam proses Regulatory Sandbox
+wajib menyampaikan laporan kinerja berkala secara
+triwulanan kepada Otoritas Jasa Keuangan.
+- 14 -
+Pasal 24
+Penyelenggara yang telah terdaftar di Otoritas Jasa Keuangan
+wajib menyusun laporan risk self assessment secara bulanan
+serta menyampaikannya kepada Otoritas Jasa Keuangan.
+Pasal 25
+Selain memberikan laporan sebagaimana dimaksud dalam
+Pasal 24, Penyelenggara wajib melakukan pelaporan kepada
+konsumen terkait hal yang berhubungan dengan kinerja
+investasi, nilai investasi, dan/atau portofolio yang dimiliki para
+konsumen.
+Pasal 26
+Penyelenggara sebagaimana dimaksud dalam Pasal 24 dan
+Pasal 25 wajib memberikan hak akses kepada Otoritas Jasa
+Keuangan atas pelaporan.
+Pasal 27
+Untuk mengolah laporan risk self assessment, Otoritas Jasa
+Keuangan berwenang memanggil atau meminta keterangan
+tambahan dari Penyelenggara.
+BAB VIII
+TATA KELOLA
+Pasal 28
+(1) Penyelenggara wajib memiliki rencana strategis sistem
+elektronik yang mendukung rencana bisnis
+Penyelenggara.
+(2) Penyelenggara wajib menyusun kebijakan, prosedur, dan
+standar yang paling sedikit meliputi aspek:
+a. strategi bisnis;
+b. perlindungan konsumen;
+c. risiko, dan permodalan;
+d. pengembangan sumber daya manusia;
+e. pengembangan dan perencanaan produk dan
+layanan;
+- 15 -
+f. operasional teknologi informasi;
+g. jaringan komunikasi;
+h. pengamanan informasi;
+i. rencana pemulihan bencana;
+j. layanan pengguna; dan
+k. penggunaan pihak penyedia jasa teknologi informasi.
+(3) Penyelenggara wajib memiliki sumber daya manusia yang
+memiliki keahlian dan/atau latar belakang di bidang
+teknologi informasi dan keuangan.
+(4) Penyelenggara yang telah tercatat dan terdaftar di Otoritas
+Jasa Keuangan wajib mengajukan permohonan
+pencatatan kepada Otoritas Jasa Keuangan apabila
+terdapat perubahan terkait model bisnis, proses bisnis,
+kelembagaan, dan operasional IKD yang dimiliki.
+BAB IX
+PUSAT DATA
+Pasal 29
+Penyelenggara wajib menempatkan pusat data dan pusat
+pemulihan bencana di wilayah Indonesia.
+BAB X
+PERLINDUNGAN DAN KERAHASIAAN DATA
+Pasal 30
+(1) Penyelenggara wajib menjaga kerahasiaan, keutuhan, dan
+ketersediaan data pribadi, data transaksi, dan data
+keuangan yang dikelolanya sejak data diperoleh hingga
+data tersebut dimusnahkan.
+(2) Ketentuan pemanfaatan data dan informasi pengguna
+yang diperoleh Penyelenggara harus memenuhi syarat
+sebagai berikut:
+a. memperoleh persetujuan dari pengguna;
+b. menyampaikan batasan pemanfaatan data dan
+informasi kepada pengguna;
+- 16 -
+c. menyampaikan setiap perubahan tujuan
+pemanfaatan data dan informasi kepada pengguna
+dalam hal terdapat perubahan tujuan pemanfaatan
+data dan informasi; dan
+d. media dan metode yang dipergunakan dalam
+memperoleh data dan informasi terjamin
+kerahasiaan, keamanan, serta keutuhannya.
+BAB XI
+EDUKASI DAN PERLINDUNGAN KONSUMEN
+Pasal 31
+(1) Penyelenggara wajib menerapkan prinsip dasar
+perlindungan konsumen yaitu:
+a. transparansi;
+b. perlakuan yang adil;
+c. keandalan;
+d. kerahasiaan dan keamanan data/informasi
+konsumen; dan
+e. penanganan pengaduan serta penyelesaian sengketa
+konsumen secara sederhana, cepat, dan biaya
+terjangkau.
+(2) Penyelenggara wajib menyediakan pusat pelayanan
+konsumen berbasis teknologi.
+(3) Pusat pelayanan konsumen berbasis teknologi paling
+sedikit terdiri atas penyediaan pusat layanan konsumen
+yang dapat dilaksanakan sendiri atau melalui pihak lain.
+Pasal 32
+(1) Penyelenggara wajib menyediakan dan/atau
+menyampaikan informasi terkini kepada Otoritas Jasa
+Keuangan dan konsumen mengenai aktivitas layanan
+keuangan digital.
+(2) Informasi sebagaimana dimaksud pada ayat (1)
+dituangkan dalam dokumen atau sarana lain yang dapat
+digunakan sebagai alat bukti.
+- 17 -
+Pasal 33
+(1) Penyelenggara wajib menyampaikan informasi kepada
+konsumen tentang penerimaan, penundaan, atau
+penolakan permohonan layanan keuangan digital.
+(2) Dalam hal Penyelenggara menyampaikan informasi
+penundaan atau penolakan sebagaimana dimaksud pada
+ayat (1), Penyelenggara wajib menyampaikan alasan
+penundaan atau penolakan.
+Pasal 34
+Penyelenggara wajib melaksanakan kegiatan untuk
+meningkatkan literasi dan inklusi keuangan.
+BAB XII
+ASPEK KEPATUHAN LAINNYA
+Pasal 35
+Penyelenggara yang terdaftar wajib menerapkan program anti
+pencucian uang dan pencegahan pendanaan terorisme di
+sektor jasa keuangan terhadap konsumen sesuai dengan
+Peraturan Otoritas Jasa Keuangan mengenai penerapan
+program anti pencucian uang dan pencegahan pendanaan
+terorisme di sektor jasa keuangan.
+BAB XIII
+KOORDINASI DAN KERJA SAMA
+Bagian Kesatu
+Pusat IKD
+Pasal 36
+Otoritas Jasa Keuangan dapat melakukan koordinasi
+dan/atau kerja sama untuk menciptakan pusat IKD dengan:
+a. otoritas lain di dalam negeri;
+b. pemerintah pusat dan daerah;
+c. asosiasi financial technology dan pusat inovasi di luar
+Otoritas Jasa Keuangan;
+- 18 -
+d. pakar dan akademisi; dan/atau
+e. otoritas di negara lain, organisasi internasional, dan/atau
+lembaga internasional.
+Bagian Kedua
+Ekosistem IKD
+Pasal 37
+(1) Penyelenggara yang telah tercatat dan/atau terdaftar di
+Otoritas Jasa Keuangan dapat bekerja sama dengan
+Lembaga Jasa Keuangan untuk menciptakan sinergi
+ekosistem IKD.
+(2) Penyelenggara harus berperan dalam menciptakan
+ekosistem digital jasa keuangan dan menyelaraskan
+layanan digital yang saling mendukung di Indonesia.
+BAB XIV
+LARANGAN
+Pasal 38
+(1) Penyelenggara dilarang memberikan data dan/atau
+informasi mengenai konsumen kepada pihak ketiga.
+(2) Larangan sebagaimana dimaksud pada ayat (1)
+dikecualikan dalam hal:
+a. konsumen memberikan persetujuan secara
+elektronik; dan/atau
+b. Penyelenggara diwajibkan oleh ketentuan peraturan
+perundang-undangan untuk memberikan data
+dan/atau informasi mengenai konsumen kepada
+pihak ketiga.
+(3) Pembatalan atau perubahan sebagian persetujuan atas
+pengungkapan data dan/atau informasi sebagaimana
+dimaksud pada ayat (2) huruf a dilakukan secara
+elektronik oleh konsumen dalam bentuk dokumen
+elektronik.
+- 19 -
+BAB XV
+KETENTUAN SANKSI
+Pasal 39
+(1) Dengan tidak mengurangi ketentuan pidana di sektor jasa
+keuangan, Otoritas Jasa Keuangan berwenang
+mengenakan sanksi administratif terhadap setiap pihak
+yang melakukan pelanggaran ketentuan Peraturan
+Otoritas Jasa Keuangan ini, termasuk pihak yang
+menyebabkan terjadinya pelanggaran tersebut berupa:
+a. peringatan tertulis;
+b. denda, yaitu kewajiban untuk membayar sejumlah
+uang tertentu;
+c. pembatalan persetujuan; dan/atau
+d. pembatalan pendaftaran.
+(2) Sanksi administratif sebagaimana dimaksud pada ayat (1)
+huruf b sampai dengan huruf d dapat dikenakan dengan
+atau tanpa didahului pengenaan sanksi administratif
+berupa peringatan tertulis sebagaimana dimaksud pada
+ayat (1) huruf a.
+(3) Sanksi administratif berupa denda sebagaimana
+dimaksud pada ayat (1) huruf b dapat dikenakan secara
+tersendiri atau secara bersama-sama dengan pengenaan
+sanksi administratif sebagaimana dimaksud pada ayat (1)
+huruf c dan huruf d.
+Pasal 40
+Selain sanksi administratif sebagaimana dimaksud dalam Pasal
+39, Otoritas Jasa Keuangan dapat melakukan tindakan
+tertentu terhadap setiap pihak yang melakukan pelanggaran
+ketentuan Peraturan Otoritas Jasa Keuangan ini.
+- 20 -
+BAB XVI
+KETENTUAN PERALIHAN
+Pasal 41
+(1) Perjanjian kerja sama antara Lembaga Jasa Keuangan
+dengan Penyelenggara yang belum tercatat dan/atau
+terdaftar di Otoritas Jasa Keuangan tetap dapat
+dilanjutkan dalam jangka waktu paling lama 3 (tiga) tahun
+sejak Peraturan Otoritas Jasa Keuangan ini diundangkan.
+(2) Dalam hal persyaratan pendaftaran Penyelenggara yang
+telah diberikan status direkomendasikan belum diatur,
+Penyelenggara tetap mempunyai kewajiban untuk
+melakukan pendaftaran dengan kelengkapan dokumen
+sebagai berikut:
+a. salinan akta pendirian badan hukum Penyelenggara
+beserta identitas kelengkapan data pengurus;
+b. penjelasan singkat secara tertulis mengenai produk;
+c. data dan informasi lainnya yang terkait dengan
+kegiatan IKD; dan
+d. rencana bisnis.
+BAB XVII
+KETENTUAN PENUTUP
+Pasal 42
+Ketentuan mengenai kewajiban pencatatan mulai berlaku 1
+(satu) bulan terhitung sejak Peraturan Otoritas Jasa Keuangan
+ini diundangkan.
+Pasal 43
+Peraturan Otoritas Jasa Keuangan ini mulai berlaku pada
+tanggal diundangkan.
+- 21 -
+Agar setiap orang mengetahuinya, memerintahkan
+pengundangan Peraturan Otoritas Jasa Keuangan ini dengan
+penempatannya dalam Lembaran Negara Republik Indonesia.
+Ditetapkan di Jakarta
+pada tanggal 15 Agustus 2018
+KETUA DEWAN KOMISIONER
+OTORITAS JASA KEUANGAN
+REPUBLIK INDONESIA,
+ttd
+WIMBOH SANTOSO
+Diundangkan di Jakarta
+pada tanggal 16 Agustus 2018
+MENTERI HUKUM DAN HAK ASASI MANUSIA
+REPUBLIK INDONESIA,
+ttd
+YASONNA H. LAOLY
+LEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 2018 NOMOR 135
+Salinan ini sesuai dengan aslinya
+Direktur Hukum 1
+Departemen Hukum
+ttd
+Yuliana
+PENJELASAN
+ATAS
+PERATURAN OTORITAS JASA KEUANGAN
+REPUBLIK INDONESIA
+NOMOR 13 /POJK.02/2018
+TENTANG
+INOVASI KEUANGAN DIGITAL DI SEKTOR JASA KEUANGAN
+I. UMUM
+IKD berperan penting dalam mendukung pelayanan jasa keuangan
+yang lebih cepat, murah, mudah, dan luas sehingga dapat menjangkau
+daerah terpencil dalam rangka mempersempit disparitas ekonomi yang
+tinggi antar wilayah.
+Kehadiran teknologi lainnya juga mendukung terciptanya layanan
+jasa keuangan yang lebih efisien dan sesuai dengan kebutuhan
+masyarakat. Peranan jasa keuangan dengan biaya operasional murah
+dan dalam skala kecil sangat tepat untuk melayani segmen mikro, kecil
+dan menengah.
+Inovasi memiliki dua sisi yaitu sisi yang memberikan manfaat atau
+sisi yang berpotensi mendisrupsi layanan jasa keuangan tradisional.
+Efek disrupsi yang akan terjadi dapat menimbulkan ketidakstabilan
+sektor keuangan dan persaingan yang tidak sehat.
+Dalam rangka meminimalisasi dampak negatif inovasi maka inovasi
+perlu diarahkan agar memberikan manfaat yang sebesar-besarnya bagi
+masyarakat serta mengedepankan tata kelola yang baik agar tercipta
+perlindungan konsumen. Selain itu diperlukan sinergi antara lembaga
+jasa keuangan dengan IKD non Lembaga Jasa Keuangan agar
+menciptakan sinergi dan meminimalisir kompetisi.
+- 2 -
+Inovasi perlu ditumbuhkembangkan melalui pembangunan
+ekosistem keuangan digital yang mendukung ekosistem dimaksud
+dengan melibatkan banyak unsur yang saling berinteraksi untuk
+mendapatkan manfaat bersama (mutual benefit), termasuk otoritas
+terkait. Pelaksanaan koordinasi antar pelaku di dalam ekosistem, akan
+difasilitasi oleh Otoritas Jasa Keuangan dalam bentuk Pusat IKD (fintech
+center).
+Selain itu, untuk usaha penumbuhkembangan IKD perlu dilakukan
+pula melalui pendekatan pemantauan berdasarkan aktivitas (activity-
+based supervision) dan pendekatan berdasarkan kelembagaan
+(institution-based supervision).
+Pengaturan dan pemantauan IKD menerapkan prinsip berimbang
+antara prinsip perlindungan konsumen dan kehati-hatian dengan
+inovasi dan kompetisi. Prinsip ini dilaksanakan dalam bentuk
+pengaturan dan pemantauan oleh para pelaku pasar sendiri (disiplin
+pasar). Otoritas menetapkan pengaturan berbasis prinsip (principle
+based regulations) yang mengatur pokok regulasi sebagai acuan bagi
+industri untuk merumuskan lebih rinci peraturan pelaksanaan atau
+standar operasional untuk bisnisnya. Para pelaku pasar diminta untuk
+melakukan pendalaman terhadap prinsip pengaturan tersebut melalui
+penentuan standar operasional secara rinci disesuaikan dengan
+dinamika pasar, teknologi, dan perlindungan konsumen untuk menjaga
+integritas dan efektifitas. Penyelenggara perlu membentuk lembaga
+tertentu untuk penetapan standar terkait aspek operasional, conduct
+business, dan etika bisnis yang diakui dan dilaksanakan bersama oleh
+para anggotanya. Lembaga dimaksud berkoordinasi secara intensif
+dengan Otoritas Jasa Keuangan agar pengawasan terhadap IKD berjalan
+secara optimal.
+Sebagai sarana untuk mempertemukan para pelaku industri
+dengan regulator dibentuk Regulatory Sandbox. Melalui forum tersebut
+akan dilakukan identifikasi dan observasi oleh otoritas terhadap
+dinamika dan risiko layanan jasa keuangan digital pasar. Dengan
+pemahaman terhadap model bisnis baru, otoritas dapat menentukan
+upaya mitigasi demi menjaga stabilitas sistem keuangan.
+Oleh karena itu, dengan mempertimbangkan hal sebagaimana
+disebutkan di atas maka perlu untuk melakukan pembentukan
+- 3 -
+Peraturan Otoritas Jasa Keuangan mengenai Inovasi Keuangan Digital
+di Sektor Jasa Keuangan.
+II. PASAL DEMI PASAL
+Pasal 1
+Cukup jelas.
+Pasal 2
+Ayat (1)
+Yang dimaksud dengan “secara bertanggung jawab” adalah
+penggunaan baru atau yang lebih baik atas produk, layanan,
+dan proses keuangan yang telah ada untuk memenuhi
+kebutuhan konsumen, dunia usaha, dan masyarakat yang
+terus berkembang dengan cara antara lain:
+a. menerapkan prinsip tata kelola dan manajemen risiko
+yang baik;
+b. selaras dengan strategi bisnis secara keseluruhan;
+c. bermanfaat bagi masyarakat luas;
+d. mengutamakan perlindungan konsumen dan kerahasiaan
+data; dan
+e. mendukung inklusi dan literasi keuangan.
+Ayat (2)
+Inovasi berbeda dengan penyempurnaan proses bisnis karena
+inovasi tidak hanya meningkatkan efisiensi dan efektifitas
+penjualan produk dan layanan keuangan namun menciptakan
+nilai tambah baru.
+Lingkup pengaturan ini hanya mencakup IKD yang
+menggunakan teknologi informasi dan komunikasi.
+Huruf a
+Cukup jelas.
+Huruf b
+Yang dimaksud dengan “mendukung pemantauan IKD
+yang efektif” adalah pengembangan IKD oleh
+Penyelenggara harus disertai dengan pemantauan
+- 4 -
+berbasis risiko yang memperhatikan tata kelola dan
+manajemen risiko dengan mengedepankan prinsip kehati-
+hatian, kewajaran, persaingan yang sehat, transparansi,
+dan perlindungan konsumen.
+Huruf c
+Yang dimaksud dengan “mendorong sinergi di dalam
+ekosistem digital jasa keuangan” adalah Ekosistem IKD
+diharapkan mampu menumbuh-kembangkan inovasi di
+bidang jasa keuangan agar lebih efisien dan
+meningkatkan kepuasan konsumen. Ekosistem digital
+jasa keuangan terdiri dari otoritas, lembaga keuangan,
+akselerator, Penyelenggara, fasilitator, inkubator,
+pengembang kapasitas, teknologi digital, wirausaha, dan
+konsumen yang berinteraksi untuk mendukung
+pertumbuhan ekonomi melalui pemanfaatan bakat,
+pakar, dan pemerhati yang berkecimpung di bidang
+ekonomi kreatif.
+Pasal 3
+Huruf a
+Dalam praktiknya penyelesaian transaksi biasa disebut juga
+dengan settlement.
+Penyelesaian transaksi antara lain terkait penyelesaian
+investasi.
+Huruf b
+Yang dimaksud dengan “penghimpunan modal” antara lain
+equity crowdfunding, virtual exchange and smart contract, serta
+alternative due diligence.
+Huruf c
+Yang dimaksud dengan “pengelolaan investasi” antara lain
+advance algorithm, cloud computing, capabilities sharing, open
+source information technology, automated advice and
+management, social trading, dan retail algorithmic trading.
+- 5 -
+Huruf d
+Yang dimaksud dengan “penghimpunan dan penyaluran dana”
+antara lain pinjam meminjam berbasis aplikasi teknologi (P2P
+lending), alternative adjudication, virtual technologies, mobile
+3.0, dan third-party application programming interface.
+Huruf e
+Yang dimaksud dengan “perasuransian” antara lain sharing
+economy, autonomous vehicle, digital distribution, dan
+securitization and hedge fund.
+Huruf f
+Yang dimaksud dengan “pendukung pasar” antara lain artifial
+inteligence/machine learning, machine readble news, social
+sentiment, big data, market information platform, dan
+automated data collection and analysis.
+Huruf g
+Yang dimaksud dengan “pendukung keuangan digital lainnya”
+antara lain social/eco crowdfunding, Islamic digital financing, e-
+waqf, e-zakat, robo advise dan credit scoring.
+Huruf h
+Yang dimaksud dengan “aktivitas jasa keuangan lainnya”
+antara lain invoice trading, voucher, token, dan produk berbasis
+aplikasi blockchain.
+Pasal 4
+Penilaian awal kriteria atas potensi inovasi bagi Lembaga Jasa
+Keuangan dilakukan oleh satuan kerja pengawas terkait di Otoritas
+Jasa Keuangan, sedangkan untuk Penyelenggara selain Lembaga
+Jasa Keuangan melalui prosedur pencatatan kepada satuan kerja
+yang membawahkan penelitian dan pengembangan IKD di Otoritas
+Jasa Keuangan.
+Pasal 5
+Ayat (1)
+Cukup jelas.
+- 6 -
+Ayat (2)
+Cukup jelas.
+Ayat (3)
+Yang dimaksud dengan “tidak diperkenankan mengelola
+portofolio atau exposure” adalah Penyelenggara hanya
+menyediakan platform untuk memfasilitasi transaksi dan
+layanan jasa keuangan.
+Pasal 6
+Ayat (1)
+Permohonan pencatatan yang dilakukan oleh Penyelenggara
+merupakan syarat bagi Penyelenggara untuk dapat mengikuti
+proses Regulatory Sandbox.
+Permohonan pencatatan oleh Penyelenggara selain Lembaga
+Jasa Keuangan disampaikan oleh direksi kepada satuan kerja
+yang membawahkan penelitian dan pengembangan IKD di
+Otoritas Jasa Keuangan dengan menggunakan formulir
+tercantum dalam Lampiran yang merupakan bagian yang tidak
+terpisahkan dari Peraturan Otoritas Jasa Keuangan ini.
+Ayat (2)
+Permohonan pencatatan bagi Lembaga Jasa Keuangan yang
+menyelenggarakan IKD untuk masuk ke dalam pengujian
+Regulatory Sandbox disampaikan oleh Lembaga Jasa
+Keuangan kepada satuan kerja pengawas terkait di Otoritas
+Jasa Keuangan dengan tembusan kepada satuan kerja yang
+membawahkan penelitian dan pengembangan IKD di Otoritas
+Jasa Keuangan dengan menggunakan formulir sebagaimana
+tercantum dalam Lampiran yang merupakan bagian yang tidak
+terpisahkan dari Peraturan Otoritas Jasa Keuangan ini.
+Ayat (3)
+Cukup jelas.
+Ayat (4)
+Cukup jelas.
+- 7 -
+Pasal 7
+Cukup jelas.
+Pasal 8
+Ayat (1)
+Cukup jelas.
+Ayat (2)
+Huruf a
+Penyelenggara berbentuk selain Lembaga Jasa Keuangan
+yang telah tercatat di Otoritas Jasa Keuangan tidak perlu
+mengajukan kembali surat permohonan untuk
+diikutsertakan dalam Regulatory Sandbox.
+Permohonan bagi Penyelenggara berbentuk Lembaga Jasa
+Keuangan berbeda dengan permohonan pencatatan
+sebagaimana dimaksud dalam Pasal 6. Permohonan yang
+dimaksud adalah permohonan yang diajukan oleh satuan
+kerja pengawas terkait di Otoritas Jasa Keuangan kepada
+satuan kerja yang membawahkan penelitian dan
+pengembangan IKD di Otoritas Jasa Keuangan agar
+inovasi Lembaga Jasa Keuangan dapat masuk ke dalam
+pengujian Regulatory Sandbox.
+Huruf b
+Cukup jelas.
+Huruf c
+Cukup jelas.
+Huruf d
+Cukup jelas.
+Huruf e
+Cukup jelas.
+Pasal 9
+Cukup jelas.
+Pasal 10
+Cukup jelas.
+- 8 -
+Pasal 11
+Cukup jelas.
+Pasal 12
+Ayat (1)
+Yang dimaksud dengan “otoritas lain” adalah lembaga
+pemerintah, otoritas, ahli, asosiasi, dan organisasi lainnya di
+sektor jasa keuangan baik dalam negeri maupun luar negeri
+untuk mendukung pelaksanaan Regulatory Sandbox dan
+pengembangan IKD.
+Ayat (2)
+Cukup jelas.
+Ayat (3)
+Cukup jelas.
+Pasal 13
+Ayat (1)
+Yang dimaksud dengan “informasi penting dan relevan” antara
+lain insiden serangan siber.
+Ayat (2)
+Cukup jelas.
+Pasal 14
+Ayat (1)
+Permohonan pendaftaran dilakukan oleh Penyelenggara
+kepada satuan kerja pengawas terkait di Otoritas Jasa
+Keuangan.
+Ayat (2)
+Penyelenggara yang memiliki jenis IKD yang sama dengan
+Penyelenggara yang dimaksud pada ayat (1) meliputi
+Penyelenggara yang telah tercatat maupun belum tercatat di
+Otoritas Jasa Keuangan namun memiliki jenis IKD yang sama
+- 9 -
+dengan Penyelenggara yang telah diberikan status
+direkomendasikan.
+Ayat (3)
+Cukup jelas.
+Ayat (4)
+Cukup jelas.
+Ayat (5)
+Cukup jelas.
+Ayat (6)
+Cukup jelas.
+Ayat (7)
+Cukup jelas.
+Pasal 15
+Cukup jelas.
+Pasal 16
+Cukup jelas.
+Pasal 17
+Cukup jelas.
+Pasal 18
+Ayat (1)
+Huruf a
+Cukup jelas.
+Huruf b
+Cukup jelas.
+Huruf c
+Materi sosialisasi yang diberikan kepada konsumen paling
+sedikit terkait risiko dari IKD.
+Huruf d
+Cukup jelas.
+- 10 -
+Huruf e
+Cukup jelas.
+Huruf f
+Cukup jelas.
+Huruf g
+Cukup jelas.
+Ayat (2)
+Cukup jelas.
+Pasal 19
+Perangkat yang dapat meningkatkan efisiensi dan kepatuhan perlu
+dilaksanakan dengan membentuk unit khusus (regulatory
+technology) yang berada di dalam Penyelenggara IKD. Unit tersebut
+dapat bekerja sama dengan pihak lain (termasuk kerja sama dengan
+IKD atau asosiasi) dan tetap menjaga kerahasiaan data dan
+informasi.
+Cakupan dari regulatory technology paling sedikit meliputi aspek:
+a. kepatuhan adalah tindakan untuk memberikan notifikasi
+otomatis terkait perubahan aturan baik di level nasional dan
+global;
+b. kontrol dan manajemen identitas adalah dalam rangka
+pelaksanaan know your customer principle dan anti pencucian
+uang dan pencegahan pendanaan terorisme;
+c. manajemen risiko adalah perangkat yang memungkinkan
+pelaporan risiko berdasarkan transaksi, risiko konsolidasi, dan
+pelaporan internal risiko termasuk pemantauan limit risiko;
+d. pelaporan adalah pelaporan secara otomatis yang terintegrasi
+yang dilaksanakan secara efisien, sederhana, dan
+meningkatkan akurasi pelaporan;
+e. pemantauan transaksi adalah perangkat yang memungkinkan
+dilakukannya monitoring dan auditing terhadap transaksi
+untuk menghindari fraud dan pelanggaran risiko; dan
+f. sistem otomasi transaksi adalah sistem yang meliputi
+perhitungan margin, fee, imbal hasil yang sesuai dengan
+perjanjian, serta tidak melanggar business conduct.
+- 11 -
+Pasal 20
+Cukup jelas.
+Pasal 21
+Cukup jelas.
+Pasal 22
+Ayat (1)
+Huruf a
+Yang dimaksud dengan “pemantauan berbasis risiko dan
+teknologi” adalah pemantauan terhadap Penyelenggara
+yang telah terdaftar di Otoritas Jasa Keuangan dengan
+mempergunakan teknologi (supervisory technology).
+Pemantauan dimaksud ditujukan untuk meningkatkan
+efektifitas dan efisiensi pemantauan terhadap
+Penyelenggara terkait aspek kepatuhan terhadap aturan
+yang berlaku.
+Ruang lingkup pemantauan antara lain:
+a. data-input approach adalah pelaporan elektronik
+dengan menggunakan paket data dengan format
+standar;
+b. data-pull approach adalah pelaporan dalam format
+data mentah;
+c. real-time access adalah akses yang memungkinkan
+dilakukan pemantauan setiap saat;
+d. reporting utilities adalah perangkat yang
+menghasilkan pelaporan secara elektronik;
+e. gathering intelligence from unstructured data adalah
+pengumpulan dan analisis data yang tidak
+terstruktur misalnya sosial media, materi sosialisasi,
+perjanjian dengan konsumen, dan sebagainya; dan
+f. regulatory submission and data quality management
+adalah perangkat yang memungkinkan melakukan
+pengiriman laporan beserta validasi dan
+pengendalian kualitas data yang dilaporkan.
+- 12 -
+Huruf b
+Cukup jelas.
+Ayat (2)
+Cukup jelas.
+Ayat (3)
+Huruf a
+Yang dimaksud dengan “pendekatan yang berimbang
+antara aspek prudensial dengan dukungan terhadap
+inovasi” merupakan kewenangan yang dimiliki Otoritas
+Jasa Keuangan untuk melakukan tindakan tertentu
+terhadap Penyelenggara dalam kondisi tertentu, dengan
+mempertimbangkan antara lain aspek skala usaha dan
+dampak sistemik.
+Huruf b
+Cukup jelas.
+Huruf c
+Cukup jelas.
+Huruf d
+Cukup jelas.
+Ayat (4)
+Cukup jelas.
+Pasal 23
+Laporan kinerja berkala secara triwulanan disampaikan kepada
+satuan kerja yang membidangi penelitian dan pengembangan IKD
+di Otoritas Jasa Keuangan.
+Penyelenggara berbentuk Lembaga Jasa Keuangan menyampaikan
+inovasi produk atau layanan yang diuji coba melalui Regulatory
+Sandbox secara terpisah dan dibedakan dengan pelaporan aktivitas
+Lembaga Jasa Keuangan secara keseluruhan yang dilaporkan ke
+satuan kerja pengawas terkait di Otoritas Jasa Keuangan.
+Pasal 24
+Cukup jelas.
+- 13 -
+Pasal 25
+Cukup jelas.
+Pasal 26
+Cukup jelas.
+Pasal 27
+Cukup jelas.
+Pasal 28
+Ayat (1)
+Cukup jelas.
+Ayat (2)
+Cukup jelas.
+Ayat (3)
+Cukup jelas.
+Ayat (4)
+Setiap inovasi selalu membawa dampak dan risiko sehingga
+jika terdapat perubahan terkait model bisnis, proses bisnis,
+dan lain-lain atas IKD yang telah tercatat dan terdaftar di
+Otoritas Jasa Keuangan maka Penyelenggara mencatatkan
+ulang perubahan IKD dan mengikuti kembali uji coba
+Regulatory Sandbox.
+Pasal 29
+Cukup jelas.
+Pasal 30
+Cukup jelas.
+Pasal 31
+Ayat (1)
+Standar minimum perlindungan konsumen mengacu kepada
+Peraturan Otoritas Jasa Keuangan Nomor 1/POJK.07/2013
+- 14 -
+tentang Perlindungan Konsumen Sektor Jasa Keuangan,
+namun demikian prinsip perlindungan konsumen tetap
+mengacu kepada setiap perubahan Peraturan Otoritas Jasa
+Keuangan mengenai perlindungan konsumen.
+Ayat (2)
+Cukup jelas.
+Ayat (3)
+Cakupan dari pusat pelayanan konsumen berbasis teknologi
+(customer service tech) antara lain meliputi:
+a. saluran komunikasi multi kanal adalah penyampaian
+keluhan dengan berbagai media baik media suara,
+elektronik, maupun sosial;
+b. knowledge management adalah proses identifikasi,
+pembuatan, penelaahan, publikasi, dan penyediaan
+konten multimedia yang memungkinkan
+dilaksanakannya penjelasan kepada konsumen melalui
+web self service;
+c. aplikasi pencatat keluhan adalah aplikasi dimaksud
+selain menghasilkan data keluhan konsumen yang dapat
+dianalisis, juga dimungkinkan untuk melakukan
+komunikasi antar konsumen;
+d. customer service analytics adalah pelayanan konsumen
+dapat optimal sesuai dengan permasalahan yang
+disampaikan; dan
+e. data produktivitas agen adalah pencatatan terhadap
+aktivitas agen dalam menangani keluhan konsumen dan
+kecepatan dalam menangani keluhan sesuai dengan
+kebijakan internal Penyelenggara.
+Pasal 32
+Cukup jelas.
+Pasal 33
+Cukup jelas.
+- 15 -
+Pasal 34
+Cukup jelas.
+Pasal 35
+Cukup jelas.
+Pasal 36
+Pusat IKD merupakan sarana komunikasi dalam mengidentifikasi,
+membina, mengawasi seluruh Penyelenggara, dan menjamin
+perlindungan konsumen di Indonesia. Dengan adanya Pusat IKD
+diharapkan dapat memudahkan koordinasi dan kolaborasi antara
+otoritas terkait dan Penyelenggara.
+Huruf a
+Cukup jelas.
+Huruf b
+Cukup jelas.
+Huruf c
+Pusat inovasi merupakan wadah inovasi dan pengembangan
+IKD yang berperan untuk memberikan rekomendasi dan
+masukan terhadap ekosistem digital industri jasa keuangan.
+Dalam praktiknya pusat inovasi di luar Otoritas Jasa
+Keuangan biasa disebut juga dengan innovation hub.
+Huruf d
+Cukup jelas.
+Huruf e
+Cukup jelas.
+Pasal 37
+Cukup jelas.
+Pasal 38
+Cukup jelas.
+Pasal 39
+Cukup jelas.
+- 16 -
+Pasal 40
+Cukup jelas.
+Pasal 41
+Cukup jelas.
+Pasal 42
+Cukup jelas.
+Pasal 43
+Cukup jelas.
+TAMBAHAN LEMBARAN NEGARA REPUBLIK INDONESIA NOMOR 6238
+LAMPIRAN
+PERATURAN OTORITAS JASA KEUANGAN
+NOMOR 13 /POJK.02/2018
+TENTANG
+INOVASI KEUANGAN DIGITAL DI SEKTOR
+JASA KEUANGAN
+FORMULIR PERMOHONAN PENCATATAN PENYELENGGARA
+Nomor : .......................... ....., ........... 20 ...
+Lampiran : ..........................
+Perihal : Permohonan Pencatatan
+Penyelenggara Inovasi Keuangan Digital
+Kepada
+Yth. Wakil Ketua Dewan Komisioner Otoritas Jasa Keuangan
+u.p. Deputi Komisioner OJK Institute
+Menunjuk Peraturan Otoritas Jasa Keuangan Nomor /POJK.01/2018
+tentang Inovasi Keuangan Digital di Sektor Jasa Keuangan, bersama ini kami
+mengajukan permohonan pencatatan Penyelenggara atas nama ....... .
+Untuk melengkapi permohonan dimaksud, bersama ini kami sampaikan
+dokumen sebagai berikut:
+a. akta pendirian badan hukum termasuk anggaran dasar berikut
+perubahannya (jika ada) yang telah disahkan/disetujui oleh instansi
+yang berwenang atau diberitahukan kepada instansi yang berwenang
+sesuai peraturan perundang-undangan;
+b. bukti identitas kelengkapan data pengurus;
+c. penjelasan singkat secara tertulis mengenai produk;
+d. data dan informasi lainnya yang terkait dengan kegiatan IKD; dan
+e. rencana bisnis.
+Demikian permohonan kami dan atas perhatian Bapak/Ibu**), kami
+mengucapkan terima kasih.
+Hormat Kami,
+Direksi ...............
+Meterai
+Rp.6000,-
+..................................
+(Nama jelas dan tanda tangan)
+**) Coret yang tidak perlu
+Ditetapkan di Jakarta
+pada tanggal 15 Agustus 2018
+KETUA DEWAN KOMISIONER
+OTORITAS JASA KEUANGAN,
+ttd
+Salinan ini sesuai dengan aslinya
+Direktur Hukum 1
+WIMBOH SANTOSO
+Departemen Hukum
+ttd
+Yuliana

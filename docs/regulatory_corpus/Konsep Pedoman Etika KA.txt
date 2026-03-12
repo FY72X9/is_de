@@ -1,0 +1,1672 @@
+<2 1
+
+KOMDIGI
+
+Konsep Pedoman
+Etika Kecerdasan
+Artifisial
+
+Direktorat Jenderal
+Ekosistem Digital
+
+Agustus 2025
+
+DIREKTORAT KECERDASAN ARTIFISIAL DAN EKOSISTEM TEKNOLOGI BARU
+DIREKTORAT JENDERAL EKOSISTEM DIGITAL
+KEMENTERIAN KOMUNIKASI DAN DIGITAL
+Sambutan
+
+Menteri Komunikasi dan Digital
+
+Meutya Hafid
+
+Perkembangan Teknologi dan komunikasi telah
+mengubah teknologi menjadi konvergen. Perubahan
+ini mengubah teknologi menjadi transformasi digital
+sehingga semua aspek kehidupan Masyarakat, baik
+dari aspek sosial, ekonomi, dan politik secara global
+harus beradaptasi. Kita semua telah menyaksikan
+bagaimana Kecerdasan Artifisial telah menjadi katalis
+utama dalam transformasi digital berbagai sektor.
+Semua ini menunjukkan bahwa Kecerdasan Artifisial
+dan teknologi baru bukan lagi sekedar teknologi masa
+depan tetapi telah menjadi bagian integral dari
+
+pertumbuhan ekonomi yang kita upayakan Bersama.
+
+Etika untuk
+
+memastikan
+
+Artifisial
+
+proses
+
+Kecerdasan diperlukan
+
+bahwa pengembangan,
+penerapan dan pemanfaatan Kecerdasan Artifisial
+dilaksanakan secara bertanggung jawab, adil,
+transparan, menghormati privasi, menjamin keamanan
+
+dan memungkinkan pengawasan manusia.
+
+Belum adanya pedoman Etika Kecerda
+secara nasional yang mencakup mitig
+pelindungan, peran dan tanggung jawab pa
+serta pemantauan, menyebabkan kerangka etika
+Kecerdasan Artifisial dalam Surat Edaran Nomor 9
+Tahun 2023 tentang Etika Kecerdasan Artifisial saat ini
+masih belum lengkap untuk memastikan penerapan
+nilai-nilai etika secara transparan sehingga terbangun
+kepercayaan (transparency builds trustworthiness).
+
+Pedoman Etika Kecerdasan Artifisial harus selaras
+
+dengan nilai-nilai Pancasila, hak asasi manusia,
+penghormatan terhadap martabat manusia, dan nilai-
+nilai universal. Diharapkan dengan adanya Pedoman
+Etika Kecerdasan Artifisial akan menjadi upaya nyata
+memandu seluruh pemangku kepentingan dalam
+menerapkan kemajuan teknologi yang berkembang
+
+cepat ini, demi kemajuan dan kesejahteraan bangsa.
+
+Jakarta, 31 Juli2025
+Menteri Komunikasi dan Digital
+
+eae
+
+Meutya Hafid
+
+nh hUCYlUlUCYYUlCOUDDD
+Kata Pengantar
+
+Direktur Jenderal Ekosistem Digital
+
+Dr. Edwin Hidayat Abdullah
+
+Kecerdasan Artifisial (KA) memiliki potensi besar
+membawa perubahan fundamental di berbagai aspek
+kehidupan. Seiring dengan kemajuan tersebut, muncul
+pula tantangan etika yang kompleks, seperti bias
+algoritma, pelanggaran penggunaan data, disinformasi
+hingga berimplikasi pada tingkat individu sampai dengan
+masyarakat dan negara. Sejalan dengan pandangan
+global, bahwa Etika KA tidak hanya berkisar pada
+penghindaran dampak negatif tetapi juga bagaimana KA
+dapat digunakan untuk kesejahteraan publik dan
+pembangunan berkelanjutan.
+
+Untuk menjawab tantangan tersebut, Konsep Pedoman
+Etika Kecerdasan Artifisial untuk memandu_ seluruh
+pemangku kepentingan, mulai dari pemangku kebijakan,
+pelaku industri, hingga pengguna akhir di dalam
+pengembangan, penyelenggaraan dan pemanfaatan KA
+secara aman, dan bertanggung jawab melalui langkah-
+langkah keselamatan (safety) dan keamanan (security) KA
+demi kemajuan bangsa dan kesejahteraan masyarakat
+Indonesia. Konsep Pedoman Etika Kecerdasan Artifisial
+memuat nilai etika KA, manfaat penerapan etika KA,
+identifikasi dan mitigasi risiko, langkah-langkah
+pelindungan (safeguard), peran dan tanggung jawab
+para pihak, dan pemantauan serta evaluasi.
+
+yy
+
+Kehadiran pedoman yang jelas menjadi langkah nyata
+untuk memastikan bahwa_ setiap pengembangan,
+penyelenggaraan, dan pemanfaatan Kecerdasan Artifisial
+senantiasa berlandaskan moralitas, keadilan, dan
+kemaslahatan bagi seluruh umat manusia. Kementerian
+Komunikasi dan Digital perlu mendapat masukan dari
+publik atas konsep Pedoman Etika Kecerdasan Artifisial
+dalam dokumen ini. Masukan yang bersifat membangun
+sangat diharapkan untuk penyusunan kebijakan yang
+efektif dan berkelanjutan. Apresiasi kami sampaikan atas
+tanggapan dan masukan yang telah diberikan.
+
+Jakarta, 3] Juli2025
+Direktur Jenderal Ekosistem Digital
+
+Dr. Edwin Hidayat Abdullah
+
+Daftar Isi
+
+Sammut
+KataPemgamtar i
+Daftar tsi ii
+Ringkasan Eksekutif  -.-.-... 5s iv
+DePimisi v
+
+PB. Perec 1
+ll. Prinsip Etika Kecerdasan ArtifisialPadaForumGlobal 2
+10 CC es 4
+IV. RuanglLingkup-—_ i ca 4
+V. NilaiEtikaKecerdasanArtifisial 20 ees 5
+VI. Manfaat Penerapan Etika KecerdasanArtifisialh = «nn. 9
+
+Vil. Identifikasi dan Mitigasi Risiko serta Langkah-Langkah
+Pelindungan (Safeguard)
+
+eset e tse nents thts sts ss essen snnnnen 9
+
+VIL] IdentifkasidanMitigasiRisiko 9 9
+
+VIL2 Langkah-langkahPelindungan(Safeguard) eee ate)
+
+Vill. PerandanTanggung JawabParaPihak 14
+
+IX. Mekanisme PemantauandanEvaluasi es 15
+
+IX] PenilaianMandiri(Self-Assessment) eee 15
+
+IX.2 Pelaporan Insider iii ee 16
+
+IX.3 PelaporanSektor ee 7
+
+IX.4 SistemPemantauanTerpadu 7
+
+X. Pelaksanaan Pedoman Etika KecerdasanArtifisial =. 7
+
+Xl. Masa Peralta Wi
+
+DaftarPustaka 18
+
+Lempira 19
+Daftar Tabel
+
+Tabell. Pelindungan (Safeguard) ee a
+
+Tabel2. PertanyaanDasarPenilaianMandiri 8 15
+Ringkasan Eksekutif
+
+Pengembangan, penyelenggaraan dan pemanfaatan Kecerdasan Artifisial
+(KA) memberikan potensi manfaat di berbagai sektor. Namun, di balik
+potensi tersebut, KA juga membawa serangkaian risiko yang kompleks.
+
+Ketiadaan kerangka etika KA sebagai
+rujukan resmi mengindikasikan bahwa
+kerangka etika KA di Indonesia saat ini
+masih belum sepenuhnya_ lengkap.
+Oleh karena itu, untuk memastikan
+pengembangan, _penyelenggaraan,
+dan pemanfaatan KA yang
+berlandaskan pada nilai Etika KA
+diperlukan Pedoman Etika Kecerdasan
+Artifisial.
+
+Pedoman Etika Kecerdasan Artifisial
+mensyaratkan adanya_pelindungan
+(safeguard) sebagai rambu-rambu
+etika yang perlu dilaksanakan oleh
+Pengguna, Pelaku  Sektor dan
+Pemangku Kebijakan Pelindungan
+(safeguard) ini mencakup kebijakan
+dan prosedur untuk menjamin
+kebermanfaatan KA bagi manusia,
+lingkungan, dan negara, sekaligus
+mencegah kerugian dan
+penyalahgunaan KA. Lebih _ lanjut,
+pelindungan (safeguard) juga
+menekankan pentingnya transparansi,
+akuntabilitas, keadilan, inklusivitas,
+keamanan teknis,
+
+penghargaan hak cipta dan budaya,
+serta kontrol manusia atas sistem KA.
+
+Untuk =mendukung = implementasi
+pelindungan (safeguard) ini, diperlukan
+pemantauan dan evaluasi Etika KA
+yang dapat dikembangkan sesuai
+kebutuhan masing-masing _ sektor.
+Penilaian dilakukan secara mandiri
+(self-assessment), dengan dukungan
+kerangka pemantauan yang kuat.
+Pemangku  Kebijakan  melakukan
+evaluasi Etika KA secara berkala untuk
+memastikan keselarasan dengan nilai
+etika. Pemangku Kebijakan, Pelaku
+Sektor, dan Pengguna diharapkan
+dapat melaksanakan Pedoman Etika
+KA secara aktif dan penuh inisiatif
+sehingga tujuan Pedoman Etika KA
+dapat terwujud yaitu pengembangan,
+penyelenggaraan dan pemanfaatan KA
+secara etis dan bertanggung jawab
+yang dibangun melalui langkah-
+langkah keselamatan (safety) dan
+keamanan (security) KA.
+Definisi
+
+1. Kecerdasan Artifisial adalah teknologi yang berfokus
+pada pengembangan sistem, dengan tujuan yang
+eksplisit atau implisit, yang mampu, secara otonom
+atau semi-otonom, memproses data dan informasi
+berdasarkan berbagai variasi masukan yang
+diterimanya untuk menghasilkan keluaran berupa
+prediksi, rekomendasi, konten, atau keputusan lainnya
+yang berdampak pada lingkungan fisik maupun
+digital.
+
+2. Pemangku Kebijakan adalah kementerian/lembaga,
+yang bertugas mengawasi dan mengeluarkan
+pengaturan terhadap sektornya dan badan usaha yang
+memiliki kewenangan untuk menetapkan kebijakan di
+perusahaan masing-masing.
+
+3. Pelaku Sektor adalah penyedia data, pengembang
+Kecerdasan Artifisial, penyedia sistem Kecerdasan
+Artifisial, dan penyelenggara sistem Kecerdasan
+Artifisial.
+
+4. Pengguna adalah Pengguna Akhir yaitu pihak yang
+menggunakan sistem Kecerdasan Artifisial secara
+langsung melalui antarmuka pengguna atau layanan
+berbasis Kecerdasan Artifisial.
+
+5. Penyedia Data adalah pihak yang menyediakan data
+untuk pelatihan, pengujian, atau validasi model
+Kecerdasan Artifisial.
+
+6. Pengembang Kecerdasan Artifisial adalah pihak yang
+merancang mengembangkan, dan  melakukan
+pelatihan awal terhadap model Kecerdasan Artifisial,
+termasuk menentukan arsitektur, algoritma, serta
+metodologi pelatihan yang digunakan untuk
+menghasilkan sistem Kecerdasan Artifisial.
+
+7. Penyedia Sistem Kecerdasan Artifisial adalah pihak
+yang menyediakan akses terhadap model Kecerdasan
+Artifisial dan  infrastruktur pendukungnya,  serta
+mengintegrasikan sistem Kecerdasan Artifisial ke
+dalam produk, layanan, atau platform tertentu.
+
+8. Penyelenggara Sistem Kecerdasan Artifisial adalah
+pihak yang mengimplementasikan dan
+mengoperasikan sistem Kecerdasan Artifisial dalam
+konteks pengguna spesifik, seperti dalam layanan
+publik, sektor industri, atau institusi tertentu.
+
+9. Instansi Pemerintah yang selanjutnya disebut dengan
+Kementerian/Lembaga adalah kementerian, lembaga
+pemerintah nonkementerian, kesekretariatan lembaga
+negara, dan kesekretariatan lembaga nonstruktural
+
+10. Kementerian adalah kementerian yang
+menyelenggarakan urusan pemerintahan di bidang
+komunikasi dan informasi.
+
+Konsep Pedoman Etika Kecerdasan Artifisial
+
+|. PENDAHULUAN
+
+Kecerdasan Artifisial
+
+(KA) adalah _ teknologi
+
+ae
+
+yang berfokus pada
+
+pengembangan sistem, dengan tujuan yang eksplisit atau implisit mampu
+secara otonom atau semi-otonom, memproses data dan _ informasi
+
+berdasarkan berbagai _variasi
+
+masukan yang diterimanya,
+
+untuk
+
+menghasilkan keluaran berupa prediksi, rekomendasi, konten, atau
+keputusan lainnya yang berdampak pada lingkungan fisik maupun digital.
+
+Kecerdasan Artifisial (KA) menawarkan potensi besar
+untuk meningkatkan efisiensi, inovasi, dan kualitas hidup.
+Namun dibalik peluang tersebut, terdapat serangkaian
+risiko yang kompleks dan tidak dapat diabaikan. Risiko-
+risiko ini bersifat multidimensi, melibatkan aspek teknis,
+sosial, ekonomi, budaya, serta politik, dan berdampak
+pada berbagai tingkat mulai dari level individu dan sistem
+(mikro), hingga level masyarakat dan negara (makro).
+Risiko teknis seperti bias algoritma, kegagalan sistem,
+atau serangan siber berpotensi mengganggu keandalan
+dan keadilan sistem KA. Sementara itu, risiko sosial dan
+struktural seperti ketimpangan digital, pelanggaran hak
+digital, eksploitasi budaya, dan disinformasi, mengarah
+pada tantangan yang lebih dalam: erosi kepercayaan
+publik, marginalisasi kelompok rentan, dan bahkan
+ancaman terhadap kedaulatan data serta_nilai-nilai
+kebangsaan.
+
+Kecerdasan Artifisial (KA) harus dikelola secara hati-hati
+untuk menjamin penggunaan KA secara aman dan
+terpercaya. Sistem KA dalam keseluruhan siklus hidup
+harus memenuhi 3 (tiga) komponen yaitu: memenuhi
+peraturan perundang-undangan, sejalan dengan Nilai
+Etika dan tangguh (robust) terhadap dampak gangguan
+yang merugikan. Ketiga komponen tersebut penting
+namun belum cukup untuk menjamin penggunaan KA
+yang aman dan terpercaya. Oleh karena itu secara ideal
+ketiga komponen tersebut bekerja secara selaras dan
+saling melengkapi, namun dalam hal terjadi tekanan yang
+muncul diantaranya, maka diharapkan seluruh Pemangku
+Kepentingan mengusahakan penyelesaiannya demi
+kemanfaatan yang luas.
+
+yy
+
+Dalam konteks Indonesia yang kaya akan keberagaman
+dan memiliki fondasi nilai kolektif seperti Pancasila,
+pemetaan risiko KA bukan sekadar latihan normatif,
+namun merupakan langkah strategis untuk memastikan
+bahwa pengembangan teknologi berjalan selaras dengan
+prinsip keadilan  sosial, kedaulatan digital, dan
+penghormatan terhadap martabat manusia. Oleh karena
+itu, pemahaman mendalam terhadap lanskap risiko ini
+harus menjadi fondasi bagi perumusan strategi dengan
+mengutamakan pendekatan kontekstual, pencegahan
+nyata, dan mitigasi berkelanjutan. Pendekatan ini penting
+agar ekosistem KA di Indonesia berkembang secara
+inklusif, adil, dan bertanggung jawab.
+
+Belum adanya panduan Etika secara nasional yang
+mencakup mitigasi risiko pelindungan, pemantauan dan
+penanganan insiden sehingga menyebabkan kerangka
+etika KA yang berlaku di Indonesia saat ini masih belum
+lengkap. Meskipun berbagai pedoman etika KA dari
+lembaga internasional seperti OECD, Uni Eropa, dan
+UNESCO telah tersedia, penerapannya di Indonesia
+belum sepenuhnya mempertimbangkan nilai-nilai lokal
+seperti gotong royong, keadilan sosial, dan keberagaman
+budaya. Pemerintah saat ini sudah mengeluarkan Surat
+Edaran (SE) Menkominfo No.9 Tahun 2023 tentang Etika
+Kecerdasan Artifisial, namun Surat Edaran ini dianggap
+belum cukup dapat mengikat pengembangan Etika KA di
+Indonesia. Tanpa Pedoman Etika KA yang selaras dengan
+nilai-nilai Indonesia, pendekatan terhadap penerapan KA
+di Indonesia berisiko tetap bersifat parsial, dan
+fragmentaris.
+
+un
+
+Konsep Pedoman Etika Kecerdasan Artifisial
+
+ll. PRINSIP ETIKA KECERDASAN ARTIFISIAL
+PADA FORUM GLOBAL
+
+Panduan Etika KA perlu selaras dengan panduan etika KA pada forum-
+
+forum global. Keselarasan _ ini
+
+memastikan bahwa_ Etika KA
+
+mempertimbangkan nilai-nilai universal.
+
+Dengan demikian KA dapat dimanfaatkan maksimal bagi
+kemanusiaan namun minimal potensi risiko dan dampak
+negatifnya. Panduan pada forum-forum global Etika KA
+yang menjadi pertimbangan meliputi diantaranya:
+
+Recommendation on the Ethics of
+
+Artificial intelligence UNESCO (2021)
+
+Rekomendasi ini disiapkan oleh UNESCO, merupakan
+kesepakatan multilateral normatif yang mengatur etika
+KA, diharapkan dapat diterapkan oleh 194 negara anggota
+UNESCO. UNESCO menegaskan bahwa sistem KA dan
+kebijakan praktik etika KA harus dilakukan secara
+berkelanjutan dan sistematik, sesuai dengan risiko yang
+relevan. Hal ini harus didasarkan pada kerangka kerja yang
+disepakati secara internasional dan melibatkan evaluasi
+terhadap lembaga swasta dan publik, penyedia layanan,
+dan program, termasuk evaluasi mandiri, serta studi
+pelacakan dan pengembangan serangkaian indikator.
+Pengumpulan dan pengolahan data harus dilakukan
+sesuai dengan hukum _internasional, peraturan
+perundang-undangan nasional mengenai pelindungan
+data dan privasi data, serta nilai-nilai dan prinsip-prinsip
+yang tercantum.
+
+Recommendation on the Ethics of Artificial
+Intelligence UNESCO mengandung 4 core
+values (Human rights and human dignity;
+Living in peaceful, just and interconnected
+societies; Ensuring diversity and
+inclusiveness; Environment and ecosystem
+
+flourishing).
+
+Sepuluh prinsip Etika KA UNESCO sebagai
+
+berikut:
+
+a. Proportionality and Do No Harm
+
+b. Safety and Security
+
+c. Right to Privacy and Data Protection
+
+d. Multi-stakeholder and Adaptive Governance &
+Collaboration
+
+. Responsibility and Accountability
+
+Transparency and Explainability
+
+. Human Oversight and Determination
+
+Sustainability
+
+i. Awareness & Literacy
+
+j. Fairness and Non-Discrimation
+
+>a > o
+
+Dalam penerapan rekomendasi ini, UNESCO lebih lanjut
+mensyaratkan adanya penilaian di level negara (Readiness
+Assessment Methodology) sebagai ukuran kesiapan
+negara dalam mengadopsi rekomendasi ini, dimana
+Indonesia sudah menyelesaikan penilaiannya di tahun
+2024.
+
+2.
+
+Merupakan prinsip internasional untuk KA yang
+dikembangkan oleh OECD, dengan 5 prinsip berikut:
+
+a. Inclusive growth, sustainable development
+and well-being, pemangku kebijakan harus
+proaktif dalam pengelolaan yang
+bertanggung jawab terhadap KA untuk
+kebermanfaatan manusia dan planet.
+
+b. Respect for the rule of law, human rights and
+democratic values, including fairness and
+privacy, Hal ini mencakup non-diskriminasi dan
+kesetaraan, kebebasan, martabat, otonomi
+individu, privasi dan pelindungan data,
+keragaman, keadilan, keadilan sosial, serta
+hak-hak tenaga kerja yang diakui secara
+internasional.
+
+Recommendation of Council on Artificial
+
+Intelligence OECD (2025)
+
+ss —h—hlUL'YTlUC—CCCODD
+Konsep Pedoman Etika Kecerdasan Artifisial
+
+c. Transparency and explainability, Pemangku
+kepentingan perlu§ berkomitmen untuk
+transparansi dan  bertanggung jawab
+mengenai sistem KA.
+
+d, Robustness, security and safety, sistem KA
+harus bersifat kuat, menjaga keselamatan dan
+keamanan pada seluruh siklus hidupnya,
+sehingga dalam penggunaan normal maupun
+penyalahgunaan dapat diperkirakan. Sistem
+KA dapat berfungsi sebagaimana mestinya
+tanoa menimbulkan risiko keselamatan atau
+keamanan.
+
+e, Accountability, Pemangku kepentingan harus
+memastikan sistem KA dapat ditelusuri
+termasuk keterhubungan kepada data set,
+proses, dan pembuatan keputusan dalam
+siklus hidup KA.
+
+Untuk menjalankan hal ini, pelaku KA perlu
+menerapkan mekanisme dan safeguard seperti
+pengawasan termasuk menangani risiko yang timbul
+dari penggunaan diluar tujuan penyalahgunaan yang
+disengaja, atau penyalahgunaan yang tidak
+disengaja, dengan cara yang sesuai dengan konteks
+dan konsisten dengan perkembangan terkini. Selain
+itu OECD saat ini memiliki pemantauan insiden dan
+bahaya dari KA (Al Incident and Hazard Monitoring).
+
+ASEAN Guide on Al Governance and
+
+Ethics (2024):
+
+Salah satu tujuan dan maksud ASEAN adalah
+untuk mempromosikan kerja sama aktif dan
+
+bantuan timbal balik pada hal-hal yang
+menjadi kepentingan bersama di bidang
+ekonomi, sosial, teknis, dan ilmiah.
+
+Panduan ini dikembangkan secara kolaboratif oleh semua
+negara anggota ASEAN dan akan berfungsi sebagai
+panduan praktik terbaik regional mengenai tata kelola
+dan etika KA. Panduan ini juga berfungsi sebagai panduan
+praktis bagi organisasi dan lembaga pemerintah di
+kawasan yang ingin merancang, mengembangkan, dan
+menerapkan teknologi KA. Negara-negara anggota,
+pengembang, dan penyelenggara teknologi KA yang
+beroperasi di yurisdiksi negara dianjurkan untuk
+menerapkan ketentuan dalam panduan secara sukarela.
+
+ae
+
+Prinsip-prinsip yang terkandung didalamnya antara
+lain:
+
+1. Transparency and Explainability
+
+2. Fairness and Equity
+
+3. Security and Safety
+
+4, Robustness and Reliability
+
+5. Human-centricity
+
+6. Privacy and Data Governance
+
+7. Accountability and Integrity
+
+Panduan ini berfokus pada mendorong keselarasan di
+dalam ASEAN dan memfasilitasi interoperabilitas
+kerangka kerja KA di berbagai yurisdiksi. Struktur dan tata
+kelolanya menitikberatkan kepada  miultidisiplin,
+menetapkan standar, hingga menjelaskan peran dan
+tanggung jawab yang terlibat mulai dari desain hingga
+implementasi KA tersebut. ASEAN juga telah menyiapkan
+model Risk Impact Assessment.
+
+Ethically Aligned Design IEEE (2019)
+
+Merupakan panduan_ teknis dan normatif bagi
+pengembang dan pemangku kebijakan, dengan titik
+berat di perancangan pengembangan, dengan prinsip:
+
+1. Human rights: memastikan tidak melanggar hak
+asasi manusia yang diakui secara internasional.
+
+2. Well-being: memprioritaskan indikator
+kesejahteraan dalam desain dan penggunaannya.
+
+3. Accountability: . memastikan bahwa_ para
+pengembang dan penyelenggara bertanggung
+jJawab dan dapat dipertanggungjawabkan.
+
+4. Transparency: memastikan pengembang
+beroperasi secara transparan.
+
+5. Minimising misuse: meminimalisir
+penyalahgunaan.
+Penerapan matriks indikator kesejahteraan yang
+
+mencakup keselamatan kerja dan kesehatan fiskal sangat
+krusial untuk mengevaluasi dampak kemajuan teknologi
+secara holistik, sehingga memungkinkan tidak hanya
+mengukur manfaat positif, tetapi juga memberikan
+kerangka kerja untuk mengidentifikasi dan menguji
+konsekuensi negatif tak terduga yang berpotensi
+mengurangi kesejahteraan manusia.
+
+sa aaa i@ #3 327
+a
+Ill. TUJUAN
+
+Konsep Pedoman Etika Kecerdasan Artifisial
+
+Etika KA adalah seperangkat prinsip moral yang akan berfungsi sebagai
+landasan yang memastikan bahwa proses pengembangan, penerapan dan
+
+pemanfaatan KA _ dilaksanakan secara bertanggung jawab,
+
+adil,
+
+transparan, menghormati privasi, menjamin keamanan, memungkinkan
+pengawasan manusia, serta sejalan dengan ketentuan hukum yang
+
+berlaku.
+
+Pedoman Etika KA memuat tata cara membangun Etika
+KA untuk mewujudkan pengembangan, penyelenggaraan
+dan pemanfaatan KA secara etis dan bertanggung jawab.
+Pengembangan, penyelenggaraan dan pemanfaatan
+Kecerdasan Artifisial yang etis dan bertanggung jawab
+dibangun melalui langkah-langkah keselamatan (safety)
+dan keamanan (security) KA.
+
+IV. RUANG LINGKUP
+
+Pedoman Etika KA digunakan sebagai Pedoman bagi:
+
+Pengguna yaitu Pengguna Akhir yaitu Pihak
+yang menggunakan sistem KA secara langsung
+
+melalui antarmuka pengguna atau layanan
+berbasis KA.
+
+Pelaku§ Sektor yaitu.§ Penyedia Data,
+Pengembang KA, Penyedia Sistem KA dan
+Penyelenggara Sistem KA.
+
+Pemangku Kebijakan yaitu Kementerian/
+Lembaga yang bertugas mengawasi dan
+mengeluarkan pengaturan terhadap sektornya
+dan badan usaha yang memiliki kewenangan
+untuk menetapkan kebijakan di perusahaan.
+
+Keselamatan (safety) KA yaitu sistem KA yang mampu
+melindungi pengguna, memastikan pengembangan
+Kecerdasan Artifisial secara bertanggung jawab, handal,
+dan transparan dalam keputusan. Sedangkan keamanan
+(security) KA yaitu sistem KA yang mampu melakukan
+pelindungan serangan dariluar sistem, mampu mencegah
+penyalahgunaan akses melalui pengelolaan manajemen
+akses, otentikasi dan hal lainnya guna membangun sistem
+KA yang aman.
+
+Pedoman Etika KA mencakup Nilai Etika KA, Manfaat
+Penerapan Etika KA, Identifikasi dan Mitigasi Risiko dan
+langkah-langkah Pelindungan (safeguard), Peran dan
+
+Tanggung jawab para pihak, serta mekanisme
+Pemantauan dan Evaluasi.
+Ketentuan pemantauan dan evaluasi pelaksanaan
+
+pedoman Etika KA ini tidak berlaku pada pengembangan,
+
+penyelenggaraan dan pemanfaatan sistem KA untuk
+
+keperluan:
+
+1. penggunaan Kecerdasan Artifisial
+pertahanan dan keamanan negara; dan
+
+2. kegiatan pengujian, pengembangan dan penelitian
+Kecerdasan Artifisial untuk kepentingan non
+komersial,
+
+sepanjang tetap mematuhi
+
+perundang-undangan.
+
+untuk tujuan
+
+ketentuan
+
+peraturan
+
+Konsep Pedoman Etika Kecerdasan Artifisial
+
+V. NILAI ETIKA KECERDASAN ARTIFISIAL
+
+Nilai Etika KA merupakan cerminan yang dapat membantu untuk
+memahami pengembangan, penerapan dan pemanfaatan KA yang dapat
+berimplikasi pada hak-hak dasar (fundamental rights).
+
+Nilai Etika KA dapat membantu memberikan panduan
+yang lebih jelas pada saat mengidentifikasi apa yang
+harus dilakukan manusia pada teknologi ini daripada apa
+yang dapat manusia lakukan pada teknologi.
+Prinsip-prinsip dalam nilai Etika KA meliputi, sebagai
+berikut:
+
+Pengembangan, penyelenggaraan dan pemanfaatan KA
+perlu memperhatikan nilai kesetaraan, keadilan, dan
+perdamaian dalam menghasilkan informasi maupun
+inovasi untuk kepentingan bersama.
+
+Inklusivitas dapat ditinjau dari sisi sudut pandang:
+Pengguna: Pengguna memiliki hak untuk
+mendapatkan layanan secara adil.
+
+Pelaku Sektor: Pelaku Sektor memastikan
+sistem KA tidak bias dan memperlakukan
+individu secara adil, setara, tanpa memandang
+ras, jenis kelamin, etnis, atau karakteristik
+lainnya. Hal ini melibatkan pertimbangan
+perspektif yang beragam selama fase desain
+dan penerapan  langkah-langkah untuk
+mengurangi bias dalam data dan
+pembangunan algoritma.
+
+Pemangku Kebijakan: Pemangku Kebijakan
+menimbang nilai kesetaraan, keadilan, dan
+perdamaian dalam menghasilkan informasi
+maupun inovasi untuk kepentingan bersama,
+
+menyiapkan pedoman untuk keperluan
+pengumpulan data yang tidak bias,
+pengambilan keputusan algoritma, dan audit
+rutin untuk mendeteksi dan memperbaiki bias.
+
+Pengembangan, penyelenggaraan dan pemanfaatan KA
+perlu memperhatikan nilai kemanusiaan dengan tetap
+saling menjaga hak asasi manusia, hubungan sosial,
+kepercayaan yang dianut, serta pendapat atau pemikiran
+setiap orang.
+
+Kemanusiaan dapat ditinjau dari sisi sudut pandang:
+
+Pengguna: Pengguna memiliki hak untuk dapat
+berinteraksi dengan teknologi yang mampu
+menerjemahkan kebutuhan sesuai budaya, ras,
+jenis kelamin, ataupun agama_ sehingga
+mencegah terjadinya konflik antar pengguna
+atau masyarakat dengan kekayaan
+keragamannya.
+
+Pelaku Sektor: Pelaku Sektor menerapkan
+langkah untuk mengurangi bias dalam data
+dan algoritma selama fase desain untuk
+menjaga hak asasi manusia, hubungan sosial,
+kepercayaan yang dianut dan keragaman
+pandangan. Sistem KA tidak boleh melakukan
+diskriminasi berdasarkan agama, ras, jenis
+kelamin dan keragaman sosial. Pelaku Sektor
+juga mempertimbangkan distribusi manfaat
+KA yang adil untuk menghindari kelompok-
+kelompok tertentu tidak memiliki akses atas
+kemanfaatannya.
+Pemangku Kebijakan: Pemangku Kebijakan
+membuat panduan pengumpulan data yang
+tidak bias, pengambilan keputusan algoritma
+
+dan audit rutin untuk mendeteksi bias serta
+memastikan kekayaan keragaman menjadi hal
+yang diutamakan dalam membangun solusi.
+
+Pengembangan, penyelenggaraan dan pemanfaatan KA
+perlu memperhatikan aspek keamanan pengguna dan
+data yang digunakan agar dapat menjaga privasi, data
+pribadi, dan mengutamakan hak pengguna sehingga
+tidak ada pihak yang dirugikan.
+
+Keamanan dapat ditinjau dari sisi sudut pandang:
+memiliki hak
+
+Pengguna: Pengguna
+
+mendapatkan kenyamanan dan keamanan
+dalam memanfaatkan layanan berbasis KA.
+
+Pelaku Sektor: Pelaku Sektor mengutamakan
+keandalan dan keamanan_ sistem KA,
+memastikan sistem tersebut berfungsi
+sebagaimana mestinya, menghindari hasil
+yang berbahaya, melakukan pengujian yang
+ketat, pemantauan dan penerapan fail-safe
+mechanism. Pelaku Sektor juga
+mengutamakan aspek keamanan data
+pengguna yang digunakan agar dapat
+menjaga_ privasi, data  opribadi, dan
+mengutamakan hak pengguna sehingga tidak
+ada pihak yang dirugikan.
+
+Pemangku Kebijakan: Pemangku Kebijakan
+memastikan penerapan sistem KA yang aman
+dan keandalannya, melakukan pengamatan
+kepatuhan keamanan sistem KA untuk menilai
+
+ketahanannya dalam berbagai kondisi.
+
+Konsep Pedoman Etika Kecerdasan Artifisial
+
+Pengembangan, penyelenggaraan dan pemanfaatan KA
+bersifat inklusif dan tidak diskriminatif, pbengguna memiliki
+hak yang sama dalam mengakses penyelenggaraan KA
+
+Aksesibilitas dapat ditinjau dari sisi sudut pandang:
+
+Pengguna: Pengguna memiliki hak yang sama
+dalam mengakses layanan berbasis KA.
+
+Pelaku Sektor: Pelaku Sektor menerapkan
+sistem KA yang dapat diakses oleh Pengguna,
+tidak melakukan diskriminasi dan bersifat
+inklusif. Pelaku Sektor memberikan kendali
+kepada Pengguna untuk memungkinkan
+melakukan intervensi untuk mengurangi
+potensirisiko.
+
+Pemangku Kebijakan: Pemangku Kebijakan
+memastikan pelaku sektor untuk menyediakan
+layanan yang setara bagi seluruh
+
+akses
+pengguna tanpa mengurangi kemampuan
+layanan.
+
+Pengembangan, penyelenggaraan dan pemanfaatan KA
+bersifat inklusif dan tidak diskriminatif, pbengguna memiliki
+hak yang sama dalam mengakses penyelenggaraan KA
+
+Transparansi dapat ditinjau dari sisi sudut pandang:
+
+Pengguna: Pengguna mengerti apa yang KA
+perbuat dengan data yang dimiliki, dan berhak
+untuk mendapatkan  akses informasi
+bagaimana KA mengolah datanya.
+
+Pelaku Sektor: Pelaku Sektor menyediakan
+transparansi atas sistem KA dan menyediakan
+penjelasan dalam _ setiap pengambilan
+keputusan.
+Konsep Pedoman Etika Kecerdasan Artifisial
+
+& Pemangku Kebijakan:Pemangku Kebijakan
+memastikan Para Pihak yang terlibat dalam
+sistem KA berkomitmen bahwa algoritma yang
+
+dikembangkan dapat dijelaskan. Transparansi
+berkaitan erat dengan tanggung jawab dan
+akuntabilitas.
+
+Pengembangan, penyelenggaraan dan pemanfaatan KA
+perlu mengutamakan kemampuan dalam pengambilan
+Keputusan dari informasi atau inovasi yang dihasilkan.
+Informasi yang dihasilkan melalui KA harus dapat
+dipercaya dan dipertanggungjawabkan ketika disebarkan
+kepada publik.
+
+Kredibilitas dan Akuntabilitas dapat ditinjau dari sisi
+sudut pandang:
+
+Pengguna: Pengguna berhak mendapatkan
+informasi yang dapat dipertanggungjawabkan
+dan kemudahan mendapatkan kejelasan
+informasi.
+
+Pelaku Sektor: Pelaku Sektor mengutamakan
+kemampuan dalam pengambilan keputusan
+informasi atau inovasi yang  dihasilkan.
+Informasi yang dihasilkan harus dapat
+dipercaya dan dipertanggungjawabkan ketika
+disebar kepada publik. Pelaku Sektor
+bertanggung jawab terhadap tindakan dan
+keluaran teknologi bila terjadi kesalahan dan
+melakukan identifikasi mulai proses desain
+hingga implementasi sistem KA.
+
+Pemangku Kebijakan: Pemangku Kebijakan
+menyiapkan panduan yang mencakup
+
+penetapan peran dan tanggung jawab yang
+jelas para pihak serta mekanisme pemantauan
+
+ae
+
+Pengembangan, penyelenggaraan dan pemanfaatan KA
+harus memastikan pelindungan data pribadi sesuai
+ketentuan peraturan perundang-undangan.
+
+Pelindungan Data Pribadi dapat ditinjau dari sisi sudut
+pandang:
+
+Pengguna: Pengguna memahami dan meyakini
+data pengguna dikumpulkan atas persetujuan
+Pengguna dan ditangani secara bertanggung
+jawab. Pengguna memiliki hak untuk
+
+mendapatkan informasi bagaimana sistem KA
+mengolah data pribadi, termasuk penghentian
+dan penghapusan data.
+
+Pelaku Sektor: Pelaku Sektor menjunjung
+tinggi hak pribadi individu dan melindungi data
+pribadi yang dikumpulkan atau diproses oleh
+sistem KA. Pelaku Sektor menerapkan
+langkah-langkah keamanan yang kuat dan
+mematuhi pelindungan data pribadi sesuai
+dengan peraturan perundang-undangan.
+
+Pemangku Kebijakan: Pemangku Kebijakan
+
+memperkuat penegakan undang-undang
+pelindungan data pribadi. Hal ini melibatkan
+penetapan standar untuk mendapatkan
+persetujuan, memastikan keamanan data, dan
+mendefinisikan penggunaan informasi data
+pribadi yang diizinkan.
+
+Pengembangan, penyelenggaraan dan pemanfaatan KA
+mempertimbangkan dengan cermat dampak yang
+ditimbulkan terhadap manusia, lingkungan, dan makhluk
+hidup lainnya, untuk mencapai keberlanjutan dan
+kesejahteraan sosial.
+
+7 —a aaa @3}323~#«~
+a Konsep Pedoman Etika Kecerdasan Artifisial
+
+Pembangunan dan Lingkungan Berkelanjutan dapat
+
+Z rn . fn
+ditinjau dari sisi sudut pandang: ey Pemangku Kebijakan: Pemangku Kebijakan
+
+melindungi hak cipta dan meningkatkan
+edukasi dan kesadaran publik mengenai
+pentingnya menghormati hak cipta. Penguatan
+
+Pengguna: Pengguna memiliki hak untuk
+menilai dampak pengembangan, penerapan,
+
+: pelindungan hak cipta dalam menghadapi KA
+dan penggunaan KA bagi Pengguna.
+
+membutuhkan pendekatan para pihak agar
+tercipta keadilan bagi pemegang hak cipta.
+
+Pelaku Sektor: Pelaku Sektor
+mempertimbangkan dampak yang
+ditimbulkan terhadap manusia, lingkungan,
+dan makhluk hidup lainnya, untuk mencapai
+keberlanjutan dan kesejahteraan sosial dan
+memberikan kontribusi positif yang
+berkelanjutan.
+
+Pemangku Kebijakan: Pemangku Kebijakan
+memastikan manfaat sistem KA _ bagi
+masyarakat dan lingkungan dan melakukan
+pemantauan untuk  keberlanjutan dan
+kesejahteraan sosial.
+
+Pengembangan, penyelenggaraan dan pemanfaatan KA
+tunduk pada prinsip pelindungan Hak Kekayaan
+Intelektual sesuai ketentuan peraturan perundang-
+undangan.
+
+Kekayaan Intelektual dapat ditinjau dari sisi sudut
+pandang:
+
+Pengguna: Pengguna Mengetahui dan
+memahami bahwa penggunaan layanan KA
+harus menghormati kekayaan intelektual dan
+menggunakannya secara bertanggung jawab.
+
+Pelaku Sektor: Pelaku Sektor tunduk pada
+prinsip pelindungan Hak Kekayaan Intelektual
+sesuai ketentuan perundangan termasuk
+rahasia dagang, hak cipta, basis data, dan
+paten.
+
+— ow, QE A ae
+Konsep Pedoman Etika Kecerdasan Artifisial
+
+VI. MANFAAT PENERAPAN ETIKA
+KECERDASAN ARTIFISIAL
+
+Pengembangan, penyelenggaraan dan pemanfaatan KA yang etis dan
+bertanggung jawab akan dapat mendukung keberlanjutan ekonomi,
+
+sosial, dan lingkungan.
+
+Manfaat Etika KA dapat dijelaskan sebagai berikut:
+
+1. Keberlanjutan Ekonomi: menciptakan inovasi, produktivitas, dan efisiensi sehingga
+
+akan mendorong pertumbuhan ekonomi.
+
+2. Keberlanjutan Sosial: membantu layanan publik sehingga memberikan kesetaraan
+
+layanan publik bagi seluruh masyarakat.
+
+3. Keberlanjutan lingkungan: melakukan optimalisasi alokasi sumber daya serta
+mengurangi limbah dan meningkatkan kelestarian lingkungan melalui pemantauan
+dan pengaturan sumber daya alam seperti air dan penggunaan bahan bakar fosil.
+
+ne lz
+
+We
+
+VII. IDENTIFIKASI DAN MITIGASI RISIKO SERTA
+LANGKAH LANGKAH PELINDUNGAN
+
+(SAFEGUARD)
+
+Vil.
+ETL Ce)
+
+Identifikasi
+
+dan Mitigasi
+
+Risiko bersifat multidimensi, melibatkan aspek teknis,
+sosial, ekonomi, budaya, serta politik, dan berdampak
+pada berbagai tingkat, mulai dari level individu dan sistem
+(mikro), hingga level masyarakat dan negara (makro).
+
+Risiko mikro dan risiko makro dijelaskan sebagai berikut:
+
+1. Risiko Mikro: kerentanan yang muncul dari desain,
+pengembangan dan implementasi teknis sistem KA
+yang berdampak pada individu, baik langsung maupun
+tidak langsung, terjadinya pelanggaran hak-hak warga
+negara
+
+yy
+
+termasuk pelanggaran terhadap hak atas pribadi, rasa
+aman, kebebasan berekspresi dan pelindungan dari
+kekerasan.
+
+Risiko mikro diantaranya sebagai berikut:
+
+a. Bias Algoritma: merupakan salah satu risiko utama
+dalam pengembangan dan penyelenggaraan KA. Bias
+tidak hanya berdampak pada keakuratan model, muncul
+kerap tidak disengaja akibat dari pola statistik dalam data
+yang digunakan untuk pelatihan KA. Sistem KA yang
+dilatih dengan data bias akhirnya memperkuat
+ketimpangan dalam proses pengambilan keputusan
+otomatis, sebagai akibat dari data yang tidak
+representatif. Bias dapat berimplikasi pada KA yang tidak
+berfungsi dengan seharusnya, sehingga menyebabkan
+dampak yang fatal.
+
+ae
+
+b. Disinformasi: kemampuan_ sistem KA dalam
+menghasilkan konten palsu seperti deepfake, dapat
+membuka_ celah_ penyalahgunaan. Fenomena _ ini
+meningkatkan potensi manipulasi informasi yang dapat
+menghilangkan integritas proses demokrasi.
+
+c. Pelanggaran Pelindungan Data Pribadi dan Keamanan
+Data: setiap pemrosesan data pribadi harus
+mendapatkan persetujuan yang jelas (explicit consent)
+dari pemilik datanya. Kegagalan sistem dalam melindungi
+data Pengguna dapat terjadi baik karena kelemahan
+teknis, maupun- ketidakpatuhan pada _— standar
+pelindungan data pribadi.
+
+d. Pelanggaran Hak Cipta: berkembangnya teknologi
+KA memunculkan risiko pelanggaran hak cipta atas data-
+data yang digunakan sebagai basis penciptaan konten.
+Risiko pelanggaran hak cipta dan kekayaan intelektual
+dapat terjadi dari penggunaan elemen budaya tradisional
+atau ekspresi artistik lokal sebagai data pelatihan KA
+tanpaizin.
+
+e. Pembelajaran Pintasan (Shortcut Learning):
+keputusan yang mencerminkan’§ logika manusia
+mengakibatkan keputusan yang dihasilkan KA bisa
+memberikan halusinasi, dan tidak dapat dijelaskan secara
+logis.
+
+f. Kerentanan Adversarial: KA dapat dimanipulasi
+melalui data input kecil yang tidak terlihat manusia, namun
+dapat berimplikasi pada model secara signifikan, karena
+saling berlawanan satu sama lain (adversarial). Risiko ini
+menunjukkan bahwa model rentan dan membutuhkan
+deteksi proporsional untuk menghindari keberulangan
+kerentanan.
+
+g. Penipuan KA (Al Deception): KA memanipulasi
+pengguna dengan berbagai kondisi dan memberi
+jawaban yang ingin didengar pengguna. Studi
+menemukan bahwa sebagian besar risiko penipuan KA,
+berasal dari sistem KA dan kebanyakan muncul setelah
+sistem diterapkan.
+
+h. Risiko Individu Kelompok Rentan (Perempuan, Anak,
+Penyandang Disabilitas, Lanjut Usia, dan Masyarakat
+Adat): Individu kelompok rentan, seperti perempuan,
+anak, penyandang disabilitas, lanjut usia, masyarakat
+adat, dan kelompok marginal lainnya, memiliki kerentanan
+risiko yang tinggi dibandingkan kelompok lainnya.
+Minimnya pemahaman terhadap cara kerja sistem KA
+membuat rentan terhadap pengumpulan data tanpa izin,
+bias algoritma, serta pengaruh berlebihan dari hasil KA
+yang dianggap netral.
+
+yy
+
+Konsep Pedoman Etika Kecerdasan Artifisial
+
+Khusus terhadap anak-anak, kurangnya kontrol terhadap
+fitur pelindungan data pribadi, dan lemahnya literasi
+digital telah memperbesar kemungkinan eksploitasi dan
+kehilangan otonomi belajar anak-anak secara sehat.
+Kemudian bagi penyandang disabilitas, banyak sistem KA
+dirancang tanpa mempertimbangkan §aksesibilitas
+sehingga menghambat penggunaan dan _ partisipasi
+kelompok ini, misalnya, chatbot layanan publik yang tidak
+kompatibel dengan pembaca layar (screen reader),
+aplikasi yang tidak menyediakan fitur alternatif untuk input
+suara. Ketidaksensitifan desain semacam _ ini
+mencerminkan bias dalam proses pengembangan,
+dimana kebutuhan kelompok disabilitas diabaikan, dan
+memperkuat kerentanan pelanggaran hak-hak
+penyandang disabilitas dalam ruang digital sehari-hari.
+
+2. Risiko Makro: merupakan dampak pengembangan,
+penyelenggaraan dan pemanfaatan KA terhadap nilai-
+nilai bersama, fungsi pelayanan publik untuk
+pemenuhan kesejahteraan sosial, ekonomi,
+kesehatan, pendidikan, budaya, lingkungan yang
+berkelanjutan dan kesenjangan akses antar wilayah
+serta kelompok masyarakat. Risiko Makro diantaranya
+terjadi akibat ketidaksetaraan akses, diskriminasi
+akses, bias KA, halusinasi, penyalahgunaan data
+pribadi
+
+VII.2 Langkah-langkah
+
+Pelindungan (Safeguard)
+
+Berbagai inovasi dari pengembangan, penyelenggaraan
+dan pemanfaatan KA tidak bisa dilepaskan dari risiko yang
+mengikutinya, sehingga mitigasi risiko dan perlindungan
+(safeguard) perlu dipersiapkan. Mitigasi risiko dan
+Pelindungan (safeguard) akan membantu Pemangku
+Kebijakan, Pelaku Sektor dan Pengguna untuk melakukan
+evaluasi kesesuaian sistem KA dengan Nilai Etika KA.
+Pelindungan (safeguard) KA merupakan pendorong
+pengembangan KA yang bertanggung _jawab,
+mengedepankan kepentingan publik namun_ tidak
+menghambat perkembangan dan pertumbuhan inovasi.
+
+untuk
+
+Langkah-langkah _ pelindungan (safeguard)
+menegakkan Nilai Etika sebagai berikut:
+
+Konsep Pedoman Etika Kecerdasan Artifisial a
+
+Tabel 1. Pelindungan (Safeguard)
+
+PF Aspek | Pelindungan (Safeguard)
+
+Kebermanfaatan dan 1. Memastikan sistem KA meningkatkan kesejahteraan, martabat, dan kualitas
+pelindungan terhadap hidup manusia, bukan sekadar efisiensi teknis.
+manusia, lingkungan, 2. Melindungi lingkungan hidup dan pastikan teknologi tidak merusak
+Sao ae keberlanjutan ekologis.
+3. Merancang dan menggunakan KA yang mengangkat potensi ekonomi lokal
+dan memperkuat posisi sosial-ekonomi masyarakat Indonesia.
+4. Melakukan penilaian dampak sosial, lingkungan, dan geopolitik sebelum
+pengembangan dan penerapan sistem KA.
+5. Mengoptimalkan penggunaan untuk menguatkan keahlian manusia, bukan
+untuk menumpulkan keahlian dan kemampuan manusia.
+6. Tidak menggunakan KA yang melemahkan kedaulatan Indonesia, baik secara
+teknologi, data, maupun pengambilan keputusan.
+7. Tidak membangun sistem KA tanpa kemampuan penguasaan sendiri.
+Menjauhi kerugian dan 1. Menyediakan mekanisme teknis dan prosedural untuk mencegah
+penyalahgunaan penyalahgunaan atau penyimpangan penggunaan KA.
+
+2. Memantau dan mengevaluasi secara aktif dampak sistem KA selama siklus
+hidupnya.
+
+3. Melaporkan dan menghentikan secara tegas jika terdapat indikasi bahwa
+sistem KA digunakan untuk membahayakan keselamatan, keamanan, atau
+kepentingan publik.
+
+4. Tidak merancang atau menggunakan KA untuk manipulasi, penipuan,
+diskriminasi, atau kontrol sosial yang tidak sah.
+
+5. Tidak menggunakan KA untuk aktivitas kriminal, seperti pencurian data,
+peretasan, deepfake, atau kejahatan siber lainnya.
+
+Transparansi dan . Menjelaskan secara terbuka cara kerja sistem KA, termasuk logika, data yang
+
+akuntabilitas digunakan, limitasi dan tujuan penggunaannya.
+
+. Mempublikasikan informasi penting seperti sumber data, potensi bias, dan risiko
+teknis.
+
+. Menetapkan dan mendokumentasikan siapa yang bertanggung jawab atas
+setiap keputusan, pengembangan, dan penerapan sistem KA.
+
+. Membangun sistem pelaporan internal dan eksternal untuk menangani keluhan,
+insiden, atau penyalahgunaan.
+
+. Menyediakan dokumentasi teknis untuk mendukung evaluasi, pbengawasa, dan
+akuntabilitas hukum.
+
+. Mendorong organisasi untuk menanamkan budaya etis dan bertanggung jawab
+dalam setiap tahapan siklus hidup KA
+
+un Konsep Pedoman Etika Kecerdasan Artifisial
+
+PF  Aspek Pelindungan (Safeguard)
+
+Keadilan dan 1. Menggunakan data yang representatif, relevan, dan sesuai konteks,
+kecukupan khususnya dalam keragaman sosial-budaya Indonesia.
+2. Memastikan KA tidak memperkuat ketimpangan sosial, ekonomi, atau
+gender.
+3. Melakukan pengujian dampak algoritma secara berkala untuk memastikan
+keadilan operasional.
+4. Melakukan mekanisme koreksi atas keputusan KA yang tidak adil atau
+merugikan.
+5. Memprioritaskan efisiensi, kebermanfaatan, dan penggunaan sumber daya
+yang wajar dan proporsional.
+6. Tidak menggunakan data atau algoritma yang mengandung bias dan dapat
+menyebabkan diskriminasi terhadap individu atau kelompok.
+7. Tidak mengumpulkan atau memproses data pribadi yang tidak diperlukan
+untuk tujuan yang sah, hormati prinsip data minimisasi.
+8. Tidak mendesain sistem KA yang berlebihan, mubazir, atau menyulitkan
+pengguna secara teknis maupun sosial.
+
+Mengedepankan 1. Melibatkan beragam kelompok masyarakat, termasuk kelompok rentan,
+inklusivitas dan minoritas, dan penyandang disabilitas dalam proses perancangan,
+keragaman
+
+pengujian, dan evaluasi sistem KA.
+
+2. Memastikan sistem KA dapat diakses dan dimanfaatkan oleh semua orang,
+tanpa hambatan teknis, bahasa, atau sosial.
+
+3. Mengembangkan antarmuka dan sistem yang ramah pengguna untuk semua
+kalangan, termasuk mereka yang memiliki keterbatasan teknologi atau
+kemampuan digital.
+
+4. Tidak melakukan dominasi nilai, budaya, atau perspektif tunggal yang dapat
+menghapus identitas dan keberagaman lokal.
+
+Keamanan lewat . Memastikan sistem KA dirancang, dibangun, dan diuji secara menyeluruh
+keandalan sistem agar berfungsi secara andal dan konsisten sesuai tujuan.
+dan kecakapan . Menerapkan uji keamanan dan stres (stress testing) untuk mengantisipasi
+teknis kegagalan teknis, gangguan operasional, atau skenario ekstrem.
+. Melindungi sistem dari serangan siber, sabotase, dan manipulasi algoritma
+melalui pbendekatan keamanan berlapis.
+. Memastikan pengembang dan penyelenggara KA memiliki kompetensi
+
+teknis dan etika yang memadaiserta terus diperbarui.
+
+Konsep Pedoman Etika Kecerdasan Artifisial a
+
+PF  Aspek Pelindungan (Safeguard)
+
+Keamanan lewat 5. Melakukan pembaruan sistem secara berkala untuk menutup celah keamanan
+keandalan sistem dan dan menyesuaikan dengan perkembangan teknologi.
+kecakapan teknis 6. Menyediakan prosedur darurat untuk menghentikan sistem KA secara cepat
+
+dan amanjika terjadi kerusakan atau dampak negatif yang tidak terkendaii.
+7.Membangun budaya pengelolaan risiko dan pembelajaran berkelanjutan
+untuk menjaga keandalan jangka panjang.
+
+Penghargaan 1. Menghormati hak kekayaan intelektual dalam seluruh proses pelatihan,
+terhadap karya cipta penggunaan, dan distribusi sistem KA.
+dan budaya 2. Memastikan sistem KA tidak memanfaatkan karya atau ekspresi budaya untuk
+
+kepentingan komersial tanpa kompensasi atau pengakuan yang adil.
+
+3. Mengembangkan sistem yang mendukung pelestarian, pengakuan, dan
+promosi budaya nasional dan lokal secara inklusif.
+
+4. Menggunakan perjanjian yang jelas ketika mengintegrasikan data atau konten
+pihak ketiga.
+
+5. Membangun kebijakan internal yang mendorong inovasi yang etis dan
+bertanggung jawab terhadap nilai-nilaibudaya dan kreativitas manusia.
+
+6. Tidak mengambil, mereproduksi, atau menggunakan karya cipta tanpa izin
+atau atribusi yang sah.
+
+7. Tidak melakukan eksploitasi terhadap warisan budaya lokal, terutama milik
+masyarakat adat atau komunitas rentan, tanpa partisipasi dan persetujuan.
+
+Tata kelola dan kontrol . Memastikan seluruh sistem KA tetap berada dalam kendali manusia, dan tidak
+
+dari manusia, oleh boleh mengambil keputusan akhir secara otomatis dalam hal yang berdampak
+
+manusia, untuk besar pada hak, hidup, atau kesejahteraan manusia.
+
+manusia . Menetapkan proses tata kelola yang menjamin pengawasan manusia yang
+bermakna (meaningful human oversight) dalam setiap tahapan pengembangan,
+
+penyelenggaraan dan pemanfaatan KA.
+
+. Mengembangkan_kebijakan, pedoman, dan struktur organisasi yang
+memungkinkan pengambilan keputusan kolektif, partisipatif, dan demokratis
+atas arah teknologi KA.
+
+. Melibatkan berbagai pemangku kepentingan dalam proses perumusan tata
+kelola KA.
+
+un Konsep Pedoman Etika Kecerdasan Artifisial
+
+Vill. PERAN DAN TANGGUNG JAWAB
+PARA PIHAK
+
+Peran dan tanggung jawab Para Pihak yaitu Pemangku Kebijakan, Pelaku
+Sektor, dan Pengguna perlu kejelasan didalam menjalankan mitigasi risiko
+melalui langkah-langkah pelindungan (safeguard) sebagaimana dijelaskan
+pada butir VII.2 di atas.
+
+Peran dan tanggung jawab masing-masing dapat c. Melakukan mitigasi risiko melalui tindakan
+dijelaskan sebagai berikut. pencegahan, identifikasi dini, perbaikan, audit
+1.Pengguna, yang  bertanggung jawab: untuk berkala, pengawasan berkelanjutan dan
+memanfaatkan KA secara sadar, etis dan bertanggung penyempurnaan sistem; dan
+jJawab serta tidak menyalahgunakan informasi atau d. Menjamin transparansi dan akuntabilitas sistem
+sistem yang digunakan. yang disediakan atau dioperasikan.
+2. Pelaku Sektor, yang bertanggung jawab untuk: 3. Pemangku Kebijakan, yang bertanggung jawab untuk:
+a. Mengembangkan dan menyelenggarakan sistem a. Menetapkan kebijakan nasional dan_ sektoral
+KA yang sesuai dengan prinsip etika; mengenai tata kelola KA yang etis;
+b. Melaksanakan manajemen risiko pada setiap tahap b. Mengembangkan kerangka kerja manajemen risiko
+siklus hidup KA; menyeluruh; dan
+
+c. Memantau dampak penerapan KA terhadap Pelaku
+Sektor dan Pengguna secara berkala dan obyektif
+
+Dalam menjalankan langkah-langkah pelindungan (safeguard), Pemangku Kebijakan dan Pelaku Sektor memahami
+aspek risiko yang dikategorikan sebagai berikut:
+
+O1 03
+
+Kategori Risiko Tidak Diterima Kategori Risiko Minimal atau Rendah
+Dalam hal dianggap mengancam dan Dalam kategori ini perlu mematuhi pelindungan
+membahayakan keselamatan pengguna dan (Safeguard) transparansi.
+
+hak asasi manusia sehingga perlu adanya
+
+pelarangan.
+
+02
+
+| Die H H Adanya keterlibatan penggunaan data pribadi berupa data biometri karakteristik fisik
+Kategori Risi ko Ti nggli yaitu sidik jari (fingerprint), pengenal wajah (facial recognition) dan karakteristik cif tubuh
+(behavioral characteristics),
+
+Dalam hal dapat memberikan dampak negatif
+Adanya keterlibatan penggunaan data keterangan pribadi, data keluarga dan data
+pada keamanan, keselamatan, kesehatan atau informasi spesifik pengguna (Personal Identifiable information); dan
+hak asasi manusia sehingga perlu persyaratan dan
+pengawasan khusus, yaitu di antaranya: Berdampaklangsung penggunaannya oleh publik atau masyarakat umum.
+
+es —hUL'YTCUlC—CYCtCéCOUSW
+Konsep Pedoman Etika Kecerdasan Artifisial
+
+IX. MEKANISME PEMANTAUAN DAN
+
+EVALUASI
+
+Pemangku Kebijakan melakukan
+pemantauan dan evaluasi secara
+berkala terhadap pelaksanaan
+Pedoman Etika KA.
+
+Pemantauan evaluasi bertujuan untuk memberikan umpan
+balik terhadap penyempurnaan Pedoman Etika KA.
+
+Hasil pemantauan dan evaluasi Etika KA menjadi bahan
+untuk penyempurnaan kebijakan dan pengembangan
+lanjutan Pedoman_ Etika KA, sesuai dengan
+perkembangan teknologi dan dinamika sosial.
+
+—_
+
+Penilaian Mandiri (self-assessment)
+
+Pelaporan Insiden
+
+Pelaporan Sektor dan
+
+RB) o)N
+
+Sistem Pemantauan Terpadu
+
+IX.1 Penilaian Mandiri (self-assessment)
+
+Pemantauan Etika KA menggunakan pendekatan melalui
+penilaian mandiri (self-assessment) untuk membantu
+Pemangku Kebijakan dan Pelaku Sektor mengevaluasi
+kesesuaian sistem KA dengan nilai Etika KA. Pendekatan
+ini memungkinkan partisipasi pelaku usaha dari berbagai
+skala sehingga dapat memperkuat akuntabilitas, daya
+saing, dan reputasi dalam ekosistem KA Indonesia serta
+memperkuat kepercayaan investor dan memperluas
+
+Langkah-langkah Pelindungan (safeguard) Etika KA
+menjadi dasar Penilaian Mandiri (self-assessment).
+Penilaian Mandiri (self-assessment) disiapkan oleh
+Pemangku Kebijakan dan dilaksanakan oleh Pelaku Sektor
+secara obyektif dan sesuai kondisi sebenarnya.
+
+Materi Penilaian Mandiri (self-assessment) berupa materi
+dasar sebagaimana Tabel 2 dibawah bersifat umum dan
+dapat dikembangkan sesuai kebutuhan masing-masing
+sektor, sebagai berikut:
+
+Tabel 2. Pertanyaan Dasar Penilaian Mandiri
+
+partisipasi industri dalam pengembangan KA _ di
+Indonesia.
+No Pertanyaan
+] Bagaimana cara mendeteksi dan
+memitigasi bias?
+2 Apakah sudah memiliki proses yang jelas
+untuk skema pertanggung jawaban dan
+proses perbaikan?
+
+Respon
+
+Tidak ada pengecekan
+Audit Ad hoc
+
+Audit Internal Rutin
+
+Audit Independen
+
+Dapat di audit oleh Publik
+
+Tidak ada yang penetapan peran
+Penugasan internal
+Terdapat unit tata kelola
+
+yy
+
+ae
+
+No Pertanyaan
+
+3 Apakah proses pembuatan keputusan
+oleh KA dapat dijelaskan kepada
+pengguna?
+
+4 Metode apa yang digunakan dalam
+
+sistem KA untuk melindungi privasi?
+
+5 Bagaimana mengevaluasi risiko sosial?
+
+Konsep Pedoman Etika Kecerdasan Artifisial
+
+Respon
+
+Akuntabilitas eksternal
+Tata Kelola Partisipatif
+
+Tidak ada transparansi
+Dokumentasi minimal
+Penjelasan internal
+Penjelasan publik
+
+Desain bersama multi Pemangku Kebijakan
+
+Mengumpulkan semua data
+Hanya anonimasi
+
+Minimasi data
+
+Privasi diferensial
+
+Persetujuan dari pemilik data
+
+Diabaikan
+
+Penilaian informal
+
+Pemindaian dampak sosial-ekonomi
+
+Konsultasi masyarakat secara rutin
+
+Terintegrasi dalam pengembangan dan diinformasikan
+
+IX.2 Pelaporan Insiden
+
+Pelaporan insiden disiapkan oleh Pemangku Kebijakan untuk menerima
+dan menangani laporan keluhan dan/atau insiden pelanggaran etika KA
+dari Pengguna, dan diteruskan kepada Pelaku Sektor untuk ditindaklanjuti
+
+secara cepat dan akuntabel.
+
+Pelaporan insiden harus bersifat mudah diakses bagi
+Pengguna dan diintegrasikan ke dalam Penilaian Mandiri
+(self-assessment) sebagai umpan balik untuk evaluasi
+dan perbaikan sistem KA.
+
+Penanganan laporan’ keluhan  dan/atau _ insiden
+pelanggaran etika KA sekaligus menjadi umpan balik atas
+Penilaian Mandiri (Self-assessment) yang _ telah
+
+dilaksanakan oleh Pemangku Kebijakan dan Pelaku
+Sektor.
+
+yy
+
+Pemangku Kebijakan dan Pelaku Sektor di dalam
+menangani keluhan dan/atau insiden Etika KA perlu
+menyiapkan langkah sebagai berikut:
+
+1. Pemangku Kebijakan menerima keluhan dan/atau
+insiden etika KA dari Pengguna selaku Pelapor;
+
+2. Pemangku Kebijakan melakukan identifikasi Pelaku
+Sektor selaku Terlapor;
+
+3. Pemangku Kebijakan melakukan proses mediasi
+antara Pelaku Sektor selaku Terlapor dengan
+Pengguna selaku Pelapor;
+
+4. Pelaku Sektor selaku Terlapor melakukan pelacakan
+keluhan dan/atau insiden Etika KA;
+
+Konsep Pedoman Etika Kecerdasan Artifisial ae
+
+1. Dalam hal keluhan dan/atau insiden Etika KA terjadi IxX.3 Pelaporan Sektor
+secara luas maka Pelaku Sektor melakukan perbaikan
+
+pada sistem KA;
+
+2. Dalam hal keluhan dan/atau insiden Etika KA terjadi
+secara individual maka Pelaku Sektor melakukan
+perbaikan sesuai dengan keluhan yang dialami oleh
+Pengguna;
+
+3. Pelaku Sektor selaku Terlapor mendokumentasikan
+dan memberikan laporan penyelesaian keluhan dan/ IX.4 Sistem Pemantauan Terpadu
+atau insiden Etika KA kepada Pemangku Kebijakan;
+
+4. Pemangku Kebijakan menyampaikan pemberitahuan Sistem Pemantauan Terpadu Etika KA disiapkan,
+
+Pelaporan Sektor disusun, disiapkan dan disampaikan
+secara rutin oleh Kementerian/Lembaga yang membina
+sektor masing-masing setiap bulan kepada Kementerian
+sebagai pertanggungjawaban kepada publik.
+
+penyelesaian kepada Pengguna selaku Pelapor; dikembangkan dan dioperasikan oleh Kementerian.
+5. Pemangku Kebijakan mendokumentasikan laporan Sistem Pemantauan Terpadu Etika KA diintegrasikan
+penyelesaian Pelaku Sektor. dengan data Pelaporan Insiden dan Pelaporan Sektor
+
+sebagai dasar pemantauan lintas sektor.
+
+X.PELAKSANAAN PEDOMAN ETIKA
+KECERDASAN ARTIFISIAL
+
+Pemangku Kebijakan dan Pelaku Sektor harus menyiapkan pelaksanaan
+Pedoman Etika KA paling lama 2 (dua) tahun terhitung sejak Peraturan
+Presiden ini berlaku. Pemangku Kebijakan, Pelaku Sektor, dan Pengguna
+agar melaksanakan Pedoman Etika KA secara aktif dan penuh inisiatif
+sehingga tujuan Pedoman Etika KA dapat terwujud.
+
+XI. MASA PERALIHAN
+
+Pemangku Kebijakan yang telah memiliki pedoman etika Kecerdasan
+Artifisial sebelum berlakunya Peraturan Presiden ini, harus menyesuaikan
+dengan pedoman etika Kecerdasan Artifisial sebagaimana diatur dalam
+Peraturan Presiden ini ini paling lama 2 (dua) tahun terhitung sejak
+Peraturan Presiden ini berlaku.
+
+71 — aaa ~~”
+un Konsep Pedoman Etika Kecerdasan Artifisial
+
+11.
+
+12.
+
+DAFTAR PUSTAKA
+
+. Association of Southeast Asian Nasions (ASEAN). (2024). ASEAN Guide on Al Governance and Ethics. ASEAN.
+. CSET Center for Security and Emerging Technology. (2024). Artificial Intelligence Law of the People’s Republic of
+
+China (draft for Suggestion from scholars) PEA RFABALE ABA (ASIA) .CSETCenterfor Security and
+Emerging Technology.
+
+. European Commission . (2019). Ethics Guidelines for Trustworthy Al. European Commission.
+. IEEE. (2019). Ethically Aligned Design a Vision for Prioritizing Human Well-being with Autonomous and Intelligent
+
+Systems. IEEE.
+
+. Ministry of Science, Technology, and Innovation Malaysia. (2024). The National Guidelines on Al Governance and
+
+Ethics. Putrajaya: Ministry of Science , Technology, and Innovation.
+
+. OECD. (2025). Recommendation of the council on Artificial Intelligence. OECD/LEGAL/0449.
+. Senado Federal Brazil. (2025). Senado Federal Parecer (SF) No1DE 2024. Senado Federal Brazil.
+. Singapore Digital (SG:D). (2020). Model Artificial Intelligence Governance Framework Second Edition. Info-
+
+COmmunications Media Development Authority (IMDA).
+
+. The Government of Republic of Korea. (2019). National Strategy for Artificial Intelligence. Ministry of Science and ICT.
+10.
+
+UNESCO. (2022). Recommendation on the Ethics of Artificial Intelligence. Paris: The United Nations Eduacational,
+Scientific, and Cultural Organization.
+
+UNESCO Jakarta. (2024). Indonesia Laporan Penilaian Kesiapan (Readiness Assessment) Kecerdasan Artifisial (Al).
+UNESCO Jakarta.
+
+Gugus Tugas Penyusunan Peta Jalan Kecerdasan Artifisial Nasional. (2025). Konsep Buku Putih Peta Jalan Kecerdasan
+Artifisial Indonesia. Jakarta: Kementerian Komunikasi dan Digital.
+
+Konsep Pedoman Etika Kecerdasan Artifisial ae
+
+LAMPIRAN
+
+Skema Pedoman Etika Kecerdasan Artifisial
+
+Pedoman Etika Kecerdasan Artifisial
+
+Transparency builds trustworthiness
+
+NilaiEtika BABV
+
+Manfaat Penerapan NilaiEtika BAB VI
+
+Identifikasi dan Mitigasi Risikoserta Bap yi|
+Langkah-Langkah Pelindungan
+
+Keselamatan (safety) dan Kemanan (security) KA
+
+Pelindungan (safeguard)
+
+Peran dan Tanggung Jawab ParaPihak BAB VIII
+
+Pemangku Kebijakan Pelaku Sektor
+
+Mekanisme Pemantauan dan Evaluasi BAB IX
+
+Pengguna
+
+PenilaianMandiri Pelaporan Insiden
+
+: }
+
+Sistem Pemantauan Terpadu
+
+x. ©
+
+Direktorat Jenderal
+Ekosistem Digital
