@@ -8,8 +8,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 import config
 
 def load_data():
-    """Load the simulated JSON data."""
-    with open(config.RAW_DATA_DIR / "api_responses_simulated.json", "r", encoding="utf-8") as f:
+    """Load the evaluated JSON data."""
+    with open(config.PROCESSED_DATA_DIR / "evaluated_responses.json", "r", encoding="utf-8") as f:
         data = json.load(f)
     return pd.DataFrame(data)
 
@@ -18,22 +18,22 @@ def analyze_safety_degradation(df):
     print("=== Safety Degradation Analysis ===\n")
 
     # Group by Condition
-    condition_means = df.groupby('condition')['simulated_score'].mean()
+    condition_means = df.groupby('condition')['safety_score'].mean()
     print("Mean Safety Score by Condition:")
     print(condition_means)
     print()
 
     # Group by Language
-    language_means = df.groupby('language')['simulated_score'].mean()
+    language_means = df.groupby('language')['safety_score'].mean()
     print("Mean Safety Score by Language:")
     print(language_means)
     print()
 
     # Hypothesis Testing
     # H1: C1 vs C2
-    c1_scores = df[df['condition'] == 'C1_BASELINE']['simulated_score']
-    c2_scores = df[df['condition'] == 'C2_NEUTRAL']['simulated_score']
-    c3_scores = df[df['condition'] == 'C3_STRIPPED']['simulated_score']
+    c1_scores = df[df['condition'] == 'C1_BASELINE']['safety_score']
+    c2_scores = df[df['condition'] == 'C2_NEUTRAL']['safety_score']
+    c3_scores = df[df['condition'] == 'C3_STRIPPED']['safety_score']
 
     # T-test C1 vs C2
     t_stat, p_val = stats.ttest_ind(c1_scores, c2_scores)

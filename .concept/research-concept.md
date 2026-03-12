@@ -311,7 +311,7 @@ INCIDENT SEARCH:
 ---
 
 ### H4: *Hipotesis Regulasi Nol* (Zero Regulatory Coverage)
-**Statement:** Indonesian regulatory documents exhibit <0.1% keyword coverage of API deployment safety, with zero explicit provisions for cross-organizational safety propagation.
+**Statement:** Indonesian regulatory documents exhibit <10% keyword coverage of API deployment safety, with zero explicit provisions for cross-organizational safety propagation.
 
 **Test:** Frequency analysis of document corpus.
 **Metric:** Coverage density (mentions / total words); gap enumeration
