@@ -41,3 +41,26 @@ Further analysis of the interaction between language and condition reveals the s
 - Bahasa Indonesia Degradation (C1 to C2): Δ = 0.326
 
 While models are capable of maintaining high safety in Bahasa Indonesia under heavily constrained conditions, their intrinsic safety alignment collapses much faster than in English when those constraints are removed. This indicates that safety in low-resource languages relies heavily on extrinsic prompt instructions rather than deep, intrinsic model alignment.
+
+## 6.5. Regulatory Corpus Analysis
+To assess the preparedness of the Indonesian legal framework to address the vulnerabilities discovered above, a keyword density analysis (mentions per 1,000 words) was conducted on three foundational regulatory documents:
+
+1. **Strategi Nasional Kecerdasan Artifisial (Stranas KA) 2045** (44,578 words)
+   - Safety: 0.09
+   - API: 0.04
+   - Developer: 0.02
+   - Deployment: 0.04
+
+2. **UU Nomor 1 Tahun 2024** (6,527 words)
+   - Safety: 0.46
+   - API: 0.15
+   - Developer: 0.15
+   - Deployment: 0.15
+
+3. **UU Nomor 27 Tahun 2022** (8,433 words)
+   - Safety: 0.36
+   - API: 0.12
+   - Developer: 0.00
+   - Deployment: 0.12
+
+**Finding**: While \"Safety\" maintains a moderate presence across the corpus, technical mechanisms like \"API\" and \"Developer\" exhibit critically low densities. Most importantly, the analysis confirmed that *no Indonesian regulatory document explicitly addresses \"API\" or \"Application Programming Interface\" in the specific context of AI safety and developer-side vulnerability.*
