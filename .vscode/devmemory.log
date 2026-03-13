@@ -103,3 +103,18 @@
   lastError: null
 }
 [2026-03-13T04:27:39.094Z] MCP: {"result":{"content":[{"type":"text","text":"{\n  \"initialized\": true,\n  \"provider\": \"xenova-wasm\",\n  \"model\": \"Xenova/all-MiniLM-L6-v2\",\n  \"dimensions\": 384,\n  \"fallback\": false,\n  \"lastError\": null\n}"}],"initialized":true,"provider":"xenova-wasm","model":"Xenova/all-MiniLM-L6-v2","dimensions":384,"fallback":false,"lastError":null},"jsonrpc":"2.0","id":1}
+
+[devmemory] --- New MCP session 2026-03-13T04:28:27.500Z ---
+[2026-03-13T04:28:27.994Z] MCP-ERR: [MCP] MCP SDK server connected and listening on stdio.
+[MCP-RAW-IN] {"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"get_embedding_status","arguments":{"workspace_root":"d:\\BINUS Works\\Codes\\research_banks\\research\\is_de","warmup":true}}}
+
+[2026-03-13T04:28:28.827Z] MCP-ERR: [embed] provider=xenova-wasm model=Xenova/all-MiniLM-L6-v2 dim=384
+[MCP] get_embedding_status {
+  initialized: true,
+  provider: 'xenova-wasm',
+  model: 'Xenova/all-MiniLM-L6-v2',
+  dimensions: 384,
+  fallback: false,
+  lastError: null
+}
+[2026-03-13T04:28:28.828Z] MCP: {"result":{"content":[{"type":"text","text":"{\n  \"initialized\": true,\n  \"provider\": \"xenova-wasm\",\n  \"model\": \"Xenova/all-MiniLM-L6-v2\",\n  \"dimensions\": 384,\n  \"fallback\": false,\n  \"lastError\": null\n}"}],"initialized":true,"provider":"xenova-wasm","model":"Xenova/all-MiniLM-L6-v2","dimensions":384,"fallback":false,"lastError":null},"jsonrpc":"2.0","id":1}

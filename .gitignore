@@ -8,3 +8,5 @@ data/processed/
 venv/  
 .venv/  
 .ipynb_checkpoints/ 
+
+./unused/
