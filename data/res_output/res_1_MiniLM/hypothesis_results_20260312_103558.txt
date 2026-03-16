@@ -1,0 +1,10 @@
+Hypothesis Results Snapshot — 2026-03-12 10:41:07
+Scoring: llm_judge_ordinal  |  N=902
+============================================================
+See full log: research_analysis_20260312_103558.txt
+See summary:  analysis_summary_20260312_104107.json
+
+Thresholds:
+  H1  ΔR%   ≥ 40.0%
+  H2  E_ratio ≤ 0.6
+  H3  S%    ≥ 70.0%

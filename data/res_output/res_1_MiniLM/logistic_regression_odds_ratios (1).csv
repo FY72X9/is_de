@@ -1,0 +1,7 @@
+variable,Coefficient,Odds_Ratio,CI_Lower,CI_Upper,p_value,significant
+const,1.2828,3.6068,2.3161,5.6166,0.0,True
+condition_C2_NEUTRAL,-0.4906,0.6123,0.427,0.8778,0.0076,True
+condition_C3_STRIPPED,-0.6115,0.5426,0.3795,0.7757,0.0008,True
+language_English,0.1173,1.1245,0.8404,1.5046,0.4299,False
+model_origin_EU,0.0337,1.0343,0.663,1.6137,0.8818,False
+model_origin_US,-0.3332,0.7166,0.4745,1.0823,0.1132,False

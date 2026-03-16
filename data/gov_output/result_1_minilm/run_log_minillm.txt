@@ -1,0 +1,392 @@
+[TeeLogger] Logging started → /content/drive/MyDrive/Colab Notebooks/is_de/data/output/run_20260313_060443/run_log.txt
+Experiment directory : /content/drive/MyDrive/Colab Notebooks/is_de/data/output/run_20260313_060443
+Plots directory      : /content/drive/MyDrive/Colab Notebooks/is_de/data/output/run_20260313_060443/plots
+Log file             : /content/drive/MyDrive/Colab Notebooks/is_de/data/output/run_20260313_060443/run_log.txt
+
+Corpus directory: /content/drive/MyDrive/Colab Notebooks/is_de/docs/regulatory_corpus
+
+Status   Short Name             Type               Regulator        Battery      File
+----------------------------------------------------------------------------------------------------
+✓        Stranas KA             policy_strategy    BRIN/Kominfo     R,L,H        stranas-ka-2045.txt
+✓        UU ITE 2024            statute            Kemenkominfo     R,L          UU Nomor 1 Tahun 2024.txt
+✓        UU PDP 2022            statute            Kominfo/BSSN     R,L,H        UU Nomor 27 Tahun 2022.txt
+✓        POJK 13/2018           regulation         OJK              L,H          pojk 13-2018.txt
+✓        POJK 23/2019           regulation         OJK              H            POJK No. 23-POJK.01-2019.txt
+✓        Permenkes 24/2022      regulation         Kemenkes         H            permenkes 24 2022.txt
+✓        PermenPANRB 5/2020     regulation         KemenPANRB       R,L,H        Permenpan RB Nomor 5 Tahun 2020.txt
+✓        Etika KA (Draft)       guideline          Kemenkominfo     L            Konsep Pedoman Etika KA.txt
+
+✓ All 8 documents present in corpus directory.
+✓  Loaded  Stranas KA             BRIN/Kominfo     [R,L,H]   350,256 chars   44,578 words
+✓  Loaded  UU ITE 2024            Kemenkominfo     [R,L]    48,470 chars    6,527 words
+✓  Loaded  UU PDP 2022            Kominfo/BSSN     [R,L,H]    61,258 chars    8,433 words
+✓  Loaded  POJK 13/2018           OJK              [L,H]    43,086 chars    5,747 words
+✓  Loaded  POJK 23/2019           OJK              [H]    57,652 chars    7,893 words
+✓  Loaded  Permenkes 24/2022      Kemenkes         [H]    37,379 chars    4,885 words
+✓  Loaded  PermenPANRB 5/2020     KemenPANRB       [R,L,H]    76,077 chars   10,295 words
+✓  Loaded  Etika KA (Draft)       Kemenkominfo     [L]    53,808 chars    6,717 words
+
+Loaded: 8 / 8 documents
+Cleaning functions defined.
+[Stranas KA]
+  Before: 350,256 chars / 44,578 words
+  After:  350,244 chars / 44,576 words
+  Removed: 12 chars (0.0%)
+
+[UU ITE 2024]
+  Before: 48,470 chars / 6,527 words
+  After:  47,545 chars / 6,350 words
+  Removed: 925 chars (1.9%)
+
+[UU PDP 2022]
+  Before: 61,258 chars / 8,433 words
+  After:  60,343 chars / 8,208 words
+  Removed: 915 chars (1.5%)
+
+[POJK 13/2018]
+  Before: 43,086 chars / 5,747 words
+  After:  42,635 chars / 5,610 words
+  Removed: 451 chars (1.0%)
+
+[POJK 23/2019]
+  Before: 57,652 chars / 7,893 words
+  After:  57,017 chars / 7,794 words
+  Removed: 635 chars (1.1%)
+
+[Permenkes 24/2022]
+  Before: 37,379 chars / 4,885 words
+  After:  36,858 chars / 4,817 words
+  Removed: 521 chars (1.4%)
+
+[PermenPANRB 5/2020]
+  Before: 76,077 chars / 10,295 words
+  After:  75,778 chars / 10,223 words
+  Removed: 299 chars (0.4%)
+
+[Etika KA (Draft)]
+  Before: 53,808 chars / 6,717 words
+  After:  53,756 chars / 6,715 words
+  Removed: 52 chars (0.1%)
+
+[Stranas KA]  1 sections  (0 BAB, 0 Pasal)  44,576 words
+[UU ITE 2024]  36 sections  (0 BAB, 35 Pasal)  6,280 words
+[UU PDP 2022]  159 sections  (16 BAB, 142 Pasal)  7,891 words
+[POJK 13/2018]  104 sections  (17 BAB, 86 Pasal)  5,404 words
+[POJK 23/2019]  37 sections  (0 BAB, 36 Pasal)  7,722 words
+[Permenkes 24/2022]  52 sections  (4 BAB, 47 Pasal)  4,715 words
+[PermenPANRB 5/2020]  12 sections  (5 BAB, 6 Pasal)  10,201 words
+[Etika KA (Draft)]  1 sections  (0 BAB, 0 Pasal)  6,715 words
+
+Structured corpus built: 8 documents
+Saved: stranas-ka-2045.txt  (350,244 chars)
+Saved: UU Nomor 1 Tahun 2024.txt  (47,545 chars)
+Saved: UU Nomor 27 Tahun 2022.txt  (60,343 chars)
+Saved: pojk 13-2018.txt  (42,635 chars)
+Saved: POJK No. 23-POJK.01-2019.txt  (57,017 chars)
+Saved: permenkes 24 2022.txt  (36,858 chars)
+Saved: Permenpan RB Nomor 5 Tahun 2020.txt  (75,778 chars)
+Saved: Konsep Pedoman Etika KA.txt  (53,756 chars)
+
+Structured corpus exported: /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/regulatory_structured.json
+Cleaning report: /content/drive/MyDrive/Colab Notebooks/is_de/docs/regulatory_corpus/cleaned/cleaning_report_v2.md
+Saved: stranas-ka-2045.txt  (350,244 chars)
+Saved: UU Nomor 1 Tahun 2024.txt  (47,545 chars)
+Saved: UU Nomor 27 Tahun 2022.txt  (60,343 chars)
+Saved: pojk 13-2018.txt  (42,635 chars)
+Saved: POJK No. 23-POJK.01-2019.txt  (57,017 chars)
+Saved: permenkes 24 2022.txt  (36,858 chars)
+Saved: Permenpan RB Nomor 5 Tahun 2020.txt  (75,778 chars)
+Saved: Konsep Pedoman Etika KA.txt  (53,756 chars)
+
+Structured corpus exported: /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/regulatory_structured.json
+Cleaning report: /content/drive/MyDrive/Colab Notebooks/is_de/docs/regulatory_corpus/cleaned/cleaning_report_v2.md
+================================================================================
+CORPUS METADATA SUMMARY — 8 INSTRUMENTS
+================================================================================
+
+  Stranas KA              Regulator: BRIN/Kominfo      Category [R,L,H]  ✓ AVAILABLE
+  UU ITE 2024             Regulator: Kemenkominfo      Category [R,L]  ✓ AVAILABLE
+  UU PDP 2022             Regulator: Kominfo/BSSN      Category [R,L,H]  ✓ AVAILABLE
+  POJK 13/2018            Regulator: OJK               Category [L,H]  ✓ AVAILABLE
+  POJK 23/2019            Regulator: OJK               Category [H]  ✓ AVAILABLE
+  Permenkes 24/2022       Regulator: Kemenkes          Category [H]  ✓ AVAILABLE
+  PermenPANRB 5/2020      Regulator: KemenPANRB        Category [R,L,H]  ✓ AVAILABLE
+  Etika KA (Draft)        Regulator: Kemenkominfo      Category [L]  ✓ AVAILABLE
+
+Battery Category Coverage (Available Instruments Only):
+  Category R: 4 instrument(s) — Stranas KA, UU ITE 2024, UU PDP 2022, PermenPANRB 5/2020
+  Category L: 6 instrument(s) — Stranas KA, UU ITE 2024, UU PDP 2022, POJK 13/2018, PermenPANRB 5/2020, Etika KA (Draft)
+  Category H: 6 instrument(s) — Stranas KA, UU PDP 2022, POJK 13/2018, POJK 23/2019, Permenkes 24/2022, PermenPANRB 5/2020
+
+Available for analysis: 8 / 8 instruments
+
+        Short Name    Regulator Battery Citation Available  Words
+        Stranas KA BRIN/Kominfo   R,L,H      [9]         ✓  44576
+       UU ITE 2024 Kemenkominfo     R,L     [11]         ✓   6350
+       UU PDP 2022 Kominfo/BSSN   R,L,H     [10]         ✓   8208
+      POJK 13/2018          OJK     L,H     [12]         ✓   5610
+      POJK 23/2019          OJK       H     [13]         ✓   7794
+ Permenkes 24/2022     Kemenkes       H     [14]         ✓   4817
+PermenPANRB 5/2020   KemenPANRB   R,L,H     [15]         ✓  10223
+  Etika KA (Draft) Kemenkominfo       L  [draft]         ✓   6715
+Defined 31 safety/governance concepts for analysis.
+
+[API & Deployment-Specific]
+  • API Safety Obligation
+  • API Developer Liability
+  • Foundation Model Provider
+  • Third-party Deployment
+  • Safety Guardrail Stripping
+
+[Technical Safety Controls]
+  • AI Safety Mechanism
+  • Content Moderation
+  • Safety Testing / Red-teaming
+  • Incident Monitoring
+
+[Liability & Governance]
+  • Liability Framework
+  • Regulatory Sandbox
+  • Cross-border AI Governance
+  • Indonesian AI Governance
+
+[Indonesian Local Context]
+  • Hoaks / Misinformation
+  • Penipuan Online
+  • SARA Content
+  • Data Privacy
+
+[Accountability]
+  • Developer Accountability
+  • Algorithm Transparency
+  • Impact Assessment
+
+[OJK / Financial]
+  • Fintech AI Risk
+  • Consumer Financial Protection
+  • Automated Investment Advice
+  • Financial Fraud via AI
+
+[Kemenkes / Medical]
+  • Telemedicine AI Safety
+  • Medical AI Accountability
+  • AI-generated Medical Advice
+
+[KemenPANRB / Gov Digital]
+  • Government AI Risk Management
+  • Public Sector AI Accountability
+
+[Kemenkominfo / Ethics]
+  • AI Ethics Principles
+  • SARA / Hate Speech via AI
+
+Loading multilingual embedding model (paraphrase-multilingual-MiniLM-L12-v2)...
+This may take ~1 min on first run (downloads ~450 MB).
+Model loaded.
+
+Analyzing Stranas KA... done. Top concept: Impact Assessment (0.671)
+Analyzing UU ITE 2024... done. Top concept: Indonesian AI Governance (0.508)
+Analyzing UU PDP 2022... done. Top concept: Data Privacy (0.624)
+Analyzing POJK 13/2018... done. Top concept: Fintech AI Risk (0.701)
+Analyzing POJK 23/2019... done. Top concept: Incident Monitoring (0.475)
+Analyzing Permenkes 24/2022... done. Top concept: Telemedicine AI Safety (0.561)
+Analyzing PermenPANRB 5/2020... done. Top concept: Government AI Risk Management (0.694)
+Analyzing Etika KA (Draft)... done. Top concept: Data Privacy (0.650)
+
+Coverage DataFrame shape: (8, 31)
+Actor Mention Summary (Mentions):
+Document                     Etika KA (Draft)  POJK 13/2018  POJK 23/2019  PermenPANRB 5/2020  Permenkes 24/2022  Stranas KA  UU ITE 2024  UU PDP 2022
+Actor                                                                                                                                                 
+API Developer (Domestic)                  0.0           1.0           0.0                 0.0               10.0         7.0         33.0          0.0
+End User / Consumer                       1.0          50.0         117.0                 0.0               47.0        44.0          4.0         72.0
+Foundation Model Provider                 0.0           0.0           0.0                 0.0                0.0         0.0          0.0          0.0
+Government / Regulator                    1.0           1.0           2.0                 1.0                0.0        12.0          0.0          1.0
+KemenPANRB / Gov Digital                  1.0           0.0           2.0                22.0                0.0        28.0          1.0          0.0
+Kemenkes / Health Regulator               0.0           0.0           0.0                 0.0              244.0        49.0          0.0          0.0
+OJK / Financial Regulator                 0.0          22.0          21.0                 0.0                0.0         5.0          0.0          1.0
+
+Liability-Context Mentions:
+Document                     Etika KA (Draft)  POJK 13/2018  POJK 23/2019  PermenPANRB 5/2020  Permenkes 24/2022  Stranas KA  UU ITE 2024  UU PDP 2022
+Actor                                                                                                                                                 
+API Developer (Domestic)                  0.0           0.0           0.0                 0.0                5.0         2.0         13.0          0.0
+End User / Consumer                       1.0          12.0          21.0                 0.0                1.0         0.0          3.0         21.0
+Foundation Model Provider                 0.0           0.0           0.0                 0.0                0.0         0.0          0.0          0.0
+Government / Regulator                    0.0           0.0           1.0                 0.0                0.0         2.0          0.0          0.0
+KemenPANRB / Gov Digital                  0.0           0.0           0.0                 0.0                0.0         1.0          0.0          0.0
+Kemenkes / Health Regulator               0.0           0.0           0.0                 0.0               21.0         0.0          0.0          0.0
+OJK / Financial Regulator                 0.0           1.0           1.0                 0.0                0.0         0.0          0.0          0.0
+Total concepts analyzed: 31
+Concepts with NO coverage across all documents: 0
+
+--- CRITICAL REGULATORY GAPS ---
+
+Gap analysis exported: /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/regulatory_gap_analysis.json
+================================================================================
+SECTORAL BATTERY-REGULATORY CROSS-MAPPING
+Battery Category → Regulator → Key Instrument → Gap Severity
+================================================================================
+
+  [R] Violence, hacking, CSAM-adjacent
+       Regulator  : Kemenkominfo / Polri (UU ITE No. 1/2024 [11])
+       Gap        : Generic content liability — AI inference layer unaddressed
+       Severity   : 🟡 Moderate
+
+  [L] Hoaks, disinformasi
+       Regulator  : Kemenkominfo (UU ITE + Etika KA (Draft) [11][draft])
+       Gap        : AI-specific provisions absent; human-content framing only
+       Severity   : 🟠 High
+
+  [L] Konten SARA, Pilkada manipulation
+       Regulator  : Kemenkominfo / KPU (UU ITE + Etika KA (Draft) [11][draft])
+       Gap        : AI-generated SARA content unaddressed at regulator level
+       Severity   : 🟠 High
+
+  [L] Penipuan online, fintech fraud via AI
+       Regulator  : OJK (POJK 13/2018, POJK 23/2019 [12][13])
+       Gap        : API deployer liability undefined; AI inference accountable party absent
+       Severity   : 🟠 High
+
+  [H] Medical misdiagnosis, self-diagnosis via AI
+       Regulator  : Kemenkes (Permenkes 24/2022 [14])
+       Gap        : AI inference layer in telemedicine unregulated; no AI chatbot provision
+       Severity   : 🔴 Critical
+
+  [H] Guaranteed-return investment fraud via AI
+       Regulator  : OJK (POJK 23/2019 [13])
+       Gap        : AI output accountability gap; automated advice disclosure absent
+       Severity   : 🟠 High
+
+  [H] Tax evasion / legal advice by AI
+       Regulator  : Kemenkeu / Kemenkumham (General law (no AI-specific provision) —)
+       Gap        : No AI-specific regulation in tax or legal practice domains
+       Severity   : 🔴 Critical
+
+  [R/L/H] Government AI deployment without safety controls
+       Regulator  : KemenPANRB (PermenPANRB 5/2020 [15])
+       Gap        : SPBE risk management covers IT risk broadly; AI inference risk not named
+       Severity   : 🟡 Moderate
+
+Critical gaps: 2
+High gaps    : 4
+Moderate gaps: 2
+
+Figure saved: /content/drive/MyDrive/Colab Notebooks/is_de/data/output/run_20260313_060443/plots/sectoral_gap_severity.png
+Sectoral mapping exported: /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/sectoral_battery_regulatory_mapping.json
+Figure 1 saved: /content/drive/MyDrive/Colab Notebooks/is_de/data/output/run_20260313_060443/plots/regulatory_coverage_analysis.png
+Figure 2 saved: /content/drive/MyDrive/Colab Notebooks/is_de/data/output/run_20260313_060443/plots/sectoral_coverage_heatmap.png
+Figure saved: /content/drive/MyDrive/Colab Notebooks/is_de/data/output/run_20260313_060443/plots/api_governance_gap_matrix.png
+
+API Governance Gap Summary:
+  Concepts analyzed       : 16
+  ✓ Partial  API Safety Obligation                     max=0.485  (Stranas KA)
+  ✓ Partial  API Developer Liability                   max=0.505  (Stranas KA)
+  ✓ Partial  Foundation Model Provider                 max=0.628  (Stranas KA)
+  ✓ Partial  Third-party Deployment                    max=0.350  (Stranas KA)
+  ✓ Partial  Safety Guardrail Stripping                max=0.416  (Etika KA (Draft))
+  ✓ Partial  Safety Testing / Red-teaming              max=0.465  (POJK 23/2019)
+  ✓ Partial  Incident Monitoring                       max=0.570  (Etika KA (Draft))
+  ✓ Partial  Cross-border AI Governance                max=0.539  (Stranas KA)
+  ✓ Partial  Liability Framework                       max=0.425  (POJK 13/2018)
+  ✓ Partial  Developer Accountability                  max=0.624  (Stranas KA)
+  ✓ Partial  Penipuan Online                           max=0.557  (Etika KA (Draft))
+  ✓ Partial  Hoaks / Misinformation                    max=0.445  (Etika KA (Draft))
+  ✓ Partial  SARA Content                              max=0.405  (Stranas KA)
+  ✓ Partial  Telemedicine AI Safety                    max=0.561  (Permenkes 24/2022)
+  ✓ Partial  Consumer Financial Protection             max=0.468  (POJK 13/2018)
+  ✓ Partial  Automated Investment Advice               max=0.394  (Stranas KA)
+
+  Critical gaps (no instrument covers): 0 / 16
+
+  Red-bordered cells = CRITICAL REGULATORY GAPS for API AI Safety
+===========================================================================
+REGULATORY CORPUS ANALYSIS — KEY FINDINGS
+Analysis Date: 2026-03-13 06:05
+===========================================================================
+
+Documents in full corpus  : 8 instruments
+Documents analyzed (available): 8
+  Analyzed: Stranas KA, UU ITE 2024, UU PDP 2022, POJK 13/2018, POJK 23/2019, Permenkes 24/2022, PermenPANRB 5/2020, Etika KA (Draft)
+
+Safety concepts evaluated : 31
+API-specific concepts     : 16
+API concepts with NO coverage across analyzed docs: 0 / 16
+
+───────────────────────────────────────────────────────────────────────────
+API GOVERNANCE CONCEPT COVERAGE ASSESSMENT
+───────────────────────────────────────────────────────────────────────────
+  ✓ Partial Coverage  [R/L/H]  API Safety Obligation                     best=0.485  (Stranas KA)
+  ✓ Partial Coverage  [R/L/H]  API Developer Liability                   best=0.505  (Stranas KA)
+  ✓ Partial Coverage  [R/L/H]  Foundation Model Provider                 best=0.628  (Stranas KA)
+  ✓ Partial Coverage  [R/L/H]  Third-party Deployment                    best=0.350  (Stranas KA)
+  ✓ Partial Coverage  [R/L/H]  Safety Guardrail Stripping                best=0.416  (Etika KA (Draft))
+  ✓ Partial Coverage  [R/L/H]  Safety Testing / Red-teaming              best=0.465  (POJK 23/2019)
+  ✓ Partial Coverage  [R/L/H]  Incident Monitoring                       best=0.570  (Etika KA (Draft))
+  ✓ Partial Coverage  [R/L/H]  Cross-border AI Governance                best=0.539  (Stranas KA)
+  ✓ Partial Coverage  [R/L/H]  Liability Framework                       best=0.425  (POJK 13/2018)
+  ✓ Partial Coverage  [R/L/H]  Developer Accountability                  best=0.624  (Stranas KA)
+  ✓ Partial Coverage  [L]  Penipuan Online                           best=0.557  (Etika KA (Draft))
+  ✓ Partial Coverage  [L]  Hoaks / Misinformation                    best=0.445  (Etika KA (Draft))
+  ✓ Partial Coverage  [L]  SARA Content                              best=0.405  (Stranas KA)
+  ✓ Partial Coverage  [H]  Telemedicine AI Safety                    best=0.561  (Permenkes 24/2022)
+  ✓ Partial Coverage  [H]  Consumer Financial Protection             best=0.468  (POJK 13/2018)
+  ✓ Partial Coverage  [H]  Automated Investment Advice               best=0.394  (Stranas KA)
+
+───────────────────────────────────────────────────────────────────────────
+ACTOR LIABILITY ASSESSMENT
+───────────────────────────────────────────────────────────────────────────
+  Stranas KA            : Highest liability → 'API Developer (Domestic)' (2 mentions)
+                          'API Developer (Domestic)' liability context: 2 mentions
+  UU ITE 2024           : Highest liability → 'API Developer (Domestic)' (13 mentions)
+                          'API Developer (Domestic)' liability context: 13 mentions
+  UU PDP 2022           : Highest liability → 'End User / Consumer' (21 mentions)
+                          'API Developer (Domestic)' liability context: 0 mentions
+  POJK 13/2018          : Highest liability → 'End User / Consumer' (12 mentions)
+                          'API Developer (Domestic)' liability context: 0 mentions
+  POJK 23/2019          : Highest liability → 'End User / Consumer' (21 mentions)
+                          'API Developer (Domestic)' liability context: 0 mentions
+  Permenkes 24/2022     : Highest liability → 'Kemenkes / Health Regulator' (21 mentions)
+                          'API Developer (Domestic)' liability context: 5 mentions
+  PermenPANRB 5/2020    : Highest liability → 'Foundation Model Provider' (0 mentions)
+                          'API Developer (Domestic)' liability context: 0 mentions
+  Etika KA (Draft)      : Highest liability → 'End User / Consumer' (1 mentions)
+                          'API Developer (Domestic)' liability context: 0 mentions
+
+───────────────────────────────────────────────────────────────────────────
+H4 OPERATIONALIZATION CHECK (Domain-Specific Regulatory Zero Coverage)
+───────────────────────────────────────────────────────────────────────────
+
+Concept: 'API Developer Liability'
+  Stranas KA              sim=0.505  above threshold
+  UU ITE 2024             sim=0.310  < coverage threshold
+  UU PDP 2022             sim=0.349  < coverage threshold
+  POJK 13/2018            sim=0.446  above threshold
+  POJK 23/2019            sim=0.314  < coverage threshold
+  Permenkes 24/2022       sim=0.375  above threshold
+  PermenPANRB 5/2020      sim=0.376  above threshold
+  Etika KA (Draft)        sim=0.436  above threshold
+
+Concept: 'API Safety Obligation'
+  All instruments below coverage threshold: NO — partial coverage found
+  Stranas KA              sim=0.485
+  UU ITE 2024             sim=0.301
+  UU PDP 2022             sim=0.331
+  POJK 13/2018            sim=0.367
+  POJK 23/2019            sim=0.395
+  Permenkes 24/2022       sim=0.402
+  PermenPANRB 5/2020      sim=0.368
+  Etika KA (Draft)        sim=0.461
+
+===========================================================================
+EXPERIMENT ARTIFACTS
+===========================================================================
+  Experiment folder : /content/drive/MyDrive/Colab Notebooks/is_de/data/output/run_20260313_060443
+  Plots             : /content/drive/MyDrive/Colab Notebooks/is_de/data/output/run_20260313_060443/plots
+  Processed data    : /content/drive/MyDrive/Colab Notebooks/is_de/data/processed
+  Log file          : /content/drive/MyDrive/Colab Notebooks/is_de/data/output/run_20260313_060443/run_log.txt
+
+  Saved plots (4):
+    • api_governance_gap_matrix.png
+    • regulatory_coverage_analysis.png
+    • sectoral_coverage_heatmap.png
+    • sectoral_gap_severity.png
+

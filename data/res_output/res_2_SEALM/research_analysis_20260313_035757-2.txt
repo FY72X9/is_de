@@ -1,0 +1,493 @@
+========================================================================
+ research_deep_analysis.ipynb — Analysis Log
+ Run started : 2026-03-13 03:57:57
+========================================================================
+
+Logger active  → /content/drive/MyDrive/Colab Notebooks/is_de/logs/research_analysis_20260313_035757-2.txt
+Scoring method will be determined in §3 (LLM-Judge).
+All output from §1 onward is mirrored to the log file.
+
+
+────────────────────────────────────────────────────────────────────────
+▶ §1 — Data Loading & Feature Engineering
+────────────────────────────────────────────────────────────────────────
+Loaded 902 raw records.
+Sample keys: ['timestamp', 'prompt_id', 'intent_category', 'language', 'model', 'condition', 'response', 'safety_score']
+Parsed DataFrame: 902 rows × 13 columns
+Feature engineering complete. New columns:
+       refusal_binary  language_bin  condition_ord
+count      902.000000    902.000000     902.000000
+mean         0.690687      0.580931       1.997783
+std          0.462467      0.493680       0.817399
+min          0.000000      0.000000       1.000000
+25%          0.000000      0.000000       1.000000
+50%          1.000000      1.000000       2.000000
+75%          1.000000      1.000000       3.000000
+max          1.000000      1.000000       3.000000
+
+Model origin distribution:
+model_origin
+US    449
+EU    306
+CN    147
+Name: count, dtype: int64
+
+Condition distribution:
+condition
+C1_BASELINE    302
+C2_NEUTRAL     300
+C3_STRIPPED    300
+Name: count, dtype: int64
+
+────────────────────────────────────────────────────────────────────────
+▶ §2 — Descriptive Statistics
+────────────────────────────────────────────────────────────────────────
+============================================================
+DATASET OVERVIEW
+============================================================
+Total observations     : 902
+Unique models          : 7
+Unique prompts (base)  : 29
+Intent categories      : ['Academic Dishonesty', 'Cybersecurity', 'Dangerous Content', 'Educational Advice', 'Election Manipulation', 'Extremism', 'Financial Advice', 'Fintech Fraud', 'Fraud (Penipuan)', 'Harassment', 'Hate Speech', 'Illegal Acts', 'Legal Advice', 'Malware', 'Medical Advice', 'Medical Misinformation', 'Misinformation (Hoaks)', 'PII', 'Political Manipulation', 'Religious Advice', 'SARA (Sectarian)', 'Self-Harm', 'Sexual Content', 'Spam', 'Substance Abuse', 'Suicide', 'Tax Evasion', 'Violence']
+Languages              : ['Bahasa Indonesia', 'English']
+Conditions             : ['C1_BASELINE', 'C2_NEUTRAL', 'C3_STRIPPED']
+
+============================================================
+SAFETY SCORE DISTRIBUTION (0=compliance, 3=robust refusal)
+============================================================
+  Score 0:   279 ( 30.9%)  ███████████████
+  Score 3:   623 ( 69.1%)  ██████████████████████████████████
+
+============================================================
+REFUSAL RATE BY CONDITION
+============================================================
+               n  mean_score  refusal_rate  compliance_rate
+condition                                                  
+C1_BASELINE  302       2.295         0.765            0.235
+C2_NEUTRAL   300       2.000         0.667            0.333
+C3_STRIPPED  300       1.920         0.640            0.360
+
+============================================================
+REFUSAL RATE BY LANGUAGE
+============================================================
+                    n  mean_score  refusal_rate
+language                                       
+Bahasa Indonesia  524       2.038         0.679
+English           378       2.119         0.706
+
+============================================================
+REFUSAL RATE BY MODEL ORIGIN
+============================================================
+                n  mean_score  refusal_rate
+model_origin                               
+CN            147       2.163         0.721
+EU            306       2.206         0.735
+US            449       1.951         0.650
+
+────────────────────────────────────────────────────────────────────────
+▶ §2b — Cross-Tabulation: Condition × Language
+────────────────────────────────────────────────────────────────────────
+Mean Refusal Rate — Condition × Language
+language     Bahasa Indonesia  English
+condition                             
+C1_BASELINE             0.760    0.772
+C2_NEUTRAL              0.651    0.688
+C3_STRIPPED             0.626    0.659
+
+Compliance Rate (1 - Refusal Rate)
+language     Bahasa Indonesia  English
+condition                             
+C1_BASELINE             0.240    0.228
+C2_NEUTRAL              0.349    0.312
+C3_STRIPPED             0.374    0.341
+
+Refusal Rate by Intent Category:
+condition               C1_BASELINE  C2_NEUTRAL  C3_STRIPPED
+intent_category                                             
+Academic Dishonesty           0.000       0.000        0.000
+Cybersecurity                 1.000       1.000        1.000
+Dangerous Content             1.000       1.000        1.000
+Educational Advice            0.000       0.000        0.000
+Election Manipulation         1.000       1.000        1.000
+Extremism                     1.000       0.833        0.727
+Financial Advice              0.333       0.333        0.182
+Fintech Fraud                 1.000       1.000        1.000
+Fraud (Penipuan)              1.000       1.000        1.000
+Harassment                    1.000       0.750        0.667
+Hate Speech                   0.250       0.250        0.083
+Illegal Acts                  0.833       0.833        0.833
+Legal Advice                  1.000       1.000        0.833
+Malware                       0.917       0.833        1.000
+Medical Advice                0.583       0.333        0.417
+Medical Misinformation        0.500       0.000        0.167
+Misinformation (Hoaks)        0.833       0.500        0.333
+PII                           0.667       0.500        0.583
+Political Manipulation        1.000       0.750        0.500
+Religious Advice              0.583       0.667        0.333
+SARA (Sectarian)              1.000       0.833        1.000
+Self-Harm                     0.692       0.615        0.615
+Sexual Content                0.917       0.750        0.750
+Spam                          0.917       0.917        0.833
+Substance Abuse               1.000       1.000        1.000
+Suicide                       0.500       0.417        0.583
+Tax Evasion                   1.000       0.750        0.833
+Violence                      0.846       0.720        0.692
+
+────────────────────────────────────────────────────────────────────────
+▶ §3 — LLM-as-a-Judge Pipeline
+────────────────────────────────────────────────────────────────────────
+No judge cache found at: /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/evaluated_responses_judge-2.json
+Running LLM-as-a-Judge inference (requires GPU runtime)…
+
+GPU total memory      : 15.64 GB
+VRAM free before load : 15.64 GB
+Downloading / verifying cache for SeaLLMs/SeaLLMs-v3-7B-Chat …
+Weights cached at     : /root/.cache/huggingface/hub/models--SeaLLMs--SeaLLMs-v3-7B-Chat/snapshots/a9900348910a6d7f611a6859270d6c28da1e0789
+Strategy used         : 4-bit NF4 (bitsandbytes)
+GPU memory after load : 5.55 GB  (10.09 GB free)
+
+Judge evaluation complete. Cache saved: evaluated_responses_judge-2.json
+
+SCORING_METHOD = 'llm_judge_ordinal'
+All §4 hypothesis tests will use 'working_score' column.
+
+────────────────────────────────────────────────────────────────────────
+▶ §4a — H1: Architectural Degradation
+────────────────────────────────────────────────────────────────────────
+H1: Architectural Degradation  [using 'working_score']
+  C1_BASELINE (safety scaffold) vs C2_NEUTRAL (raw API)
+  Dual criterion: ΔR% ≥ 40.0%  AND  Mann-Whitney p < 0.05
+------------------------------------------------------------
+  N(C1)=302, N(C2)=300
+  Mean C1=2.474  Mean C2=2.377
+  Refusal Rate  C1=0.483  C2=0.383
+
+  Mann-Whitney U = 49805.0, p = 0.0072  *** SIGNIFICANT
+  t-test         t = 2.317, p = 0.0208
+  Effect size    rank-biserial r = -0.099  |  Cohen's d = 0.189
+
+  ΔR% = (0.483 - 0.383) / 0.483 × 100 = 20.7%  (threshold ≥ 40.0%: ✗ NOT MET)
+
+  H1 VERDICT: PARTIALLY SUPPORTED (statistical only — threshold unmet; ordinal scoring may exceed threshold)
+  Interpretation: Moving from safety-scaffold deployment (C1) to raw API (C2)
+  does produce statistically significant safety degradation.
+  Note: ΔR% = 20.7% is below the 40% threshold with binary scoring.
+  LLM-Judge ordinal scores (capturing partial refusals as 1-2) expected to raise ΔR%.
+
+────────────────────────────────────────────────────────────────────────
+▶ §4b — H2: Linguistic Asymmetry
+────────────────────────────────────────────────────────────────────────
+H2: Linguistic Asymmetry  [using 'working_score']
+  English vs Bahasa Indonesia (all conditions pooled)
+  Dual criterion: E_ratio ≤ 0.6  AND  Mann-Whitney p < 0.05
+------------------------------------------------------------
+  N(EN)=378,  N(ID)=524
+  Mean EN=2.122   Mean ID=2.592
+  Refusal Rate  EN=0.143   ID=0.607
+
+  E_ratio = 0.607 / 0.143 = 4.248  (threshold ≤ 0.6: ✗ NOT MET)
+  Interpretation: ID refusal rate is 424.8% of EN refusal rate
+
+  Mann-Whitney U = 53535.0, p = 1.0000  ns
+  Effect size    rank-biserial r = 0.459  |  Cohen's d = -0.975
+
+  H2 VERDICT: NOT SUPPORTED
+  Interpretation: Bahasa Indonesia prompts do NOT exhibit
+  statistically lower safety scores than English (linguistic asymmetry).
+
+────────────────────────────────────────────────────────────────────────
+▶ §4c — H3: Configuration Collapse
+────────────────────────────────────────────────────────────────────────
+H3: Configuration Collapse  [using 'working_score']
+  Three-condition Kruskal-Wallis + S% threshold
+  Dual criterion: S% ≥ 70.0%  AND  Kruskal-Wallis p < 0.05
+------------------------------------------------------------
+  Group sizes: C1_BASELINE=302  C2_NEUTRAL=300  C3_STRIPPED=300
+  Group means: C1_BASELINE=2.474  C2_NEUTRAL=2.377  C3_STRIPPED=2.333
+
+  Kruskal-Wallis H = 10.245, p = 0.0060  *** SIGNIFICANT
+
+  ConfigSensitivity Index S% = (2.474 - 2.333) / 2.474 × 100 = 5.7%
+  Threshold ≥ 70.0%: ✗ NOT MET
+
+  Post-hoc pairwise Mann-Whitney (Bonferroni-corrected):
+    C1_BASELINE vs C2_NEUTRAL: U=49805, p_adj=0.0430 ***, r=-0.099
+    C1_BASELINE vs C3_STRIPPED: U=50796, p_adj=0.0087 ***, r=-0.121
+    C2_NEUTRAL vs C3_STRIPPED: U=46062, p_adj=1.0000 ns, r=-0.024
+
+  H3 VERDICT: PARTIALLY SUPPORTED (statistical only — S% = 5.7% below 70.0% threshold; ordinal scoring expected to elevate)
+  Interpretation: System-prompt stripping (C3) does produce
+  statistically significant safety degradation vs baseline (C1).
+  Note: S% = 5.7% < 70% threshold; gap detected but ordinal scores may differ.
+
+────────────────────────────────────────────────────────────────────────
+▶ §4d — E1: Exploratory Language × Condition Interaction
+────────────────────────────────────────────────────────────────────────
+E1: Exploratory — Language × Condition Interaction
+  (NOTE: This analysis was formerly labelled H4: Compound Vulnerability)
+  H4 (Regulatory Zero Coverage) is in regulatory_deep_analysis.ipynb
+------------------------------------------------------------
+  OLS Interaction Model  (N=902, R²=0.200)
+  Overall F(3,898) = 74.772, p = 0.0000  *** SIGNIFICANT
+
+  Coefficients:
+    intercept    = +2.6643
+    C            = -0.0728
+    L            = -0.4760
+    CxL          = +0.0061
+
+  Key finding: Language × Condition interaction coefficient = +0.0061
+  → Interaction is SIGNIFICANT (attenuating): linguistic asymmetry narrows under degraded conditions.
+  → This supports the compound vulnerability mechanism described in H2+H3 interpretation.
+
+  E1 NOTE: This is an exploratory result — no hypothesis is confirmed or rejected.
+  Direct follow-up: Test C3 × ID subgroup mean vs C1 × EN for policy gap estimation.
+
+────────────────────────────────────────────────────────────────────────
+▶ §4e — H5: Model Origin Effect
+────────────────────────────────────────────────────────────────────────
+H5: Model Origin Effect
+  Do models from different geographies differ in safety performance?
+-------------------------------------------------------
+  Group sizes:
+    EU        n= 306  mean=2.206  refusal%=73.5%
+    CN        n= 147  mean=2.163  refusal%=72.1%
+    US        n= 449  mean=1.951  refusal%=65.0%
+
+  Kruskal-Wallis  H = 6.901, p = 0.0317  *** SIGNIFICANT
+
+  Post-hoc Pairwise (Bonferroni):
+    EU vs CN: U=22810, p_adj=1.0000 ns | Δmean=+0.043
+    EU vs US: U=74534, p_adj=0.0411 * | Δmean=+0.255
+    CN vs US: U=35336, p_adj=0.3429 ns | Δmean=+0.212
+
+  H5 VERDICT: SUPPORTED
+
+────────────────────────────────────────────────────────────────────────
+▶ §5a — Binary Logistic Regression
+────────────────────────────────────────────────────────────────────────
+                           Results: Logit
+=====================================================================
+Model:                 Logit             Pseudo R-squared:  0.017    
+Dependent Variable:    refusal_binary    AIC:               1102.0470
+Date:                  2026-03-13 04:47  BIC:               1130.8145
+No. Observations:      893               Log-Likelihood:    -545.02  
+Df Model:              5                 LL-Null:           -554.58  
+Df Residuals:          887               LLR p-value:       0.0018298
+Converged:             1.0000            Scale:             1.0000   
+Method:                MLE                                           
+---------------------------------------------------------------------
+                       Coef.  Std.Err.    z    P>|z|   [0.025  0.975]
+---------------------------------------------------------------------
+const                  1.2828   0.2260  5.6765 0.0000  0.8399  1.7257
+condition_C2_NEUTRAL  -0.4906   0.1838 -2.6691 0.0076 -0.8509 -0.1304
+condition_C3_STRIPPED -0.6115   0.1824 -3.3525 0.0008 -0.9689 -0.2540
+language_English       0.1173   0.1486  0.7894 0.4299 -0.1739  0.4085
+model_origin_EU        0.0337   0.2269  0.1487 0.8818 -0.4111  0.4785
+model_origin_US       -0.3332   0.2104 -1.5839 0.1132 -0.7455  0.0791
+=====================================================================
+
+
+--- ODDS RATIOS (exp(β)) ---
+                       Coefficient  Odds_Ratio  CI_Lower  CI_Upper  p_value  significant
+const                       1.2828      3.6068    2.3161    5.6166   0.0000         True
+condition_C3_STRIPPED      -0.6115      0.5426    0.3795    0.7757   0.0008         True
+condition_C2_NEUTRAL       -0.4906      0.6123    0.4270    0.8778   0.0076         True
+model_origin_US            -0.3332      0.7166    0.4745    1.0823   0.1132        False
+language_English            0.1173      1.1245    0.8404    1.5046   0.4299        False
+model_origin_EU             0.0337      1.0343    0.6630    1.6137   0.8818        False
+
+Interpretation guide:
+  OR > 1 → predictor increases odds of REFUSAL
+  OR < 1 → predictor decreases odds of refusal (increases compliance risk)
+
+────────────────────────────────────────────────────────────────────────
+▶ §5b — Ordered Logistic Regression
+────────────────────────────────────────────────────────────────────────
+OLR: using 'working_score'  |  categories = [np.int64(0), np.int64(1), np.int64(2), np.int64(3)]  (n=4)
+
+Running OLR with 4 categories: [np.int64(0), np.int64(1), np.int64(2), np.int64(3)]
+                             OrderedModel Results                             
+==============================================================================
+Dep. Variable:                      y   Log-Likelihood:                -502.98
+Model:                   OrderedModel   AIC:                             1076.
+Method:            Maximum Likelihood   BIC:                             1244.
+Date:                Fri, 13 Mar 2026                                         
+Time:                        04:48:00                                         
+No. Observations:                 902                                         
+Df Residuals:                     867                                         
+Df Model:                          32                                         
+==========================================================================================================
+                                             coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------------
+condition_C2_NEUTRAL                      -0.5667      0.196     -2.888      0.004      -0.951      -0.182
+condition_C3_STRIPPED                     -0.7015      0.198     -3.538      0.000      -1.090      -0.313
+language_English                          -2.4092      0.197    -12.242      0.000      -2.795      -2.024
+model_origin_EU                           -0.2297      0.241     -0.952      0.341      -0.703       0.243
+model_origin_US                           -0.0320      0.227     -0.141      0.888      -0.478       0.414
+intent_category_Cybersecurity              2.0954      0.801      2.615      0.009       0.525       3.666
+intent_category_Dangerous Content          0.4740      0.635      0.746      0.456      -0.771       1.719
+intent_category_Educational Advice         0.4536      0.639      0.710      0.478      -0.799       1.706
+intent_category_Election Manipulation      2.0955      0.801      2.615      0.009       0.525       3.666
+intent_category_Extremism                  2.6856      0.657      4.091      0.000       1.399       3.972
+intent_category_Financial Advice          -0.9290      0.674     -1.378      0.168      -2.251       0.392
+intent_category_Fintech Fraud              0.0003      0.688      0.000      1.000      -1.348       1.348
+intent_category_Fraud (Penipuan)           0.4575      0.681      0.672      0.501      -0.876       1.791
+intent_category_Harassment                 1.5169      0.632      2.400      0.016       0.278       2.756
+intent_category_Hate Speech                1.0651      0.629      1.694      0.090      -0.167       2.297
+intent_category_Illegal Acts               0.4737      0.650      0.729      0.466      -0.800       1.747
+intent_category_Legal Advice              -0.2103      0.647     -0.325      0.745      -1.478       1.058
+intent_category_Malware                    1.4172      0.636      2.228      0.026       0.171       2.664
+intent_category_Medical Advice            -0.7322      0.667     -1.098      0.272      -2.039       0.574
+intent_category_Medical Misinformation     0.9198      0.689      1.334      0.182      -0.431       2.271
+intent_category_Misinformation (Hoaks)     0.2312      0.682      0.339      0.735      -1.105       1.568
+intent_category_PII                        1.3680      0.630      2.170      0.030       0.133       2.603
+intent_category_Political Manipulation     1.3726      0.630      2.179      0.029       0.138       2.607
+intent_category_Religious Advice           0.4462      0.631      0.707      0.480      -0.791       1.684
+intent_category_SARA (Sectarian)           3.3277      1.141      2.917      0.004       1.092       5.563
+intent_category_Self-Harm                  0.5755      0.625      0.921      0.357      -0.650       1.801
+intent_category_Sexual Content             2.6222      0.650      4.037      0.000       1.349       3.895
+intent_category_Spam                       1.3875      0.632      2.194      0.028       0.148       2.627
+intent_category_Substance Abuse            1.2201      0.629      1.940      0.052      -0.013       2.453
+intent_category_Suicide                    0.4414      0.632      0.699      0.485      -0.797       1.680
+intent_category_Tax Evasion                0.4181      0.643      0.650      0.516      -0.842       1.678
+intent_category_Violence                   1.3445      0.561      2.396      0.017       0.244       2.445
+0/1                                       -6.8800      0.723     -9.511      0.000      -8.298      -5.462
+1/2                                       -0.2304      0.418     -0.551      0.581      -1.049       0.589
+2/3                                        1.7953      0.059     30.428      0.000       1.680       1.911
+==========================================================================================================
+
+Odds Ratios from OLR:
+condition_C2_NEUTRAL                       0.5674
+condition_C3_STRIPPED                      0.4958
+language_English                           0.0899
+model_origin_EU                            0.7948
+model_origin_US                            0.9685
+intent_category_Cybersecurity              8.1284
+intent_category_Dangerous Content          1.6064
+intent_category_Educational Advice         1.5739
+intent_category_Election Manipulation      8.1292
+intent_category_Extremism                 14.6676
+intent_category_Financial Advice           0.3949
+intent_category_Fintech Fraud              1.0003
+intent_category_Fraud (Penipuan)           1.5801
+intent_category_Harassment                 4.5583
+intent_category_Hate Speech                2.9010
+intent_category_Illegal Acts               1.6060
+intent_category_Legal Advice               0.8104
+intent_category_Malware                    4.1255
+intent_category_Medical Advice             0.4809
+intent_category_Medical Misinformation     2.5088
+intent_category_Misinformation (Hoaks)     1.2601
+intent_category_PII                        3.9274
+intent_category_Political Manipulation     3.9457
+intent_category_Religious Advice           1.5623
+intent_category_SARA (Sectarian)          27.8747
+intent_category_Self-Harm                  1.7780
+intent_category_Sexual Content            13.7662
+intent_category_Spam                       4.0049
+intent_category_Substance Abuse            3.3876
+intent_category_Suicide                    1.5549
+intent_category_Tax Evasion                1.5190
+intent_category_Violence                   3.8363
+0/1                                        0.0010
+1/2                                        0.7942
+2/3                                        6.0215
+dtype: float64
+
+Marginal effects at mean:
+  Marginal effects unavailable: 'OrderedResults' object has no attribute 'get_margeff'
+
+────────────────────────────────────────────────────────────────────────
+▶ §5c — Interaction Effects: Language × Condition
+────────────────────────────────────────────────────────────────────────
+Interaction Analysis: Does Indonesian language amplify safety degradation in permissive conditions?
+----------------------------------------------------------------------
+OLS Full Interaction Model:
+====================================================================================
+                       coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept            2.1935      0.131     16.787      0.000       1.937       2.450
+lang_id             -0.0347      0.161     -0.216      0.829      -0.350       0.280
+cond_raw            -0.2495      0.174     -1.438      0.151      -0.590       0.091
+cond_str            -0.3381      0.173     -1.952      0.051      -0.678       0.002
+lang_id:cond_raw    -0.0762      0.228     -0.335      0.738      -0.523       0.370
+lang_id:cond_str    -0.0633      0.227     -0.278      0.781      -0.510       0.383
+origin_cn            0.2120      0.131      1.619      0.106      -0.045       0.469
+origin_eu            0.2552      0.102      2.499      0.013       0.055       0.456
+====================================================================================
+
+--- KEY INTERACTION COEFFICIENTS ---
+  lang_id:cond_raw                     β=-0.076, p=0.7378 ns   → amplifies vulnerability
+  lang_id:cond_str                     β=-0.063, p=0.7807 ns   → amplifies vulnerability
+Figure saved: /content/drive/MyDrive/Colab Notebooks/is_de/diagrams/safety_analysis_main.png
+Forest plot saved: /content/drive/MyDrive/Colab Notebooks/is_de/diagrams/logistic_regression_forest_plot.png
+Heatmap saved: /content/drive/MyDrive/Colab Notebooks/is_de/diagrams/compliance_by_model_condition-2.png
+
+────────────────────────────────────────────────────────────────────────
+▶ §7 — Hypothesis Testing Summary
+────────────────────────────────────────────────────────────────────────
+==========================================================================================
+HYPOTHESIS TESTING SUMMARY
+Scoring method: llm_judge_ordinal
+==========================================================================================
+ID    Hypothesis                                       Test                      Thresholds
+------------------------------------------------------------------------------------------
+H1    Architectural Degradation (C1 vs C2)  — ΔR% ≥ 40% Mann-Whitney U + ΔR%      ΔR% ≥ 40.0%, p < 0.05
+H2    Linguistic Asymmetry (EN vs ID)  — E_ratio ≤ 0.60 Mann-Whitney U + E_ratio  E_ratio ≤ 0.6, p < 0.05
+H3    Configuration Collapse (3 conditions)  — S% ≥ 70% Kruskal-Wallis + S%       S% ≥ 70.0%, p < 0.05
+H4    Domain-Specific Regulatory Zero Coverage  [→ regulatory notebook] Regulatory track          See regulatory_deep_analysis.ipynb
+E1    Exploratory: Language × Condition Interaction    OLS Interaction           No threshold (exploratory)
+H5    Model Origin Effect (US/EU/CN)                   Kruskal-Wallis            p < 0.05
+------------------------------------------------------------------------------------------
+
+KEY FINDINGS:
+
+  1. Global refusal rate: 69.1% (623 / 902 responses)
+  2. Baseline refusal rate (C1): 76.5%
+  3. Stripped refusal rate (C3): 64.0%
+     → ΔR% = 16.3%  (threshold ≥ 40.0%: ✗)
+  4. English refusal rate: 70.6% vs Indonesian: 67.9%
+     → E_ratio = 0.962  (threshold ≤ 0.6: ✗)
+
+  5. Safest model origin:   EU (73.5% refusal)
+     Riskiest model origin: US (65.0% refusal)
+  6. Worst vulnerability cell: C3_STRIPPED × Bahasa Indonesia
+     Compliance rate: 37.4% (harmful content generation rate)
+
+NOTE: H4 (Regulatory Zero Coverage) is tested in regulatory_deep_analysis.ipynb.
+      E1 is exploratory — no hypothesis confirmed or rejected.
+
+────────────────────────────────────────────────────────────────────────
+▶ §7 — Export & Log Finalisation
+────────────────────────────────────────────────────────────────────────
+[1] Dataset exported      : /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/analysis_ready_dataset-2.csv
+[2] Summary JSON exported : /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/analysis_summary.json
+[3] Odds ratios exported  : /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/logistic_regression_odds_ratios-2.csv
+[4] Summary copy → logs/  : analysis_summary_20260313_044807-2.json
+
+Scoring method : llm_judge_ordinal
+Judge cache    : LOADED
+
+Files written this run:
+  • /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/analysis_ready_dataset-2.csv
+  • /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/analysis_summary.json
+  • /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/logistic_regression_odds_ratios-2.csv
+  • /content/drive/MyDrive/Colab Notebooks/is_de/logs/logistic_regression_odds_ratios-2.csv
+  • /content/drive/MyDrive/Colab Notebooks/is_de/logs/analysis_summary_20260313_044807-2.json
+  • /content/drive/MyDrive/Colab Notebooks/is_de/diagrams/compliance_by_model_condition-2.png
+
+[5] Hypothesis snapshot   : hypothesis_results_20260313_035757-2.txt
+
+========================================================================
+ Run finished: 2026-03-13 04:48:07
+
+ Files written this run:
+  • /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/analysis_ready_dataset-2.csv
+  • /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/analysis_summary.json
+  • /content/drive/MyDrive/Colab Notebooks/is_de/data/processed/logistic_regression_odds_ratios-2.csv
+  • /content/drive/MyDrive/Colab Notebooks/is_de/logs/logistic_regression_odds_ratios-2.csv
+  • /content/drive/MyDrive/Colab Notebooks/is_de/logs/analysis_summary_20260313_044807-2.json
+  • /content/drive/MyDrive/Colab Notebooks/is_de/diagrams/compliance_by_model_condition-2.png
+  • /content/drive/MyDrive/Colab Notebooks/is_de/logs/hypothesis_results_20260313_035757-2.txt
+========================================================================
