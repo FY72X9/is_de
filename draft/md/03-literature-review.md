@@ -55,3 +55,26 @@ Prior qualitative assessments of Indonesia's AI governance (primarily grey liter
 ## 2.8 Summary: Literature Gaps Addressed by This Study
 
 This review identifies four gaps that motivate the study's design. First, no empirical study has measured the safety consequence of API configuration changes in an Indonesian deployment context using an ordinal evaluation rubric. Second, prior cross-lingual safety research has not systematically characterized judge-model calibration bias as a methodological variable in cross-lingual evaluation paradigms. Third, Indonesian AI regulatory analysis has relied on qualitative assessment rather than computational corpus analysis. Fourth, no study has unified API safety measurement and regulatory gap analysis within a single theoretical framework. This research addresses all four gaps simultaneously, grounding both empirical measurement and regulatory analysis in the *API-Mediated AI Safety Asymmetry* theoretical construct developed in the next chapter.
+
+```mermaid
+mindmap
+  root((4 Literature Gaps<br/>Addressed by This Study))
+    Empirical Gap
+      No API-layer safety measurement in Indonesian context
+      Configuration layer not isolated as independent variable
+      No ordinal safety corpus for Indonesian LLM benchmarking
+    Methodological Gap
+      Binary evaluation collapses partial guardrail failures
+      Single-judge designs embed cultural calibration bias
+      Cross-lingual judge divergence uncharacterized
+    Governance Gap
+      Indonesian regulatory corpus analyzed qualitatively only
+      No instrument-by-concept coverage matrix exists
+      No dual-model semantic gap analysis for AI governance
+    Theoretical Gap
+      API configuration as safety mediator untheorized in IS
+      Config-regulatory decoupling not formalized
+      No unified safety-governance IS construct for deployment
+```
+
+*Figure 2.1: Mind map of four literature gaps addressed by this study. Each gap corresponds to a methodological or theoretical dimension of the study design: empirical (experimental protocol), methodological (dual LLM-as-a-Judge), governance (dual-model semantic analysis), and theoretical (API-Mediated AI Safety Asymmetry construct).*

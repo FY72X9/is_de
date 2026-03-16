@@ -43,6 +43,43 @@ The transition from C1 to C2 isolates the **architectural dimension** — removi
 
 Each condition generated approximately 300 responses (C1: n=302; C2: n=300; C3: n=300), balanced across languages and models.
 
+```mermaid
+flowchart TD
+    PROMPT["Prompt Battery<br/>n=902 · 28 intent categories<br/>Parallel EN + Bahasa Indonesia"]
+
+    subgraph CONDS["3 Deployment Conditions"]
+        C1["C1_BASELINE<br/>Full safety scaffold<br/>n≈302"]
+        C2["C2_NEUTRAL<br/>Minimal instruction<br/>n≈300"]
+        C3["C3_STRIPPED<br/>Explicit permissive<br/>n≈300"]
+    end
+
+    API["7 Foundation Models via OpenRouter<br/>US · EU · CN origins"]
+    RESP["902 API Responses<br/>data/raw/api_responses_*.json"]
+
+    subgraph EVAL["Dual LLM-as-a-Judge Evaluation"]
+        QWEN["Qwen2.5-3B-Instruct<br/>Primary · 4-bit NF4<br/>Floor-truncated: scores 1–2–3"]
+        SEA["SeaLLMs-v3-7B-Chat<br/>Cross-validation · 4-bit NF4<br/>Full range: scores 0–1–2–3"]
+    end
+
+    SCORED["Dual-Scored Dataset<br/>data/processed/evaluated_responses.json"]
+    STAT["Statistical Analysis<br/>Mann-Whitney · Kruskal-Wallis · OLR · Binary Logit"]
+
+    PROMPT --> C1 & C2 & C3
+    C1 & C2 & C3 --> API
+    API --> RESP
+    RESP --> QWEN & SEA
+    QWEN & SEA --> SCORED
+    SCORED --> STAT
+
+    style C1 fill:#d5f0db,stroke:#27ae60
+    style C2 fill:#fef9e7,stroke:#f39c12
+    style C3 fill:#fce4e4,stroke:#c0392b
+    style QWEN fill:#e8f4f8,stroke:#2980b9
+    style SEA fill:#e8f4f8,stroke:#2980b9
+```
+
+*Figure 4.1: Experimental design and data flow. Prompt battery is executed across three conditions for each of the 7 foundation models; 902 responses are scored by both judges producing a dual-scored dataset for statistical analysis. Color coding reflects safety configuration intensity: green (safe) to red (stripped).*
+
 ### 4.2.3 Prompt Battery Design
 
 The prompt battery covers three categorical tiers and 28 distinct intent categories, with parallel versions in English and Bahasa Indonesia for each prompt:
@@ -169,6 +206,37 @@ The full eight-instrument corpus spans all ministerial domains of Indonesian AI 
 
 Raw corpus texts contain OCR artifacts from PDF extraction. The cleaning pipeline proceeds: (1) Unicode normalization (NFKC); (2) OCR correction via curated 50+ pattern regex map (e.g., `REPIJBUK → REPUBLIK`); (3) boilerplate and page-header removal; (4) mid-sentence line-break correction from PDF column splitting; (5) structural parsing into BAB/Pasal/Ayat JSON hierarchy. Cleaning reduced corpus by 0.0–1.9% per document. Structured output resides in `data/processed/regulatory_structured.json`.
 
+```mermaid
+flowchart TD
+    DOCS["8 Raw Regulatory Documents<br/>93,293 total words<br/>Stranas KA · UU PDP · UU ITE<br/>POJK 13/18 · POJK 23/19<br/>Permenkes · PermenPANRB · Etika KA"]
+
+    CLEAN["Corpus Cleaning Pipeline<br/>Unicode NFKC · OCR correction<br/>Boilerplate removal · BAB/Pasal/Ayat parsing"]
+
+    subgraph EMBED["Dual Embedding Models"]
+        MINI["paraphrase-multilingual-MiniLM-L12-v2<br/>117M params · document-level<br/>Threshold: 0.35"]
+        E5["intfloat/multilingual-e5-base<br/>278M params · 100-word chunks<br/>Threshold: 0.82"]
+    end
+
+    COVERS["Coverage Matrix<br/>31 AI safety concepts × 8 instruments"]
+    ACTOR["Actor Liability Mapping<br/>4 actor categories · proximity NLP"]
+    GAPS["Dual-Confirmed Gap Matrix<br/>Below threshold in BOTH models<br/>= Absolute regulatory absence"]
+    SEV["Sectoral Severity Classification<br/>Critical · High · Moderate · Low<br/>Evaluator-invariant result"]
+
+    DOCS --> CLEAN
+    CLEAN --> MINI & E5
+    MINI & E5 --> COVERS
+    CLEAN --> ACTOR
+    COVERS --> GAPS
+    GAPS & ACTOR --> SEV
+
+    style MINI fill:#e8f4f8,stroke:#2980b9
+    style E5 fill:#d5f0db,stroke:#27ae60
+    style GAPS fill:#fce4e4,stroke:#c0392b
+    style SEV fill:#fce4e4,stroke:#c0392b
+```
+
+*Figure 4.2: Regulatory corpus analysis pipeline. Dual embedding models operate as independent evaluators; dual-confirmed gaps (below threshold in both) constitute absolute regulatory absences. Actor liability mapping runs in parallel on the cleaned corpus. Both streams feed the evaluator-invariant sectoral severity classification.*
+
 ### 4.5.3 Dual-Model Semantic Coverage Analysis
 
 This study employs two embedding models as independent semantic coverage evaluators, a design choice motivated by the need for convergent validity in regulatory gap identification:
@@ -178,6 +246,10 @@ This study employs two embedding models as independent semantic coverage evaluat
 **Cross-validation:** `intfloat/multilingual-e5-base` [37] — 278M parameter contrastive encoder, chunk-based strategy (100-word windows, max similarity per document), threshold 0.82. Assesses whether any 100-word passage in the document addresses the concept with substantive semantic proximity.
 
 The threshold asymmetry (0.35 vs. 0.82) reflects each model's distinct similarity space: MiniLM's 0.35 marks the minimum meaningful semantic overlap boundary in its 0.0–1.0 cosine space; E5's 0.82 marks substantive topical coverage in its compressed 0.45–0.95 space, where contrastive training pushes moderately related passages into the 0.80–0.88 band. **Dual-confirmed gaps** — concepts scored below threshold in both models — represent absolute regulatory absences: no single 100-word passage in any of the eight documents produces adequate semantic similarity in either sensitivity regime.
+
+![Figure 4.3: Embedding Model Comparison](../../diagrams/charts_gov/fig_gov01_model_comparison.png)
+
+*Figure 4.3: Architecture specifications, cosine similarity scale comparison, and coverage gap counts per regulatory instrument for both embedding models (MiniLM-L12-v2 vs. E5-base). Left panel: model architecture summary. Centre panel: each model's operating similarity range with threshold position. Right panel: coverage gap count per instrument across 16 API-governance concepts — lower is better (fewer gaps).*
 
 Coverage analysis runs across 31 AI safety concepts in six groups: API and deployment-specific (16 concepts, primary targets for H4), technical safety controls, liability and governance, Indonesian local context, accountability, financial/medical/government domain-specific concepts. The concept battery employs bilingual descriptors (English label + Indonesian paraphrase) to capture regulatory vocabulary in both languages.
 

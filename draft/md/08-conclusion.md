@@ -40,6 +40,36 @@ The results generate four evidence-based reform recommendations, each grounded i
 
 **Recommendation 4 — Commission Sectoral AI Safety Annexes for Permenkes and POJK.** Medical AI and tax/legal AI exhibit Critical-severity regulatory gaps confirmed by both embedding models and the actor liability analysis. Coordinated sectoral guidance — a *Surat Edaran Menkes* for medical AI chatbot safety and a *Surat Edaran OJK* for AI-generated investment and financial advice — would address these critical sectors without requiring legislative revision. The existing regulatory frameworks (Permenkes 24/2022 for telemedicine, POJK 13/2018 for fintech) provide the jurisdictional foundation; the necessary additions are AI-specific inference-layer safety obligations assigned to platform operators.
 
+```mermaid
+flowchart TD
+    EVIDENCE["Empirical Evidence Base<br/>OR=0.543 C3_STRIPPED · p=0.0008<br/>0 FMP liability mentions across 8 instruments<br/>2 Critical sectoral gaps · 37.4% worst-cell compliance"]
+
+    R1["Rec 1: Binding API Config Minimum Standard<br/>Peraturan Menteri Kominfo<br/>System-prompt safety floor for consumer AI<br/>Enforced at app registration via safety audit"]
+    R2["Rec 2: Amend UU ITE<br/>Name Foundation Model Provider + API Deployer<br/>as distinct regulated actors<br/>Two-tier liability architecture (cf. EU AI Act)"]
+    R3["Rec 3: Elevate Etika KA to Binding Peraturan Menteri<br/>Advisory draft → enforceable ministerial regulation<br/>Zero E5 gaps: AI governance vocabulary ready<br/>Bridges Stranas KA aspirations → UU ITE enforcement"]
+    R4["Rec 4: Sectoral AI Safety Annexes<br/>SE Kemenkes: AI chatbot · telemedicine safety<br/>SE OJK: AI investment · financial advice<br/>Critical-severity gaps confirmed by both models"]
+
+    FLOOR["Config-Layer Protection Floor<br/>All consumer API deployments<br/>in Indonesian market"]
+    SECTOR["Sector-Specific Inference Obligations<br/>Medical · Financial · Legal domains<br/>Named actors · Enforceable standards"]
+    GOAL["API Safety Governance Gap Closed<br/>Quantified risk addressed by<br/>measurable regulatory requirement"]
+
+    EVIDENCE --> R1 & R2 & R3 & R4
+    R1 & R2 --> FLOOR
+    R3 & R4 --> SECTOR
+    FLOOR & SECTOR --> GOAL
+
+    style EVIDENCE fill:#fce4e4,stroke:#c0392b
+    style R1 fill:#e8f4f8,stroke:#2980b9
+    style R2 fill:#e8f4f8,stroke:#2980b9
+    style R3 fill:#e8f4f8,stroke:#2980b9
+    style R4 fill:#e8f4f8,stroke:#2980b9
+    style FLOOR fill:#fef9e7,stroke:#f39c12
+    style SECTOR fill:#fef9e7,stroke:#f39c12
+    style GOAL fill:#d5f0db,stroke:#27ae60
+```
+
+*Figure 7.1: Policy recommendation roadmap. Four evidence-based recommendations (blue) flow from the empirical evidence base (red) to two intermediate reform outcomes (yellow) converging on governance gap closure (green). Recommendations 1 and 2 address the configuration layer floor; Recommendations 3 and 4 address sector-specific inference obligations. Each recommendation is independently implementable without primary legislative amendment except Rec 2 (requires UU ITE amendment).*
+
 ## 7.4 Future Research Directions
 
 Three research directions emerge from the limitations and findings of this study:

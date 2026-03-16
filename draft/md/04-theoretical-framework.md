@@ -36,6 +36,29 @@ The temporal-domain dimension characterizes safety validation lag for domain-tra
 
 *Stranas KA*'s aggressive AI adoption timeline [9] explicitly targets healthcare, finance, and public administration as priority sectors. Deploying API-mediated AI in these high-risk domains without domain-specific safety recertification for Indonesian regulatory contexts constitutes temporal-domain safety asymmetry: models designed and safety-tested for one regulatory environment are deployed in another, with zero Indonesian sectoral safety validation requirements.
 
+```mermaid
+graph TB
+    CORE["API-Mediated AI Safety Asymmetry<br/>Central IS Construct"]
+
+    D1["Architectural Dimension<br/>Scaffolding layer removal<br/>C1 to C2 transition<br/>ΔR% ≈ 20.6% — H1"]
+    D2["Observational Dimension<br/>Degraded monitoring telemetry<br/>No incident registry<br/>No cross-border log sharing"]
+    D3["Configurational Dimension<br/>Deployer system-prompt choice<br/>C1 to C3: OR = 0.543<br/>Primary policy lever — H3"]
+    D4["Temporal-Domain Dimension<br/>Safety validation lag<br/>Domain-transposition risk<br/>Medical · Tax/Legal → Critical — H4"]
+
+    CORE --- D1
+    CORE --- D2
+    CORE --- D3
+    CORE --- D4
+
+    style CORE fill:#2c3e50,stroke:#1a252f,color:#ecf0f1
+    style D1 fill:#e8f4f8,stroke:#2980b9
+    style D2 fill:#e8f4f8,stroke:#2980b9
+    style D3 fill:#fce4e4,stroke:#c0392b
+    style D4 fill:#fef9e7,stroke:#f39c12
+```
+
+*Figure 3.1: Four analytical dimensions of the API-Mediated AI Safety Asymmetry construct. The configurational dimension (red border) receives the strongest empirical grounding and is the primary policy lever. Architectural and temporal-domain dimensions carry paired hypothesis tests (H1 for architectural; H4 for temporal-domain). The observational dimension informs structural governance interpretation.*
+
 ## 3.3 Theoretical Anchors
 
 The API-Mediated AI Safety Asymmetry construct connects to several theoretical traditions that this study draws upon for hypothesis generation, analysis design, and interpretation.
@@ -75,5 +98,39 @@ Gap Matrix (31 concepts × 8 instruments)
         ↓ Actor Liability Mapping
 Accountability Vacuum Identification
 ```
+
+```mermaid
+flowchart LR
+    subgraph IV["Independent Variables"]
+        FM["Foundation Model<br/>weight-level safety"]
+        ORIG["Model Geographic Origin<br/>US n=449 · EU n=306 · CN n=147"]
+    end
+
+    subgraph MOD["Moderators"]
+        LANG["Language<br/>English n=378 · Bahasa Indonesia n=524"]
+        CONFIG["API Configuration<br/>C1 BASELINE · C2 NEUTRAL · C3 STRIPPED"]
+    end
+
+    subgraph DV["Dependent Measures"]
+        ORD["Ordinal Safety Score 0–3<br/>Dual LLM-as-a-Judge"]
+        BIN["Binary Refusal Rate<br/>Evaluator-invariant"]
+    end
+
+    subgraph REG["Parallel Regulatory Track"]
+        CORPUS["8 Indonesian Instruments<br/>93,293 words"]
+        GAP["Gap Matrix<br/>31 concepts × 8 instruments"]
+        ACTOR["Actor Liability Map<br/>FMP: 0 mentions"]
+    end
+
+    FM --> CONFIG
+    ORIG --> CONFIG
+    LANG -->|"Moderates"| CONFIG
+    CONFIG --> ORD
+    CONFIG --> BIN
+    CORPUS --> GAP
+    GAP --> ACTOR
+```
+
+*Figure 3.2: Full conceptual model. Left path: experimental track — foundation model safety properties are modulated by API configuration (primary IV), with language and model origin as moderators, producing ordinal and binary safety measures as dependent variables. Right path: regulatory track — corpus semantic analysis generates the gap matrix and actor liability map as parallel evidence. Both tracks converge on the API-Mediated AI Safety Asymmetry construct.*
 
 The theoretical model predicts that (a) configuration changes produce monotonic safety degradation (H1, H3), (b) Indonesian-language prompts receive weaker safety scores than English (H2), (c) model origin moderates safety outcomes (H5), and (d) the regulatory corpus fails to address the API configuration layer as a regulated variable (H4). The empirical results reported in Chapter 5 confirm or partially confirm each prediction while revealing measurement complexities — particularly judge-model calibration bias in cross-lingual assessment — that enrich the theoretical understanding of API-mediated AI safety asymmetry.

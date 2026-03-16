@@ -14,6 +14,26 @@ Configuration choices by API integrators drive safety outcomes (H3, OR = 0.543�
 
 This finding extends the Regulatory Gap Theory [2][8] into a specific operational context: the gap is not abstract. It is a measurable quantity — 14.6 percentage points of additional harmful compliance across the compound vulnerability axis — attached to a specific, identifiable regulatory intervention point: the API deployer's system-prompt configuration. Indonesian regulatory reform that addresses this single intervention point could close the most quantified portion of the identified safety gap without requiring comprehensive AI legislation.
 
+```mermaid
+flowchart LR
+    INTEGRATOR["Indonesian API Integrator<br/>Applies C3_STRIPPED system prompt<br/>Legally unconstrained choice"]
+    HARM["Safety Failure Output<br/>36.0% compliance under C3<br/>OR = 0.543 refusal odds removed"]
+    USER["End User<br/>Absorbs harmful content<br/>No direct regulatory recourse"]
+    REG["Indonesian Regulatory System<br/>8 instruments<br/>Zero config floor<br/>Zero FMP liability"]
+
+    INTEGRATOR -->|"Configures and deploys"| HARM
+    HARM -->|"Delivered to"| USER
+    REG -.->|"No minimum config standard<br/>No enforcement mechanism"| INTEGRATOR
+    USER -.->|"No incident registry<br/>No regulatory feedback loop"| REG
+
+    style INTEGRATOR fill:#fef9e7,stroke:#f39c12
+    style HARM fill:#fce4e4,stroke:#c0392b
+    style REG fill:#fce4e4,stroke:#c0392b
+    style USER fill:#e8f4f8,stroke:#2980b9
+```
+
+*Figure 6.1: Configuration-regulatory decoupling loop. API integrators make unconstrained configuration choices (solid arrows = technical dependency); the regulatory system provides no corrective feedback to deployers, and users absorb harm with no registry mechanism feeding back to regulators (dashed arrows = absent accountability). The loop has no self-correcting mechanism under current Indonesian law.*
+
 ## 6.3 The Socio-Technical Accountability Vacuum
 
 Actor liability mapping reveals that Foundation Model Provider liability achieves zero mentions across 93,293 words of Indonesian regulatory text spanning eight instruments. This finding operationalizes Hollnagel's [7] accountability diffusion mechanism at the international level: when the entity that designs the safety architecture (the foundation model provider) exists outside Indonesian jurisdiction and the entity that configures the deployment (the domestic API integrator) faces no regulatory safety obligation, the safety outcome becomes an externality absorbed by the end user.
