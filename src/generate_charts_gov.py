@@ -132,36 +132,39 @@ def fig_gov01_model_comparison():
     # ── Left: Model specs table ──
     ax.axis("off")
     attr = ["Model ID", "Developer", "Parameters", "Architecture",
-            "Max seq length", "Cosine range", "Coverage threshold",
-            "Observed range", "Best instrument", "Corpus peak score"]
-    mini = ["paraphrase-multilingual-MiniLM-L12-v2", "sentence-transformers",
-            "117 M", "12-layer transformer (distilled)", "128 tokens",
+            "Max seq len", "Cosine range", "Threshold",
+            "Observed range", "Best instrument", "Peak score"]
+    mini = ["paraphrase-multilingual-\nMiniLM-L12-v2", "sentence-transformers",
+            "117 M", "12-layer transformer\n(knowledge-distilled)", "128 tokens",
             "0.0 – 1.0", "0.35", "0.058 – 0.701",
-            "POJK 13/2018 (Fintech AI Risk)", "0.701"]
-    e5   = ["intfloat/multilingual-e5-base", "Microsoft / NTNU",
-            "278 M", "12-layer transformer (contrastive)", "512 tokens",
+            "POJK 13/2018\n(Fintech AI Risk)", "0.701"]
+    e5   = ["intfloat/\nmultilingual-e5-base", "Microsoft / NTNU",
+            "278 M", "12-layer transformer\n(contrastive trained)", "512 tokens",
             "0.45 – 0.95", "0.82", "0.787 – 0.891",
-            "PermenPANRB 5/2020 (Gov AI Risk)", "0.891"]
+            "PermenPANRB 5/2020\n(Gov AI Risk Mgmt)", "0.891"]
 
     col_labels = ["Attribute", "MiniLM-L12-v2", "E5-Base"]
     table_data = [[a, m, e] for a, m, e in zip(attr, mini, e5)]
-    # bbox=[x0, y0, width, height] in axes-fraction coordinates
     t = ax.table(
         cellText=table_data, colLabels=col_labels,
-        cellLoc="center", bbox=[0.0, 0.06, 1.0, 0.87],
+        cellLoc="center", bbox=[0.01, 0.03, 0.98, 0.91],
     )
     t.auto_set_font_size(False)
-    t.set_fontsize(8.5)
-    t.auto_set_column_width([0, 1, 2])
+    t.set_fontsize(8)
+    # Manually assign column widths (fractions must sum to 1.0)
+    # Col-0 = Attribute (shorter labels) ~21%, Col-1 = MiniLM ~40%, Col-2 = E5 ~39%
+    col_w = {0: 0.21, 1: 0.40, 2: 0.39}
     for (r, c), cell in t.get_celld().items():
         cell.set_linewidth(0.6)
+        cell.set_width(col_w[c])
+        cell.PAD = 0.06          # internal padding fraction
         if r == 0:
             cell.set_facecolor("#1e3a5f")
             cell.set_text_props(color="white", fontweight="bold")
-        elif r % 2 == 1:          # odd data rows — slightly darker
+        elif r % 2 == 1:
             bg = {0: "#F3F4F6", 1: "#DBEAFE", 2: "#DCFCE7"}
             cell.set_facecolor(bg.get(c, "#F3F4F6"))
-        else:                      # even data rows — lighter
+        else:
             bg = {0: "#FFFFFF", 1: "#EFF6FF", 2: "#F0FDF4"}
             cell.set_facecolor(bg.get(c, "#FFFFFF"))
     ax.set_title("Model Architecture Specifications",
@@ -217,10 +220,10 @@ def fig_gov01_model_comparison():
     ax3.bar(x - w / 2, MINI_GAPS, w, color=C_MINI, alpha=0.85, label="MiniLM (thr 0.35)")
     ax3.bar(x + w / 2, E5_GAPS,   w, color=C_E5,   alpha=0.85, label="E5-Base (thr 0.82)")
     for i, (m, e) in enumerate(zip(MINI_GAPS, E5_GAPS)):
-        ax3.text(i - w / 2, m + 0.18, str(int(m)),
-                 ha="center", fontsize=9, color=C_MINI, fontweight="bold")
-        ax3.text(i + w / 2, e + 0.18, str(int(e)),
-                 ha="center", fontsize=9, color=C_E5,   fontweight="bold")
+        ax3.text(i - w / 3, m + 0.125, str(int(m)),
+                 ha="center", fontsize=8, color=C_MINI, fontweight="bold")
+        ax3.text(i + w / 3, e + 0.125, str(int(e)),
+                 ha="center", fontsize=8, color=C_E5,   fontweight="bold")
     ax3.set_xticks(x)
     ax3.set_xticklabels(
         [d.replace("\n", " ") for d in DOCS_SHORT],
@@ -230,7 +233,7 @@ def fig_gov01_model_comparison():
     ax3.set_title("Coverage Gap Count per Instrument\n(16 API-governance concepts)",
                   fontsize=10, fontweight="bold")
     ax3.legend(fontsize=8.5, loc="upper right", framealpha=0.88, edgecolor="#CBD5E1")
-    ax3.set_ylim(0, 13.5)
+    ax3.set_ylim(0, 18)
     ax3.set_xlim(-0.65, 7.85)
     ax3.axhline(8, ls=":", color="gray", lw=1.2, alpha=0.55)
     # "50%" label — safely inside the right edge
@@ -282,7 +285,7 @@ def fig_gov02_gap_severity():
     for i, (bar, sev, gap) in enumerate(zip(bars, severity, gaps)):
         ax.text(bar.get_width() + 0.04, i, sev, va="center", fontsize=9, fontweight="bold",
                 color=colors[scores[i]])
-        ax.text(0.04, i - 0.27, gap, va="center", fontsize=7.8, color="#374151",
+        ax.text(0.04, i - 0.4, gap, va="center", fontsize=7.8, color="#001F4B",
                 fontstyle="italic")
 
     ax.set_yticks(y)
@@ -519,7 +522,7 @@ def fig_gov06_max_coverage():
         fontsize=10.5, fontweight="bold"
     )
     ax.legend(fontsize=8.5, loc="lower right")
-    ax.set_xlim(0, 1.0)
+    ax.set_xlim(0, 1.4)
     plt.tight_layout()
     plt.savefig(os.path.join(OUT_DIR, "fig_gov06_max_coverage.png"), bbox_inches="tight")
     plt.close()
@@ -649,7 +652,7 @@ def fig_gov08_instrument_ranking():
     ax2.set_ylabel("% API Concepts Below Threshold", fontsize=9)
     ax2.set_title("Coverage Gap Percentage\n(16 API concepts)", fontsize=10, fontweight="bold")
     ax2.legend(fontsize=8)
-    ax2.set_ylim(0, 75)
+    ax2.set_ylim(0, 100)
 
     # ── Instrument ranking radar (simplified: parallel coordinates) ──
     ax3 = axes[2]
