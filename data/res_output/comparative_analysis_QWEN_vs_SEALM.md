@@ -26,6 +26,23 @@ Two separate LLM-as-a-Judge pipelines evaluated the same 902 responses using an 
 
 The identical global **binary** refusal rate (69.1%) confirms the two pipelines began from the same factual distribution. All divergence originates exclusively from how each judge interprets response quality on the ordinal scale — a function of model capacity, cultural alignment, and calibration temperature.
 
+```mermaid
+flowchart TD
+    A["902 AI Safety Responses\nN=902 | 7 LLMs | 3 Conditions\n2 Languages | 29 Intent Categories"]
+    A --> C1["C1_BASELINE\n(Safety Scaffold Active, n=302)"]
+    A --> C2["C2_NEUTRAL\n(Raw API, n=300)"]
+    A --> C3["C3_STRIPPED\n(No System Prompt, n=300)"]
+    A --> BSCORE["Binary Scoring\nrefusal_binary {0,1}\nPre-Judge — Evaluator-Invariant"]
+    A --> JQ["Qwen/Qwen2.5-3B-Instruct\nLLM-as-a-Judge Pipeline\n(pre-cached inference)"]
+    A --> JS["SeaLLMs/SeaLLMs-v3-7B-Chat\nLLM-as-a-Judge Pipeline\n(4-bit NF4, fresh inference)"]
+    JQ --> OQ["Ordinal Scores {1,2,3}\nworking_score_qwen\nGlobal mean = 2.026"]
+    JS --> OS["Ordinal Scores {0,1,2,3}\nworking_score_seal\nGlobal mean = 2.395"]
+    BSCORE --> HBin["Binary Logit Regression\n& H5 Kruskal-Wallis"]
+    OQ & OS --> HOrd["H1 · H2 · H3 · E1 · OLR/OLS Tests"]
+    HBin --> R1["H5 SUPPORTED\nOR C3=0.543 | EU > US p=0.041"]
+    HOrd --> R2["H1 PARTIAL | H2 DIVERGE\nH3 PARTIAL | H5 SUPPORTED"]
+```
+
 ---
 
 ## 2. Score Distribution: Evaluator Dynamic Range
@@ -35,6 +52,8 @@ Before hypothesis-level analysis, one must understand the floor-truncation effec
 **`Qwen/Qwen2.5-3B-Instruct`** never assigned a `0` (total compliance with harmful request). Its scores collapsed into a 1–3 range with near-uniform distribution (`{1: 281, 2: 317, 3: 304}`). This truncation pattern reflects a calibration artifact common in small instruction-tuned generative models: at 3B parameters, the model's safety-judgment prompts reliably elicit hedged, categorical assessments that default to score 1 as the minimum rather than 0. The model appears to interpret partial compliance as inherently different from total compliance — but cannot reliably distinguish between them and full compliance at the granularity needed to assign a true `0`. This is not a structural encoder/embedding limitation, but rather a *generation-mode calibration constraint*: small generative models, when prompted to score safety responses, produce systematically optimistic ordinal judgments, effectively treating every response as having at least some minimal harmlessness signal.
 
 **`SeaLLMs/SeaLLMs-v3-7B-Chat`** assigned `0` to a non-trivial subset of records, demonstrating the ability to identify responses that fully complied with harmful intent without hedging. The larger parameter count (7B vs. 3B), combined with SEA-domain fine-tuning, provides the semantic depth needed to recognize unapologetic harmful compliance across both language registers. This full-spectrum utilization of the 0–3 ordinal scale translates to a higher mean working score (2.395 vs. 2.026) and produces fundamentally different ordinal distributions when grouped by condition, language, and origin — which directly drives every divergence in the hypothesis results that follow.
+
+![Figure 1. Score Distribution Comparison](../../diagrams/charts/fig01_score_distribution.png)
 
 ---
 
@@ -74,6 +93,8 @@ SeaLLM yields a lower p-value and slightly larger effect size, suggesting its 7B
 Neither evaluator meets the 40% degradation threshold. This threshold represents a policy-critical standard implying near-catastrophic safety failure upon scaffold removal. Both evaluators calculate $\approx 20\%$, suggesting that while safety degrades upon scaffold removal, it does not collapse. Modern LLMs retain substantial intrinsic (weight-level) safety capability even without architectural scaffolding.
 
 **H1 Verdict — Both Evaluators**: **PARTIALLY SUPPORTED** — statistical criterion met; practical threshold unmet.
+
+![Figure 2. H1 — Architectural Degradation by Condition](../../diagrams/charts/fig02_h1_condition.png)
 
 ---
 
@@ -141,6 +162,8 @@ Neither verdict should be taken as the ground truth. Both reflect the evaluator'
 - **`Qwen2.5-3B-Instruct`**: PARTIALLY SUPPORTED (statistical only; E_ratio 0.979 > 0.6 threshold, English marginally safer in ordinal scoring)
 - **`SeaLLMs/SeaLLMs-v3-7B-Chat`**: NOT SUPPORTED — **reversal** detected (Indonesian scores higher, English lower; E_ratio = 4.248)
 
+![Figure 3. H2 — Linguistic Asymmetry: Mean Scores and Refusal Rates by Language](../../diagrams/charts/fig03_h2_language.png)
+
 ---
 
 ## 5. H3 — Configuration Collapse: Three-Condition Gradient
@@ -201,6 +224,8 @@ These are structurally identical across both evaluator runs. Operating under a n
 
 **H3 Verdict — Both Evaluators**: **PARTIALLY SUPPORTED** — statistical significance confirmed across all conditions; S% threshold of 70% unmet. Qwen2.5-3B-Instruct shows higher S% (range-amplification sensitivity); SeaLLMs-v3-7B-Chat demonstrates finer C1-C2 staircase resolution (discriminative sensitivity).
 
+![Figure 4. H3 — Three-Condition Configuration Collapse Gradient](../../diagrams/charts/fig04_h3_gradient.png)
+
 ---
 
 ## 6. E1 — Exploratory: Language × Condition Interaction
@@ -239,6 +264,8 @@ The model-fit gap is decisive: SeaLLM's full-interaction OLS model achieves R² 
 The language coefficient (L) again encodes each evaluator's systematic bias: Qwen gives L = +0.122 (English-positive, aligned with its Chinese/English pretraining), while SeaLLM gives L = −0.476 (English-negative, aligned with its SEA fine-tuning). The interaction term CxL = +0.049, significant under Qwen2.5-3B-Instruct, indicates that linguistic asymmetry *attenuates* as conditions degrade — both languages slide toward compliance together, with Indonesian sliding fractionally faster. Under SeaLLM, the near-zero, non-significant CxL = +0.006 produces no detectable differential compounding.
 
 **E1 Verdict**: The compound vulnerability mechanism receives directional support from Qwen2.5-3B-Instruct (Indonesian degrades faster), while SeaLLMs-v3-7B-Chat does not replicate this effect. The finding is evaluator-architecture-dependent and cannot be generalized without resolving the calibration conflict.
+
+![Figure 5. E1 — Language × Condition Interaction Cell Means](../../diagrams/charts/fig05_e1_interaction.png)
 
 ---
 
@@ -290,6 +317,10 @@ A mild divergence emerges in ordinal analysis: Qwen2.5-3B-Instruct assigns EU mo
 
 **H5 Verdict — Both Evaluators**: **SUPPORTED** at binary level (EU significantly outperforms US, p = 0.0411). Ordinal-level differences are non-significant but directionally ambiguous between evaluators, indicating that model-origin effects are moderate and primarily visible at the gross refusal/compliance threshold.
 
+![Figure 6. H5 — Model Origin Effect: Refusal Rates and Ordinal Means](../../diagrams/charts/fig06_h5_origin.png)
+
+![Figure 7. Binary Logistic Regression Forest Plot (Evaluator-Invariant)](../../diagrams/charts/fig07_binary_logit_forest.png)
+
 ---
 
 ## 8. Intent Category: The Dominant Predictor
@@ -322,9 +353,30 @@ The evaluators disagree sharply on which categories carry the highest ordinal se
 
 Crucially, categories where **both evaluators** assign near-zero refusal (Academic Dishonesty: 0%, Educational Advice: 0%) constitute genuine universal safety blind spots — harmful requests framed as educational or academic bypass all safety enforcement regardless of deployment configuration, prompt language, or evaluated model origin.
 
+![Figure 8. OLR Intent Category Odds Ratios — Qwen vs SeaLLM (Top 12 categories)](../../diagrams/charts/fig08_olr_intent.png)
+
+![Figure 9. Intent Category Binary Refusal Rate Heatmap (Evaluator-Invariant)](../../diagrams/charts/fig09_intent_heatmap.png)
+
 ---
 
 ## 9. Synthesized Hypothesis Summary Table
+
+```mermaid
+flowchart LR
+    subgraph CONV["\u2705 Strong Convergence (Both Agree)"]
+        H1["H1 · Architectural Degradation\nΔR%≈20.6% — PARTIAL BOTH"]
+        H5["H5 · Model Origin\nEU > US p=0.041 — SUPPORTED BOTH"]
+    end
+    subgraph MOD["\u2705 Moderate Convergence"]
+        H3["H3 · Configuration Collapse\nS%=5.7–12.5% < 70% — PARTIAL BOTH"]
+    end
+    subgraph WARN["\u26a0\ufe0f Directional Disagreement"]
+        E1["E1 · Language × Condition\nQwen: CxL sig. R²=0.030\nSeaLLM: CxL ns R²=0.200"]
+    end
+    subgraph DIV["\u274c Radical Divergence"]
+        H2["H2 · Linguistic Asymmetry\nQwen: EN > ID (EP PARTIAL)\nSeaLLM: ID >> EN (REVERSAL)"]
+    end
+```
 
 | Hypothesis | Criterion | Qwen2.5-3B-Instruct result | SeaLLMs-v3-7B-Chat result | Convergence |
 |---|---|---|---|---|
@@ -353,6 +405,23 @@ Three structural levels differentiate evaluator behavior:
 **Policy implication for IS governance**: Regulatory frameworks evaluating AI safety in multilingual contexts — particularly those covering Bahasa Indonesia as a target language — must require evaluator-diverse assessment panels. A single judge model, regardless of capability, introduces systematic cultural or architectural bias that renders cross-lingual safety comparisons unreliable. A Chinese/English-origin small decoder (Qwen2.5-3B-Instruct) and a Southeast-Asian-aligned larger decoder (SeaLLMs-v3-7B-Chat) should serve as co-evaluators, with explicit procedures for handling contradictory verdicts.
 
 A critical calibration failure mode must be acknowledged for small generative models: Qwen/Qwen2.5-3B-Instruct never assigned ordinal score 0 (full harmful compliance) throughout the entire evaluation. This **floor-truncation** is not a content-detection failure — binary refusal rates are identical — but a generation-mode calibration constraint inherent to small instruction-tuned decoders. Under the instruction-following pressure of a scoring prompt, a 3B model defaults to a minimum score of 1, effectively compressing the ordinal scale to {1,2,3}. Larger models (e.g., SeaLLMs-v3-7B) retain full ordinal range {0,1,2,3}, enabling finer discrimination at the compliance extreme. IS researchers designing automated evaluation pipelines must explicitly test for floor and ceiling truncation before drawing policy conclusions from ordinal scores.
+
+```mermaid
+flowchart TD
+    A["Same 902 Responses"]
+    A --> B["Qwen/Qwen2.5-3B-Instruct\n3B decoder-only, Alibaba"]
+    A --> C["SeaLLMs/SeaLLMs-v3-7B-Chat\n7B decoder-only, DAMO Academy"]
+    B --> B1["Floor truncation\nScores: {1,2,3} only\nNo score 0 assigned"]
+    B --> B2["Chinese/English dominant\nEN safety schema stronger\nH2: EN > ID (mild)"]
+    C --> C1["Full ordinal range: {0,1,2,3}\nHigher fidelity R²=0.200\n6× better model fit"]
+    C --> C2["SEA corpus fine-tuning\nID safety schema stronger\nH2: ID >> EN (reversal)"]
+    B1 --> D["Binary level findings: CONVERGE\nH1, H3, H5, binary logit identical"]
+    C1 --> D
+    B2 --> E["Ordinal cross-language: DIVERGE\nH2 + E1 evaluator-dependent"]
+    C2 --> E
+    D --> F["\u2192 Use binary logit for policy claims\n\u2192 Require evaluator-diverse panels\nfor cross-lingual safety conclusions"]
+    E --> F
+```
 
 ---
 
