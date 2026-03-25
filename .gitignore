@@ -6,7 +6,8 @@ data/raw/
 docs/pdf/  
 data/processed/ 
 venv/  
-.venv/  
+.venv/  z
 .ipynb_checkpoints/ 
 
 ./unused/
+.vscode/devmemory.log
