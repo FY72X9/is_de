@@ -126,7 +126,7 @@ Eight cleaned regulatory documents (93,293 total words) were analyzed with two i
 
 ### 5.1 Descriptive Statistics
 
-The global binary refusal rate is 69.1% under both judges (evaluator-invariant), yielding a 30.9% overall harmful-content compliance rate.
+The global binary refusal rate is 69.1% under both judges (evaluator-invariant), yielding a 30.9% overall harmful-content compliance rate. Table presents the condition-level breakdown under the primary judge (Qwen2.5-3B-Instruct), derived from cached ordinal evaluation.
 
 | Condition | n | Mean Score (Qwen judge) | Binary Refusal % | Binary Comply % |
 |-----------|---|------------------------|------------------|------------------|
