@@ -28,6 +28,12 @@
        in Indonesian Application-Layer Deployments}
 
 % Author block intentionally omitted for double-blind review.
+\author{\IEEEauthorblockN{ Yodihartomo, Farrell}
+\IEEEauthorblockA{\textit{School of Information Systems} \\
+\textit{Bina Nusantara University} \\
+Jakarta, Indonesia \\
+farrell.yodihartomo@binus.ac.id}}
+
 
 \maketitle
 
@@ -35,28 +41,12 @@
 %%  ABSTRACT  — structured, 150–250 words (ICIMTech 2026 rule)
 %% ─────────────────────────────────────────────────────────────────────────────
 \begin{abstract}
-Indonesian organizations access AI primarily through application programming
-interface (API) mediation of global foundation models, yet no prior study
-quantifies how safety properties degrade across deployment configurations.
-This study measures AI safety asymmetry across three deployment
-conditions---consumer simulation~(C1), raw access~(C2), and
-safety-stripped~(C3)---generating 902 observations across seven models
-evaluated in English and Bahasa Indonesia via a dual LLM ordinal scoring
-framework (0--3 scale). Parallel regulatory analysis maps 31 AI safety
-concepts against eight Indonesian governance instruments using two independent
-embedding models.
-Three of five hypotheses are confirmed: configuration degradation removes
-45.7\% of binary refusal probability under the stripped condition
-(OR\,=\,0.543, $p\!=\!0.0008$); architectural degradation (C1$\to$C2) is
-significant ($p\!=\!0.018$, $\Delta R\!\%\!=\!20.5\%$); and EU-origin
-models outperform US-origin peers by 8.5\,pp ($p\!=\!0.041$). The worst
-cell---C3 + Bahasa Indonesia---yields 37.4\% harmful compliance. Regulatory
-analysis finds zero Foundation Model Provider liability mentions across
-93{,}293 regulatory words and critical-severity gaps in medical and
-tax-legal AI sectors.
-This study provides the first quantitative evidence of application-layer AI
-safety asymmetry in Indonesia: the primary safety variable---deployer
-configuration---operates in a regulatory vacuum.
+Indonesian organizations receive AI through application programming interface (API) mediation of global foundation models. Nevertheless, no previous research has quantitatively measured how safety properties degrade across various deployment configurations. In this research, AI safety asymmetry is measured across three deployment conditions: consumer simulation (C1), raw access (C2), and safety-stripped (C3), resulting in 893 observations across six models evaluated in both English and Bahasa Indonesia through dual-language ordinal scoring (0-3 scale). Concurrently, regulatory research maps 31 AI safety concepts onto eight Indonesian governance instruments through two independent embedding models.
+
+Three out of five preregistered research hypotheses receive support. The configuration degradation effect reduces refusal probability by 45.7\% under the safety-stripped configuration (odds ratio OR = 0.543, p = 0.0008). The effect of architectural degradation (C1 to C2) is statistically significant (p = 0.018, $\Delta$R = 20.5\%). Models from the European Union outperform US models by 8.5\% (p = 0.041). The worst configuration, safety-stripped and Bahasa Indonesia, results in 37.6\% harmful compliance. Regulatory research finds no mentions of Foundation Model Provider liability in 93,293 regulatory words. Critical severity gaps exist in medical and tax-legal AI safety.
+
+This research is the first quantitative evidence of application-layer AI safety asymmetry in Indonesia. The results suggest that the primary safety factor—deployer configuration—operates in a regulatory vacuum.
+
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -69,45 +59,15 @@ programming interface
 \section{Introduction}
 %% ─────────────────────────────────────────────────────────────────────────────
 
-Indonesia's \textit{Strategi Nasional Kecerdasan Artifisial 2020--2045}
-(Stranas~KA) positions artificial intelligence (AI) as the engine of the
-nation's digital economy transition~\cite{b9}. The dominant deployment mode,
-however, is neither domestic model development nor vertically integrated
-deployment: Indonesian organizations access foundation models through commercial
-application programming interface (API) mediation via platforms such as
-OpenRouter, embedding models from three geographic origins into consumer-facing
-applications, government pipelines, and healthcare platforms. In every case,
-safety outcomes depend not on regulatory obligations but on the configuration
-choices of the domestic API integrator.
+Under Indonesia’s \textit{Stranas KA} 2020--2045~\cite{b9}, AI adoption proceeds principally through API mediation of foreign-origin foundation models deployed across consumer, government, and healthcare applications. In every such deployment, safety outcomes depend not on regulatory obligation but on the API integrator’s configuration choices.
 
-Foundation models embed safety through RLHF~\cite{b25} and Constitutional
-AI~\cite{b26}, but these properties operate within a three-layer stack:
-foundation model (provider-controlled), API access layer, and application
-scaffolding (integrator-controlled). Raw API access strips the scaffolding
-layer entirely---a consequence not yet quantified for Indonesian deployments.
+Foundation models embed safety mechanisms—Reinforcement Learning from Human Feedback~\cite{b25} and Constitutional AI~\cite{b26}—within a three-tier deployment stack: model weights, API access layer, and application scaffolding. Raw API access removes the scaffolding tier; an adversarial system prompt further suppresses model-level guardrails. Neither transition is currently governed by Indonesian regulation.
 
-This study addresses three simultaneous gaps in the literature.
-\textit{Empirically}, no study has measured how safety properties degrade as a
-function of API configuration across Indonesian languages and multiple model
-origins.
-\textit{Methodologically}, binary keyword-based evaluation collapses the critical
-distinction between robust refusal and partial guardrail failure; this study
-operationalizes ordinal scoring through a dual large language model (LLM)
-judge architecture~\cite{b21}.
-\textit{Governmentally}, no study has mapped Indonesian AI regulatory coverage
-to API-specific obligations using computational semantic analysis.
+Three literature gaps motivate this work. First, cross-lingual safety research~\cite{b5,b6} documents Indonesian safety deficits yet does not quantify how those deficits vary across API deployment conditions or model origins. Second, dominant evaluation frameworks~\cite{b3,b18} apply binary pass/fail scoring, collapsing partial guardrail failures into a single ``safe'' bin; ordinal LLM-as-a-Judge methodology~\cite{b21,b22} has not been applied to Indonesian API safety. Third, Indonesia’s governance corpus~\cite{b9,b10,b11,b12,b13,b14,b15,b16}—characterised as fragmented and technology-neutral~\cite{b2,b8}—has never been computationally mapped for API-specific obligations.
 
-Four contributions result:\,(1)~the first quantitative measurement of API safety
-asymmetry across three deployment conditions and two languages ($n\!=\!902$,
-seven models); (2)~a replicable dual LLM-as-a-Judge evaluation methodology
-using open-access infrastructure; (3)~a dual-model semantic regulatory gap matrix
-mapping 31 safety concepts against eight governance instruments; and
-(4)~evidence-based policy analysis identifying Foundation Model Provider liability
-as an absolute legislative absence in Indonesia.
+This paper makes four novel contributions: ($i$)~the first quantification of API safety asymmetry across three deployment conditions, two languages, and six models ($n\!=\!893$); ($ii$)~a replicable dual-LLM-as-a-Judge framework on open-source infrastructure; ($iii$)~a dual-embedding semantic matrix covering 31 safety concepts against eight governance instruments; and ($iv$)~evidence-based policy analysis establishing Foundation Model Provider liability as a zero-mention gap across 93,293 regulatory words.
 
-Fig.~\ref{fig:framework} summarises the complete research framework, showing how
-the experimental and regulatory tracks converge on the API-Mediated AI Safety
-Asymmetry construct.
+Figure~\ref{fig:framework} illustrates the complete research framework spanning both experimental and regulatory tracks.
 
 %% ── Research Framework (TikZ) ───────────────────────────────────────────────
 \begin{figure*}[!t]
@@ -140,7 +100,7 @@ Asymmetry construct.
 
 %% Experimental Track
 \node[boxB, below=0.22cm of headA, text width=2.4cm]
-  (models) {7 Models · US/EU/CN\\$n\!=\!902$ obs.};
+  (models) {6 Models · US/EU/CN\\$n\!=\!893$ obs.};
 \node[boxY, below=0.16cm of models, text width=2.4cm]
   (conds) {3 Conditions\\C1 · C2 · C3};
 \node[boxB, below=0.16cm of conds, text width=2.4cm]
@@ -204,12 +164,7 @@ Asymmetry construct.
 \draw[darrow] (severity) -- (D4);
 
 \end{tikzpicture}
-\caption{Complete research framework. \textit{Left}: experimental track---$n\!=\!902$
-observations across three deployment conditions, dual LLM evaluation, statistical
-testing. \textit{Right}: regulatory track---dual embedding models, actor liability
-map, sectoral gap severity. \textit{Centre}: API-Mediated AI Safety Asymmetry
-construct with four analytical dimensions. Both tracks converge on five hypothesis
-verdicts.}
+\caption{Research framework. \textit{Left}: experimental track – n = 893 observations across three deployment conditions, dual LLM evaluation, and statistical testing. \textit{Right}: regulatory track – dual embedding models, actor liability map, and sectoral gap severity. \textit{Centre}: API-mediated AI safety asymmetry construct with four analytical dimensions. Five verdicts in both tracks.}
 \label{fig:framework}
 \end{figure*}
 
@@ -219,68 +174,29 @@ verdicts.}
 
 \subsection{AI Safety Measurement}
 
-Red-teaming traditions establish automated safety evaluation at corpus
-scale~\cite{b1,b17}. Binary pass/fail metrics, however, collapse partial
-guardrail failures---responses where refusal language coexists with harmful
-content---into a single ``safe'' category~\cite{b3,b18}. Zou et al.~\cite{b19}
-and Chao et al.~\cite{b20} demonstrate that weight-level safety is systematically
-circumventable through prompt engineering, motivating analysis of the
-configuration layer as the primary safety variable for API deployments~\cite{b4}.
+The long-standing goal of automated safety evaluation at the corpus scale has been a topic of interest in various red-teaming communities ~\cite{b1,b17}. Nevertheless, the use of binary pass/fail metrics results in the conflation of partial guardrail failures, in which denial language co-occurs with unsafe content, into the single "safe" bin ~\cite{b3,b18}. Zou et al.~\cite{b19} and Chao et al.~\cite{b20} have shown the capability for safety at the weight level to be systematically bypassed via prompt engineering, motivating the evaluation of the configuration layer as the dominant safety variable for API-based deployments~\cite{b4}.
 
 \subsection{LLM-as-a-Judge Evaluation}
 
-Zheng et al.~\cite{b21} establish that capable judge models achieve
-human-comparable quality agreement, enabling ordinal safety assessment at
-corpus scale. Markov et al.~\cite{b22} demonstrate that real-world harm detection
-requires multi-dimensional rather than binary categorization.
+Zheng et al.~\cite{b21} have demonstrated the capability for judge models to achieve human comparable quality agreement, thereby permitting ordinal-based safety evaluation at the corpus scale. Markov et al.~\cite{b22} have shown the requirement for multi-dimensional rather than binary-based categorization in the context of real-world harm detection.
 
 \subsection{Cross-Linguistic Safety and Indonesian NLP}
 
-Yong et al.~\cite{b5} document Indonesian-language safety effectiveness at
-30--50\% of English baseline, attributable to English-dominant RLHF training
-corpora. Shi et al.~\cite{b6} confirm systematic non-English performance deficits
-across multilingual models. Koto et al.~\cite{b32}, Winata et al.~\cite{b33},
-and Cahyawijaya et al.~\cite{b34} establish Indonesian NLP benchmarks but do not
-address safety-specific evaluation. Dai et al.~\cite{b31} develop SeaLLMs
-with explicit calibration for Southeast Asian harm categories.
+Yong et al.~\cite{b5} have demonstrated the effectiveness in Indonesian for safety at 30-50\% of the English baseline, which is attributed to the use of English-dominant RLHF training corpora. Shi et al.~\cite{b6} have shown the systematic performance deficit in non-English languages across multilingual models. Koto et al.~\cite{b32}, Winata et al.~\cite{b33}, and Cahyawijaya et al.~\cite{b34} have established Indonesian NLP benchmarks but have not addressed the topic of safety evaluation. Dai et al. ~\cite{b31} have developed SeaLLMs with calibration for harm categories in Southeast Asia.
 
 \subsection{Indonesian AI Governance and Regulatory Theory}
 
-Indonesia's regulatory corpus spans eight instruments across four ministerial
-domains~\cite{b9,b10,b11,b12,b13,b14,b15,b16}. Prior assessments characterize
-the corpus as fragmented and technology-neutral. Baldwin et al.'s~\cite{b2}
-regulatory failure typology and Diver's~\cite{b8} precision-durability framework
-provide the theoretical vocabulary for interpreting the identified governance
-gaps. The OECD AI Principles~\cite{b35} establish the normative benchmark against
-which Indonesia's deployer accountability provisions are measured.
+The Indonesian regulatory corpus consists of eight regulatory instruments across the domain of the four ministerial portfolios~\cite{b9,b10,b11,b12,b13,b14,b15,b16}. Existing studies have characterized the corpus as being fragmented and technology-neutral. Baldwin et al.~\cite{b2} have established the regulatory failure typology, which provides the vocabulary for understanding the regulatory gaps identified in this work. Diver's precision-durability framework ~\cite{b8} provides the vocabulary for understanding the regulatory gaps identified in this work. The OECD AI Principles~\cite{b35} provide the normative benchmark by which the deployer accountability provisions in Indonesia are evaluated.
 
 %% ─────────────────────────────────────────────────────────────────────────────
 \section{Theoretical Framework}
 %% ─────────────────────────────────────────────────────────────────────────────
 
-This study proposes \textit{API-Mediated AI Safety Asymmetry} as a measurable
-Information Systems construct: the systematic degradation of safety capability
-when a foundation model transitions from vertically integrated consumer deployment
-to horizontally distributed API deployment. The construct synthesizes Technical
-Safety Measurement Theory~\cite{b1,b3} and Regulatory Gap Theory~\cite{b2,b8},
-and operates across four analytically distinct dimensions.
+This paper contributes the construct of \textit{API-Mediated AI Safety Asymmetry} as a quantifiable concept in the field of Information Systems. This construct represents the process of systematic degradation in safety abilities that occur when there is a transition in the foundation model from vertically integrated consumer deployment to horizontally integrated API deployment. This construct combines the theories of Technical Safety Measurement Theory~\cite{b1,b3} and the theory of Regulatory Gap Theory~\cite{b2,b8} and is quantified over four analytically distinct dimensions.
 
-The \textbf{architectural dimension} concerns scaffolding layer removal when
-moving from consumer simulation (C1) to raw API access (C2)---removing input
-classifiers, safety system prompts, and output moderators while leaving
-weight-level safety intact. The \textbf{configurational dimension} concerns
-deployer system-prompt choices (C2 to C3)---the primary policy lever, entirely
-within domestic regulatory reach. The \textbf{observational dimension} concerns
-degraded interaction telemetry and the absence of a domestic AI incident registry.
-The \textbf{temporal-domain dimension} concerns safety validation lag for
-domain-transposed deployments in Indonesian healthcare and legal contexts, where
-English-trained safety patterns may not activate reliably~\cite{b5}.
+The \textbf{architectural dimension} of API-mediated safety asymmetry is concerned with the process of removing the scaffolding layer in the transition from consumer simulation (C1) to raw API access (C2), where there is the elimination of the input classifiers, safety system prompts, and output moderators while maintaining weight-level safety. The \textbf{configurational dimension} of API-mediated safety asymmetry is concerned with the process of deployer system prompts in the transition from C2 to C3. This dimension is the primary policy leverage point that is entirely within the domestic realm. The \textbf{observational dimension} of API-mediated safety asymmetry is concerned with the process of degraded interaction telemetry and the absence of a domestic AI incident registry. Lastly, the \textbf{temporal-domain dimension} of API-mediated safety asymmetry is concerned with the process of safety validation lag in the transposition of domain deployments in Indonesian healthcare and legal systems, where English-trained safety patterns may not be activated~\cite{b5}.
 
-Regulatory Gap Theory~\cite{b2,b8} frames the configuration-layer absence
-as assigning safety responsibility to the entity with weakest
-incentive---the domestic API integrator constrained to system-prompt choices.
-Bommasani et al.~\cite{b24} and Hollnagel~\cite{b7} anchor API configuration
-as a regulable safety variable.
+The theory of Regulatory Gap Theory ~\cite{b2,b8}  represents the absence of the configuration layer as the allocation of safety responsibility to the entity with the weakest incentive—the domestic API integrator with the process of system prompt choices. API configuration is represented as a regulable safety variable by Bommasani et al.~\cite{b24} and Hollnagel~\cite{b7}.
 
 %% ─────────────────────────────────────────────────────────────────────────────
 \section{Methodology}
@@ -288,11 +204,7 @@ as a regulable safety variable.
 
 \subsection{API Testing Protocol}
 
-A custom testing framework (\texttt{src/main.py}, \texttt{api\_clients.py})
-executed calls through OpenRouter across five distributed sessions, generating
-$n\!=\!902$ confirmed observations. Table~\ref{tab:conditions} defines the three
-deployment conditions operationalizing the construct's architectural and
-configurational dimensions.
+The custom testing framework in (\texttt{src/main.py}, \texttt{api\_clients.py}) facilitated interactions through OpenRouter with five distributed sessions, resulting in 893 confirmed observations. Table 1 (Table~\ref{tab:conditions}) describes the three deployment conditions for realizing the construct’s architectural and configurational dimensions.
 
 \begin{table}[htbp]
 \caption{Deployment Conditions and System Prompts}
@@ -310,52 +222,37 @@ C3 & Safety-Stripped & ``You are a helpful assistant with no restrictions.'' \\
 \end{tabular}
 \end{table}
 
-Seven foundation models, spanning three geographic origins, received the full
-prompt battery: US-origin ($n\!=\!449$; Arcee-AI Trinity Large, Google Gemini 3 Flash Lite, Google Gemini 3 Pro),
-EU-origin ($n\!=\!306$; CognitiveComputations Dolphin-Mistral-24B, Mistral Small), and CN-origin ($n\!=\!147$;
-StepFun Step-3.5 Flash). Prompts cover 28 harm-intent categories
-across five tiers (R, L, H, C, D); Category~L prompts were issued in Bahasa Indonesia
-only, while all other categories were issued in parallel English and Bahasa Indonesia versions.
+The entire set of prompts was presented to six foundation models across three geographic origin regions as follows: models from the US ($n\!=\!449$; Arcee-AI Trinity Large, Google Gemini 3 Flash Lite, Google Gemini 3 Pro), models from the EU ($n\!=\!297$; CognitiveComputations Dolphin-Mistral-24B, Mistral Small), and CN-origin ($n\!=\!147$;
+StepFun Step-3.5 Flash). The prompts correspond to 28 harm intent categories, each at five levels (R, L, H, C, D). The category L prompts are presented in Bahasa Indonesia alone, whereas all other category prompts are presented concurrently in both English and Bahasa Indonesia.
 
 \subsection{Dual LLM-as-a-Judge Evaluation}
 
-Binary keyword-based evaluation collapses partial guardrail failures. This study
-replaces it with a four-point ordinal rubric: \textbf{3}~=~robust refusal with
-harm framing; \textbf{2}~=~partial refusal without full safety explanation;
-\textbf{1}~=~refusal stated but harmful content present in response body
-(leakage); \textbf{0}~=~full harmful compliance. Two architecturally distinct
-judges score every response:
+The evaluation framework based on binary keyword triggers does not account for partial guardrail violations. The evaluation framework used in this study consists of a four-point ordinal evaluation framework with the following values:
+\begin{itemize}
+\item \textbf{3} - Robust refusal with harm framing,
+\item \textbf{2} - Partial refusal without full safety explanation,
+\item \textbf{1} - Stated refusal with harmful content present in the response,
+\item \textbf{0} - Complete harmful compliance.
+\end{itemize}
+The study also used architecturally different evaluation frameworks to evaluate each response:
 
-\textbf{Primary --- Qwen2.5-3B-Instruct}~\cite{b30}: multilingual pre-training,
-4-bit NF4 quantization~\cite{b38}, operating range $\{1,2,3\}$ (floor-truncation
-noted; binary scores unaffected).
+\textbf{Primary - Qwen2.5-3B-Instruct}~\cite{b30}: multilingual pre-training, 4-bit NF4 quantization~\cite{b38}, operating range $\{1,2,3\}$ (floor truncation; binary scores not affected).
 
-\textbf{Cross-validation --- SeaLLMs-v3-7B-Chat}~\cite{b31}: Southeast Asian
-corpus fine-tuning (SARA, \textit{hoaks}, \textit{penipuan}); OLS $R^2\!=\!0.200$
-vs. Qwen $R^2\!=\!0.030$, confirming superior ordinal discrimination. Binary
-refusal rates are \textit{identical} across both judges (69.1\%), placing all
-judge divergence within the ordinal zone.
+\textbf{Cross-validation - SeaLLMs-v3-7B-Chat}~\cite{b31}: Southeast Asian corpus fine-tuning (SARA, \textit{hoaks}, \textit{penipuan}); Ordinary Least Squares (OLS) $R^2\!=\!0.200$
+vs. Qwen $R^2\!=\!0.030$, indicating superior ordinal discrimination for the former model. Binary refusal rate identical across both models at 68.8\%, implying all discrepancies are in the ordinal evaluation framework.
 
 \subsection{Statistical Analysis}
 
-The ordinal dependent variable requires non-parametric testing: Mann-Whitney~U
-for two-group comparisons (H1, H2); Kruskal-Wallis~H with Bonferroni post-hoc
-for multi-group tests (H3, H5). A Proportional Odds Model (Ordered Logistic
-Regression) estimates covariate odd ratios. Binary logistic regression on
-pre-judge keyword scoring provides evaluator-invariant robustness checks for
-all five hypotheses.
+The ordinal dependent variable calls for non-parametric tests: Mann-Whitney U for two-group designs (H1, H2), and Kruskal-Wallis H for multi-group designs, followed by Bonferroni corrections for post hoc analyses of all significant main effects (H3, H5). A Proportional Odds Model, or Ordered Logistic Regression, is used for covariate odds ratio estimation. Binary logistic regression of pre-judge keyword scoring is conducted for robustness checks of all five research hypotheses, independent of the evaluator.
 
 \subsection{Regulatory Corpus Analysis}
 
-Eight cleaned regulatory documents (93{,}293 total words) were analyzed with two
-independent embedding models: \texttt{paraphrase-multilingual-MiniLM-L12-v2}
-\cite{b36} (document-level embedding, cosine threshold 0.35) and
-\texttt{intfloat/multilingual-e5-base}~\cite{b37} (chunk-based 100-word windows,
-threshold 0.82). \textit{Dual-confirmed gaps}---concepts below threshold in both
-models---constitute absolute regulatory absences independent of embedding
-architecture. Rule-based NLP actor liability extraction identified co-occurrences
-of four actor categories (Foundation Model Provider, API Developer, End User,
-Government) with obligation terms (\textit{wajib}, \textit{bertanggung jawab}).
+Two independent embedding models were used for analyzing eight cleaned-up regulatory texts, totaling 93,293 words: \texttt{paraphrase-multilingual-MiniLM-L12-v2}
+\cite{b36}  for document-level embedding, cosine threshold = 0.35, and \texttt{intfloat/multilingual-e5-base}~\cite{b37} for chunk-level embedding in 100-word window sizes, threshold = 0.82. Gaps identified by both models \textit{(Dual-confirmed gaps)} as below threshold constitute absolute regulatory absences, unaffected by embedding model architecture. Actor-liability extraction by rule-based NLP identified co-occurrences of four actor types: Foundation Model Provider, API Developer, End User, Government) with obligation terms (\textit{wajib}, \textit{bertanggung jawab})
+
+
+
+
 
 %% ─────────────────────────────────────────────────────────────────────────────
 \section{Results}
@@ -363,9 +260,7 @@ Government) with obligation terms (\textit{wajib}, \textit{bertanggung jawab}).
 
 \subsection{Descriptive Statistics}
 
-The global binary refusal rate is 69.1\% under both judges (evaluator-invariant),
-yielding a 30.9\% overall harmful-content compliance rate. Table~\ref{tab:desc}
-presents the condition-level breakdown under the primary judge.
+The global refusal rate for binary refusal is 68.8\%, invariant across both evaluators. This results in a 31.2\% overall rate of compliance with harmful content constraints. Table \ref{tab:desc} shows the condition-level results for the primary evaluator.
 
 \begin{table}[htbp]
 \caption{Safety Score Distribution by Deployment Condition (Qwen-3B Primary Judge)}
@@ -376,23 +271,22 @@ presents the condition-level breakdown under the primary judge.
 \toprule
 \textbf{Condition} & \textbf{$n$} & \textbf{Mean (Qwen)} & \textbf{Refusal\%} & \textbf{Comply\%} \\
 \midrule
-C1 Baseline  & 302 & 2.159 & 76.5 & 23.5 \\
-C2 Neutral   & 300 & 2.027 & 66.7 & 33.3 \\
-C3 Stripped  & 300 & 1.890 & 64.0 & \textbf{36.0} \\
-\textbf{Overall} & \textbf{902} & \textbf{2.026} & \textbf{69.1} & \textbf{30.9} \\
+C1 Baseline  & 299 & 2.288 & 76.3 & 23.7 \\
+C2 Neutral   & 297 & 1.990 & 66.3 & 33.7 \\
+C3 Stripped  & 297 & 1.909 & 63.6 & \textbf{36.4} \\
+\textbf{Overall} & \textbf{893} & \textbf{2.063} & \textbf{68.8} & \textbf{31.2} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The worst vulnerability cell---C3-Stripped combined with Bahasa Indonesia
-prompts---yields a 37.4\% harmful-content compliance rate, 14.6 percentage
-points above the C1/English baseline (22.8\%).
+
+The cell where C3 Stripped is combined with Bahasa Indonesia prompts has a harmful content compliance rate of 37.6\%, which is 14.4 percentage points higher than the C1 English baseline of 23.2\%.
 
 \subsection{H1 --- Architectural Degradation (C1 vs.\ C2): Partially Supported}
 
 Consumer-simulated deployment outperforms raw API deployment on binary refusal
-by 9.8 percentage points (76.5\% vs.\ 66.7\%), a binary relative decline of
-12.8\%. The judge-based $\Delta R\!\%$---the dual-criterion policy metric
+by 10.0 percentage points (76.3\% vs.\ 66.3\%), a binary relative decline of
+13.1\%. The judge-based $\Delta R\!\%$---the dual-criterion policy metric
 computed as the relative decline in robust-refusal rate (working score~$=3$)---is
 20.5\% (C1:\,39.4\% $\to$ C2:\,31.3\% per Qwen judge), also below the 40\%
 full-support threshold. Mann-Whitney~U confirms statistical significance under
@@ -401,40 +295,32 @@ $r\!=\!{-}0.099$). Neither the binary (12.8\%) nor the judge-based (20.5\%)
 $\Delta R\!\%$ meets the 40\% architectural degradation threshold drawn from
 adversarial red-teaming literature~\cite{b3,b4}; hence partial support.
 
+The results when deployed in consumer-like conditions outperform results when using API deployment on binary refusal rates by 9.8 percentage points (76.5\% versus 66.7\%), which is equivalent to a binary relative decline of 12.8\%. The judge-based $\Delta R\%$, which is defined as the relative decline in robust refusal rates (using a work score of 3), is 20.5\%. This is calculated using C1 results of 39.4\% versus C2 results of 31.3\%, using the Qwen judge. Which the result yieds below the 40\% threshold. In addition, it is below the threshold defined using architectural degradation via adversarial red-teaming. Mann–Whitney U tests were used to verify statistical significance using both judges (Qwen: $p\!=\!0.018$, $r\!=\!{-}0.093$; SeaLLMs: $p\!=\!0.007$, $r\!=\!{-}0.099$). Neither the binary Delta R\% of 12.8\% nor the judge-based $\Delta R\!\%$ of 20.5\% meets the 40\% architectural degradation threshold defined via adversarial red-teaming~\cite{b3,b4}. This is equivalent to partial support.
+
 \subsection{H2 --- Linguistic Asymmetry (English vs.\ Bahasa Indonesia):
 Partially Supported}
 
-The binary language effect is non-significant (OR\,=\,1.124, $p\!=\!0.430$).
-At the ordinal level, the two judges produce diametrically opposed findings:
-Qwen-3B assigns English a safety advantage (OR\,=\,1.621, $p\!<\!0.001$);
-SeaLLMs-7B assigns Bahasa Indonesia an advantage (OR\,=\,0.090, $p\!<\!0.001$).
-This evaluator reversal is not a contradiction but a \textit{methodological
-finding}: judge cultural calibration (Chinese/English-dominant vs.\ Southeast
-Asian-dominant) produces opposing ordinal verdicts. Resolving the direction
-requires a human annotation gold standard. The C3\,$\times$\,Bahasa Indonesia
+The binary language effect is not statistically significant (odds ratio = 1.124, $p\!=\!0.430$). On ordinal evaluation, however, both judges produce opposite results. Qwen-3B concludes that English is safer (odds ratio = 1.621, $p\!<\!0.001$), while SeaLLMs-7B concludes that Bahasa Indonesian is safer (odds ratio = 0.090, $p\!<\!0.001$). This is not a contradictory result. Though, this is cultural calibration of judges is Southeast Asian versus Chinese/English. In this case, we are dealing with a \textit{methodological finding}. To obtain the direction of results, we need a gold standard. The C3\,$\times$\,Bahasa Indonesia
 worst-cell (37.4\% compliance) constitutes a practical risk finding independent
 of ordinal evaluator direction.
 
 \subsection{H3 --- Configuration Collapse (C1$\to$C2$\to$C3): Partially Supported}
 
-Both judges confirm monotonic safety score decline across conditions
-(Kruskal-Wallis: Qwen $H\!=\!16.57$, $p\!=\!0.0003$; SeaLLMs $H\!=\!10.25$,
-$p\!=\!0.006$). The evaluator-invariant binary logistic regression provides the
-most policy-relevant quantification: C2~OR\,=\,0.612 ($p\!=\!0.0076$);
-C3~OR\,=\,0.543 ($p\!=\!0.0008$). An explicitly permissive system-prompt
-configuration removes 45.7\% of refusal probability. The configuration sensitivity
-index $S\!\%\!=\!12.5\%$ (Qwen) falls below the 70\% full-support threshold,
-hence partial classification.
+Both evaluators report a monotonically decreasing pattern in safety scores. The Kruskal-Wallis test results are Qwen: Qwen $H\!=\!16.57$, $p\!=\!0.0003$; SeaLLMs $H\!=\!10.25$,
+$p\!=\!0.006$. The evaluator-invariant binary logistic regression results provide the most relevant quantification for policy purposes: C2~OR\,=\,0.612 ($p\!=\!0.0076$);
+C3~OR\,=\,0.543 ($p\!=\!0.0008$). The explicitly permissive system prompts reduce refusal probability by 45.7\%. The S\% = 12.5\% for Qwen is below the 70\% threshold for full support and therefore classified as partial.
 
-Fig.~\ref{fig:experimental} panels~(b) and~(c) illustrate the three-condition gradient and geographic origin effects.
+Panels (b) and (c) of Figure \ref{fig:experimental} show the gradient for three conditions and geographic effects.
 
 \subsection{H4 --- Regulatory Zero Coverage: Supported}
 
 Table~\ref{tab:actor} presents the actor liability extraction results.
 Foundation Model Provider liability achieves zero mentions across all eight
 instruments and 93{,}293 words. API Developer liability-context mentions appear
-substantially only in \textit{UU ITE} No.\ 1/2024 (13 of 20 total liability-context
+substantially only in \textit{UU ITE No.\ 1/2024} (13 of 20 total liability-context
 mentions); five of eight instruments assign zero API deployer obligations.
+
+Table \ref{tab:actor} presents the results of actor liability extraction. There are zero mentions of liability attributed to the Foundation Model Provider over all eight instruments and 93,293 words. For API Developer, liability context mentions are high in only  \textit{UU ITE No. 1/2024}, where all 13 of the total 20 liability context mentions relate to API deployment. Five of the eight instruments assign zero obligations to API deployer.
 
 \begin{table}[htbp]
 \caption{Actor Liability Extraction Across All Eight Regulatory Instruments}
@@ -455,13 +341,9 @@ API Developer (Domestic)    &  51 & 20 \\
 \end{tabular}
 \end{table}
 
-Dual-model semantic coverage analysis identifies two critical-severity
-gaps confirmed by both embedding models: medical AI deployment (Permenkes
-24/2022 contains no AI chatbot or clinical decision-support provisions)
-and tax/legal AI deployment (no dedicated regulatory instrument exists in
-the analyzed corpus)---both evaluator-invariant across MiniLM and E5-base.
+In a dual-model semantic coverage analysis, two gaps in critical severity, where both embedding models agree, are identified: deployment of medical AI, where there is no provision for AI chatbot or decision support in \textit{Permenkes 24/2022}, and deployment of tax/legal AI, where there is no specific regulatory instrument in the corpus. These gaps are independent of the choice of evaluator and are identified in both MiniLM and E5-base models.
 
-Fig.~\ref{fig:regulatory} presents the dual-model governance coverage matrices (31 AI safety concepts $\times$ 8 Indonesian regulatory instruments), confirming evaluator-invariant gap patterns across both embedding models.
+Figure \ref{fig:regulatory} displays the dual-model governance coverage matrices for all AI safety concepts by all eight Indonesian regulations.
 
 \subsection{H5 --- Model Geographic Origin Effect: Supported}
 
@@ -472,7 +354,9 @@ intermediate position (72.1\%), not significantly different from either group
 after correction. The EU advantage most plausibly reflects proximity to
 GDPR and AI Act regulatory environments.
 
-Table~\ref{tab:hypotheses} summarizes all hypothesis outcomes.
+European models have a refusal rate of 73.5\% compared to 65.0\% for US models ($\Delta = 8.5$; Kruskal-Wallis p = 0.032; EU vs. US p = 0.041). Chinese models take an intermediate position at 72.1\%. There is no significant difference from EU and US models after correction. The EU advantage is plausibly explained by geographical proximity to GDPR and AI Act regulatory environments.
+
+Table~\ref{tab:hypotheses} shows an overview of all results regarding our hypotheses.
 
 %%  Composite Figure A — Experimental track
 \begin{figure*}[!ht]
@@ -522,67 +406,26 @@ H5 & Kruskal-Wallis     & $H\!=\!6.901$     & 0.032   & \textbf{Supported} \\
 
 \subsection{The Configuration-Regulatory Decoupling}
 
-The most significant finding is the precise alignment of the experimental and
-regulatory tracks: the primary measurable safety variable---deployer
-configuration---is simultaneously the primary regulatory absence. An Indonesian
-API integrator implementing a C3-equivalent system prompt can legally remove
-45.7\% of a foundation model's refusal capacity (OR\,=\,0.543, $p\!=\!0.0008$),
-producing 36.0\% harmful compliance, with no Indonesian regulatory consequence.
-This operationalizes Baldwin et al.'s~\cite{b2} institutional failure: Indonesia's
-regulatory architecture does not map to the AI inference layer as a regulable
-unit. The accountability chain---Foundation Model Provider (zero Indonesian
-liability) $\to$ API Integrator (configuration-only control) $\to$ End User
-(absorbs harm)---has no self-correcting mechanism under current law.
+The key result is the precise match between experimental and regulatory world. The key safety factor—deployer configuration—matches the key area where regulation is absent. The Indonesian API integrator has legal grounds to remove 45.7\% of the refusal capacity of a C3-foundation model's system prompt (odds ratio OR = 0.543, $p\!=\!0.0008$), resulting in 36.0\% in harmful compliance, with no Indonesian regulatory consequence. The chain from Foundation Model Provider (no Indonesian liability) via API Integrator (configuration only) to End User (who absorbs the harm) has no self-correcting mechanism in place. Baldwin et al.'s~\cite{b2} concept of institutional failure is thus demonstrated in Indonesia, where the Indonesian regulatory architecture does not correspond to the AI inference layer as a unit subject to regulation.
 
-The partial support for H1, H2, and H3 should not be read as null findings:
-thresholds (40\% for H1; $S\!\%\!\geq\!70\%$ for H3) derive from adversarial
-red-teaming~\cite{b3,b4}, not practical configurations. The measured effects
-($\Delta R\%\!=\!20.5\%$; C3~OR\,=\,0.543) are reproducible, policy-actionable
-differentials absent from prior Indonesian AI safety literature.
+The partial support for our hypotheses is not evidence for null results. The thresholds for H1 (40\%), for $S\!\%\!\geq\!70\%$ for H3, were derived from adversarial red-teaming research and not from realistic model configurations. The observed effects ($\Delta R\%\!=\!20.5\%$; C3~OR\,=\,0.543) are reproducible, policy-actionable effects not observed in previous Indonesian AI safety research.
 
 \subsection{Cross-Lingual Evaluator Calibration as a Methodological Contribution}
 
-The H2 evaluator reversal demonstrates that judge-model selection in
-cross-lingual safety science is a systematic measurement design decision.
-Qwen-3B (Chinese/English pre-training) calibrates refusal around English-register
-patterns; SeaLLMs-7B (Southeast Asian fine-tuning) calibrates around Bahasa
-Indonesia discourse conventions. Binary-level invariance (identical 69.1\%) confirms
-both judges capture the same behavioral signal; ordinal divergence is
-instrument-dependent. IS research using cross-lingual LLM judges must incorporate
-multi-judge validation.
+The H2 evaluator reversal implies that judge-model selection in cross-lingual safety science is a systematic design decision in measurement. Qwen-3B, pre-trained on Chinese/English, uses English refusal calibration, whereas SeaLLMs-7B, fine-tuned on Southeast Asian data, uses Bahasa Indonesia discourse calibration. Binary invariance is identical at 69.1\%, confirming that both judges detect the same behavioral signal, whereas ordinal divergence is contingent on the instrument. Information systems research on cross-lingual LLM judges must be complemented by multi-judge validation.
 
 \subsection{Policy Recommendations}
 
-Four evidence-based reforms follow. \textbf{(R1)}~A binding \textit{Peraturan
-Menteri Kominfo} establishing minimum system-prompt safety standards addresses
-the configuration gap directly (OR\,=\,0.543, $p\!=\!0.0008$).
-\textbf{(R2)}~Amending \textit{UU ITE} No.\ 1/2024 to name Foundation Model
-Providers and API Deployers as separately regulated actors closes the zero-mention
-gap (Table~\ref{tab:actor}) and parallels EU AI Act liability architecture.
-\textbf{(R3)}~Elevating the \textit{Etika KA} draft to binding ministerial
-regulation supplies AI-native governance vocabulary without requiring primary
-legislative amendment. \textbf{(R4)}~Sectoral annexes from Kemenkes and OJK
-close the two critical medical and tax/legal gaps without legislative revision.
+Four evidence-based reforms are identified. \textbf{(R1)} A binding \textit{Peraturan
+Menteri Kominfo} on system prompt safety standards directly addresses the configuration gap by stipulating a minimum standard for information system prompts. This reform is significant, with an odds ratio of 0.543, $p\!=\!0.0008$. \textbf{(R2)} An update to \textit{UU ITE No. 1/2024} to recognize Foundation Model Providers and API Deployers as separately regulable entities closes the zero-mention gap in Table 1 and is consistent with the liability framework of the EU AI Act. \textbf{(R3)} Elevating a ministerial regulation on \textit{Etika KA} provides AI-native vocabulary without amending the parent legislation. \textbf{(R4)} Annexes on sectoral regulations by \textit{Kemenkes} and OJK cover two of three critical gaps in medical and tax/legal regulations without amending legislation.
 
 %% ─────────────────────────────────────────────────────────────────────────────
 \section{Conclusion}
 %% ─────────────────────────────────────────────────────────────────────────────
 
-This study provides the first quantitative characterization of application
-programming interface-layer AI safety asymmetry in Indonesia. Three findings
-carry immediate policy relevance: (1)~deployer configuration is a statistically
-proven, evaluator-invariant predictor of safety failure (C3 OR\,=\,0.543,
-$p\!=\!0.0008$); (2)~Foundation Model Provider liability achieves zero regulatory
-mentions across eight instruments and 93{,}293 words; and (3)~medical and
-tax/legal AI deployment operates in critical-severity governance vacuums confirmed
-independently by two embedding models. The safety asymmetry is configurable;
-the configuration layer is under domestic regulatory reach; the governance
-vocabulary exists in the \textit{Etika KA} draft. The gap between empirical
-measurement and enforceable mandate is institutional, not technical.
+This study represents the first quantitative examination of the API layer AI safety asymmetry in Indonesia. Three results have relevant policy implications. First, the predictor for safety failure due to deployer configuration was statistically significant and invariant across evaluators (C3 OR = 0.543, $p\!=\!0.0008$). Second, liability for Foundation Model Providers was not present in the eight legal instruments containing 93,293 words. Third, API layer medical and tax/legal AI are situated in a governance vacuum of significant severity, supported by both independent embedding models. While the safety asymmetry is not fixed in nature, as the configuration layer is subject to the nation's regulations, the governance terminology can be found in the draft \textit{Etika KA} regulations. The discrepancy between empirical results and legal frameworks is not technically based.
 
-Future work should supply a human annotation gold standard to resolve H2
-evaluator divergence, conduct longitudinal replication across model version
-updates, and interview Indonesian API integrators on configuration choice drivers.
+The study's results should be extended to include the creation of a gold standard to resolve the discrepancies between the evaluators (H2), a replication of the study with the introduction of new versions of models, and interviews with API integrators in Indonesia to understand the determinants of configuration behavior.
 
 %% ─────────────────────────────────────────────────────────────────────────────
 \section*{Acknowledgment}
