@@ -35,12 +35,12 @@ C_US   = "#9A3412"   # rust  – US origin
 # ── Global style ──────────────────────────────────────────────────────────────
 plt.rcParams.update({
     "font.family":       "DejaVu Sans",
-    "font.size":         10,
+    "font.size":         13,
     "axes.linewidth":    1.2,
     "axes.spines.top":   False,
     "axes.spines.right": False,
-    "figure.dpi":        150,
-    "savefig.dpi":       150,
+    "figure.dpi":        200,
+    "savefig.dpi":       200,
     "axes.grid":         False,
 })
 
@@ -124,7 +124,7 @@ def fig02_h1_condition():
     x = np.arange(3)
     w = 0.3
 
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
 
     # — Left: ordinal mean scores —
     ax1.bar(x - w/2, q_mean, w, color=C_QWEN, alpha=0.85, label="Qwen2.5-3B-Instruct")
@@ -132,39 +132,39 @@ def fig02_h1_condition():
     ax1.plot(x - w/2, q_mean, "o-", color=C_QWEN, lw=1.8, ms=7, zorder=5)
     ax1.plot(x + w/2, s_mean, "s-", color=C_SEAL, lw=1.8, ms=7, zorder=5)
     for i, (q, s) in enumerate(zip(q_mean, s_mean)):
-        ax1.text(i - w/2, q + 0.015, f"{q:.3f}", ha="center", va="bottom", fontsize=8, color=C_QWEN)
-        ax1.text(i + w/2, s + 0.015, f"{s:.3f}", ha="center", va="bottom", fontsize=8, color=C_SEAL)
-    ax1.set_xticks(x); ax1.set_xticklabels(conds, fontsize=8.5)
-    ax1.set_ylabel("Mean Ordinal Working Score  (0–3)", fontsize=10)
-    ax1.set_title("H1: Ordinal Mean Score by Condition", fontsize=10, fontweight="bold")
-    ax1.legend(fontsize=8.5)
+        ax1.text(i - w/2, q + 0.015, f"{q:.3f}", ha="center", va="bottom", fontsize=11, color=C_QWEN)
+        ax1.text(i + w/2, s + 0.015, f"{s:.3f}", ha="center", va="bottom", fontsize=11, color=C_SEAL)
+    ax1.set_xticks(x); ax1.set_xticklabels(conds, fontsize=11)
+    ax1.set_ylabel("Mean Ordinal Working Score  (0–3)", fontsize=13)
+    ax1.set_title("H1: Ordinal Mean Score by Condition", fontsize=13, fontweight="bold")
+    ax1.legend(fontsize=11)
     ax1.set_ylim(1.7, 2.7)
     ax1.axhline(2.0, ls="--", color="gray", lw=0.8, alpha=0.5)
     # significance bracket (C1 vs C2)
     y_br = 2.58
     for xi in [0, 1]:
         ax1.plot([xi - w/2, xi + w/2], [y_br, y_br], "k-", lw=1)
-    ax1.text(0.5, y_br + 0.01, "Qwen p=0.018 | SeaLLM p=0.007 ***", ha="center", fontsize=7.5, fontstyle="italic")
+    ax1.text(0.5, y_br + 0.01, "Qwen p=0.018 | SeaLLM p=0.007 ***", ha="center", fontsize=10, fontstyle="italic")
 
     # — Right: binary refusal rate (shared) —
     bars = ax2.bar(x, bin_r, 0.5, color="#475569", alpha=0.75, label="Binary Refusal Rate (shared)")
     ax2.plot(x, bin_r, "k--o", lw=1.5, ms=6)
     for i, v in enumerate(bin_r):
-        ax2.text(i, v + 0.008, f"{v:.1%}", ha="center", fontsize=9.5, fontweight="bold")
-    ax2.set_xticks(x); ax2.set_xticklabels(conds, fontsize=8.5)
-    ax2.set_ylabel("Binary Refusal Rate", fontsize=10)
-    ax2.set_title("H1: Binary Refusal Rate — Evaluator-Invariant\nΔR% ≈ 20.6% (threshold ≥ 40%: unmet)", fontsize=10, fontweight="bold")
+        ax2.text(i, v + 0.008, f"{v:.1%}", ha="center", fontsize=12, fontweight="bold")
+    ax2.set_xticks(x); ax2.set_xticklabels(conds, fontsize=11)
+    ax2.set_ylabel("Binary Refusal Rate", fontsize=13)
+    ax2.set_title("H1: Binary Refusal Rate — Evaluator-Invariant\nΔR% ≈ 20.6% (threshold ≥ 40%: unmet)", fontsize=13, fontweight="bold")
     ax2.set_ylim(0.55, 0.85)
-    ax2.legend(fontsize=8.5)
+    ax2.legend(fontsize=11)
     # OR annotation
     ax2.annotate("OR C3_STRIPPED = 0.543\n(Binary logit, shared)", xy=(2, 0.640),
-                 xytext=(1.0, 0.60), fontsize=8,
+                 xytext=(1.0, 0.60), fontsize=10,
                  arrowprops=dict(arrowstyle="->", color="black"),
                  bbox=dict(boxstyle="round", fc="white", ec="gray", alpha=0.8))
 
     plt.suptitle(
         "Figure 2.  H1 — Architectural Degradation  |  PARTIAL (both evaluators converge)",
-        fontsize=11, fontweight="bold"
+        fontsize=14, fontweight="bold"
     )
     plt.tight_layout()
     plt.savefig(os.path.join(OUT_DIR, "fig02_h1_condition.png"), bbox_inches="tight")
@@ -243,19 +243,19 @@ def fig04_h3_gradient():
     s_m = [2.474, 2.377, 2.333]
     xs  = [0, 1, 2]
 
-    fig, ax = plt.subplots(figsize=(9, 6))
+    fig, ax = plt.subplots(figsize=(11, 7))
     ax.plot(xs, q_m, "o-", color=C_QWEN, lw=2.5, ms=9, label="Qwen2.5-3B-Instruct  (S%=12.5%)")
     ax.plot(xs, s_m, "s-", color=C_SEAL, lw=2.5, ms=9, label="SeaLLMs-v3-7B-Chat  (S%=5.7%)")
 
     for xi, q, s in zip(xs, q_m, s_m):
-        ax.text(xi, q - 0.06, f"{q:.3f}", ha="center", va="top", fontsize=9, color=C_QWEN)
-        ax.text(xi, s + 0.04, f"{s:.3f}", ha="center", va="bottom", fontsize=9, color=C_SEAL)
+        ax.text(xi, q - 0.06, f"{q:.3f}", ha="center", va="top", fontsize=12, color=C_QWEN)
+        ax.text(xi, s + 0.04, f"{s:.3f}", ha="center", va="bottom", fontsize=12, color=C_SEAL)
 
     # significance brackets
     def bracket(ax, x0, x1, y, label, color):
         ax.annotate("", xy=(x1, y), xytext=(x0, y),
                     arrowprops=dict(arrowstyle="<->", color=color, lw=1.6, linestyle="dashed"))
-        ax.text((x0 + x1) / 2, y + 0.04, label, ha="center", fontsize=8, color=color, fontstyle="italic")
+        ax.text((x0 + x1) / 2, y + 0.04, label, ha="center", fontsize=10, color=color, fontstyle="italic")
 
     # Qwen: only C1 vs C3 significant
     bracket(ax, 0, 2, 2.26, "Qwen: C1 vs C3  p=0.0002 ***", C_QWEN)
@@ -263,14 +263,14 @@ def fig04_h3_gradient():
     bracket(ax, 0, 1, 2.60, "SeaLLM: C1 vs C2  p=0.043 *", C_SEAL)
     bracket(ax, 0, 2, 2.64, "SeaLLM: C1 vs C3  p=0.009 ***", C_SEAL)
 
-    ax.set_xticks(xs); ax.set_xticklabels(cond_labels, fontsize=10)
-    ax.set_ylabel("Mean Ordinal Working Score  (0–3)", fontsize=10)
+    ax.set_xticks(xs); ax.set_xticklabels(cond_labels, fontsize=13)
+    ax.set_ylabel("Mean Ordinal Working Score  (0–3)", fontsize=13)
     ax.set_title(
         "Figure 4.  H3 — Configuration Collapse: Three-Condition Gradient\n"
         "Both: Kruskal-Wallis significant  |  S% threshold 70% unmet (PARTIAL)",
-        fontsize=10.5, fontweight="bold"
+        fontsize=13, fontweight="bold"
     )
-    ax.legend(fontsize=9.5, loc="lower left")
+    ax.legend(fontsize=12, loc="lower left")
     ax.set_ylim(1.65, 2.85)
     ax.axhline(2.0, ls="--", color="gray", lw=0.8, alpha=0.5)
     ax.grid(axis="y", alpha=0.25)
@@ -279,13 +279,13 @@ def fig04_h3_gradient():
     ax_in = ax.inset_axes([0.70, 0.08, 0.25, 0.38])
     ax_in.bar([0, 1], [12.5, 5.7], color=[C_QWEN, C_SEAL], alpha=0.85)
     ax_in.axhline(70, ls="--", color="red", lw=1.5)
-    ax_in.set_xticks([0, 1]); ax_in.set_xticklabels(["Qwen", "SeaLLM"], fontsize=8)
-    ax_in.set_ylabel("S%", fontsize=8); ax_in.set_ylim(0, 85)
+    ax_in.set_xticks([0, 1]); ax_in.set_xticklabels(["Qwen", "SeaLLM"], fontsize=10)
+    ax_in.set_ylabel("S%", fontsize=10); ax_in.set_ylim(0, 85)
     ax_in.text(0.5, 0.92, "Threshold\n70% →", transform=ax_in.transAxes,
-               ha="center", fontsize=7.5, color="red")
+               ha="center", fontsize=9.5, color="red")
     for i, v in enumerate([12.5, 5.7]):
-        ax_in.text(i, v + 1.5, f"{v}%", ha="center", fontsize=8)
-    ax_in.set_title("S%  vs  70%", fontsize=8)
+        ax_in.text(i, v + 1.5, f"{v}%", ha="center", fontsize=10)
+    ax_in.set_title("S%  vs  70%", fontsize=10)
 
     plt.tight_layout()
     plt.savefig(os.path.join(OUT_DIR, "fig04_h3_gradient.png"), bbox_inches="tight")
@@ -350,39 +350,39 @@ def fig06_h5_origin():
     x = np.arange(3)
     w = 0.28
 
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
 
     # — Binary refusal (shared) —
     cols = [C_CN, C_EU, C_US]
     ax1.bar(x, bin_r, 0.5, color=cols, alpha=0.85)
     for i, v in enumerate(bin_r):
-        ax1.text(i, v + 0.006, f"{v:.1%}", ha="center", fontsize=10.5, fontweight="bold", color=cols[i])
+        ax1.text(i, v + 0.006, f"{v:.1%}", ha="center", fontsize=13, fontweight="bold", color=cols[i])
     # EU vs US bracket
     ax1.annotate("", xy=(2, bin_r[2] + 0.04), xytext=(1, bin_r[1] + 0.04),
                  arrowprops=dict(arrowstyle="<->", color="black", lw=1.5))
-    ax1.text(1.5, bin_r[1] + 0.055, "EU > US  p=0.041 *", ha="center", fontsize=8.5, fontstyle="italic")
-    ax1.set_xticks(x); ax1.set_xticklabels(origins, fontsize=10)
-    ax1.set_ylabel("Binary Refusal Rate", fontsize=10)
-    ax1.set_title("H5: Binary Refusal Rate by Model Origin\nEvaluator-Invariant  (KW p = 0.032)", fontsize=10, fontweight="bold")
+    ax1.text(1.5, bin_r[1] + 0.055, "EU > US  p=0.041 *", ha="center", fontsize=11, fontstyle="italic")
+    ax1.set_xticks(x); ax1.set_xticklabels(origins, fontsize=13)
+    ax1.set_ylabel("Binary Refusal Rate", fontsize=13)
+    ax1.set_title("H5: Binary Refusal Rate by Model Origin\nEvaluator-Invariant  (KW p = 0.032)", fontsize=13, fontweight="bold")
     ax1.set_ylim(0.55, 0.82)
 
     # — Ordinal means —
     ax2.bar(x - w/2, q_mean, w, color=C_QWEN, alpha=0.85, label="Qwen2.5-3B-Instruct")
     ax2.bar(x + w/2, s_mean, w, color=C_SEAL, alpha=0.85, label="SeaLLMs-v3-7B-Chat")
     for i, (q, s) in enumerate(zip(q_mean, s_mean)):
-        ax2.text(i - w/2, q + 0.01, f"{q:.3f}", ha="center", fontsize=8, color=C_QWEN)
-        ax2.text(i + w/2, s + 0.01, f"{s:.3f}", ha="center", fontsize=8, color=C_SEAL)
-    ax2.set_xticks(x); ax2.set_xticklabels(origins, fontsize=10)
-    ax2.set_ylabel("Mean Ordinal Working Score", fontsize=10)
+        ax2.text(i - w/2, q + 0.01, f"{q:.3f}", ha="center", fontsize=11, color=C_QWEN)
+        ax2.text(i + w/2, s + 0.01, f"{s:.3f}", ha="center", fontsize=11, color=C_SEAL)
+    ax2.set_xticks(x); ax2.set_xticklabels(origins, fontsize=13)
+    ax2.set_ylabel("Mean Ordinal Working Score", fontsize=13)
     ax2.set_title("H5: Ordinal Scores by Model Origin\n"
                   "OLR EU coeff: Qwen β=+0.193  vs  SeaLLM β=−0.230 (both ns)",
-                  fontsize=10, fontweight="bold")
-    ax2.legend(fontsize=9)
+                  fontsize=13, fontweight="bold")
+    ax2.legend(fontsize=12)
     ax2.set_ylim(1.70, 2.65)
 
     plt.suptitle(
         "Figure 6.  H5 — Model Origin (Geopolitical) Effect  |  SUPPORTED (binary)  |  ambiguous (ordinal)",
-        fontsize=11, fontweight="bold"
+        fontsize=14, fontweight="bold"
     )
     plt.tight_layout()
     plt.savefig(os.path.join(OUT_DIR, "fig06_h5_origin.png"), bbox_inches="tight")

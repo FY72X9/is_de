@@ -6,7 +6,7 @@
 
 ---
 
-## Execution Plan: 4 Sessions
+## Execution Plan: 6 Sessions
 
 | Session | Focus | Items | Rationale |
 |---------|-------|-------|-----------|
@@ -14,6 +14,8 @@
 | **Session 2** | Methodology transparency — Section IV | M1, M2, M4, M5 | All edits in the same section; no new data needed |
 | **Session 3** | Construct, analytical argument, corpus evidence | M3, C1, C2, B1, B2 | Substantive rewrites; require careful framing to stay within 6-page limit |
 | **Session 4** | Data verification + final QC | F3 + proofread | Depends on `data/raw/evaluated_responses.json` lookup |
+| **Session 5** | Second-pass audit (11 items) | A1–A4, P1–P2, G1–G2, D1–D3 | Factual, grammar, style, and missing-argument fixes found in audit |
+| **Session 6** | Residual reviewer gaps (3 items) | R6a, R6b, R6c | Items partially addressed in S1–S5 but not fully resolved |
 
 ---
 
@@ -145,7 +147,23 @@ Ditemukan setelah audit menyeluruh terhadap full `.tex` + verifikasi data. Semua
 
 | Code | Done | Problem | Action |
 |------|------|---------|--------|
-| I1 | ☐ | R1.4: Font dalam subplot `fig_paper_A_experimental.png` terlalu kecil | Regenerasi via `src/compose_paper_figures.py` atau notebook |
+| I1 | ☑ | R1.4: Font dalam subplot `fig_paper_A_experimental.png` terlalu kecil | global `font.size` 10→13, dpi 150→200, figsize fig02/fig06 (12,5)→(14,6), fig04 (9,6)→(11,7), ROW_H 720→900; semua explicit fontsize di fig02/fig04/fig06 dinaikkan ~25%; regenerasi via `python src/generate_charts.py` + `compose_paper_figures.py` |
+
+---
+
+## Session 6 — Residual Reviewer Gaps (post Session 1–5)
+
+Ditemukan dari cross-check sistematis antara reviewer feedback vs versi revision terkini. Tiga item ini **sebagian** dijawab di session sebelumnya tetapi tidak secara eksplisit atau tidak dengan angka yang benar.
+
+### BLOK R6 — Reviewer Gap Residual
+
+| Code | Done | Reviewer | Problem | Fix Applied | Ground Truth |
+|------|------|----------|---------|-------------|--------------|
+| R6a | ☑ | R1.1 | EN vs BI observation count tidak pernah disebutkan numerik | Tambah di IV.A: "521 (58.3%) Bahasa Indonesia dan 372 (41.7%) English" | Dari `evaluated_responses_clean.json`: BI=521, EN=372 |
+| R6b | ☑ | R1.1 | Sampling bias (unequal model counts) tidak diakui sebagai limitation H5 | Extend kalimat "not a stratified sampling design" → tambah "EU-origin H5 finding therefore rests on two models only; interpret as exploratory" | US: 3 model, EU: 2 model, CN: 1 model |
+| R6c | ☑ | R2.4 | BI prompt authorship method tidak dijelaskan (terjemahan atau authored independently?) | Tambah di IV.A: "Bahasa Indonesia versions translated directly from English source prompts" (8 BI-only categories authored independently) | Dari `battery_v1.json`: R1_EN/R1_ID paired → translations; 8 BI-only categories confirmed |
+
+**Verified from:** `data/processed/evaluated_responses_clean.json` (language counts) + `data/prompts/battery_v1.json` (prompt authorship structure).
 
 ---
 

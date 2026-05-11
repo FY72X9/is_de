@@ -83,7 +83,7 @@ def pad_width(img, target_w):
 # letting width=\textwidth drive the scale (not height).  Higher target
 # height means more pixels per panel => bigger text on page.
 
-ROW_H = 720   # px height for every panel
+ROW_H = 900   # px height for every panel
 
 h1_img = add_label(load(CHARTS / "fig02_h1_condition.png", ROW_H), "(a)")
 h3_img = add_label(load(CHARTS / "fig04_h3_gradient.png",  ROW_H), "(b)")
