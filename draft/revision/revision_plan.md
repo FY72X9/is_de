@@ -180,3 +180,30 @@ Ditemukan dari cross-check sistematis antara reviewer feedback vs versi revision
 | **Net** | **≈ +4–8 lines above current** |
 
 > If net addition exceeds 6-page limit after Session 2, trim Discussion VI.A rhetorical paragraph (target of C2) first before any other cut.
+
+---
+
+## Session C1 — Word Compression (~205 kata, 1 prompt)
+
+**Trigger**: Paper humanized oleh user → masih ~200 kata di atas 6-page limit.  
+**Execution**: 1 prompt (single `multi_replace_string_in_file` batch, 10 edits sekaligus).  
+**Status**: 🔲 Pending
+
+| Code | Done | Location | Problem | Estimated Saving |
+|------|------|----------|---------|-----------------|
+| C-1 | ☑ | Section III — 4 dimensions | "is concerned with the process of" × 4 → "captures / addresses" | ~35 kata |
+| C-2 | ☑ | Conclusion ¶1 — First/Second/Third | 3 poin bernomor → 1 kalimat convergence | ~30 kata |
+| C-3 | ☑ | IV.A — sampling caveat | Angka per-origin counts diulang → "These per-origin counts..." | ~15 kata |
+| C-4 | ☑ | H2 Results — methodological finding | 2 kalimat → 1 kalimat "requiring a gold standard to resolve directionally" | ~5 kata |
+| C-5 | ☑ | Background II.A | "have shown that... This motivates" → "show that..., motivating" | ~8 kata |
+| C-6 | ☑ | Background II.B | "have demonstrated that... which permits" → "show that..., enabling" | ~10 kata |
+| C-6b | ☑ | Background II.C | "have demonstrated the effectiveness in Indonesian... which is attributed to the use of" → "report Indonesian safety... attributed to" | ~9 kata |
+| C-7 | ☑ | IV.B — 68.8% disebut 2x | "the 68.8\% binary inter-judge agreement" → "this figure" | ~4 kata |
+| C-8 | ☑ | IV.B — transition sentence removed | "The study also used architecturally different evaluation frameworks to evaluate each response:" → dihapus | ~12 kata |
+| C-9 | ☑ | H3 Results — typo + redundansi | "Both evaluators report... The Kruskal-Wallis test results are Qwen: Qwen" → 1 kalimat, typo fixed | ~6 kata |
+| C-10 | ☑ | Discussion VI.A — dua kalimat pembuka | Lebur menjadi 1 kalimat | ~11 kata |
+| C-11 | ☑ | Policy R1 | "This reform is significant, with an odds ratio of 0.543, p=0.0008." → dihapus | ~12 kata |
+| **C-11b** | ☑ | **Policy R4 — factual fix** | **"two of three critical gaps" → "both critical gaps"** + "Annexes on sectoral regulations" → "Sectoral annexes" | **factual fix + ~3 kata** |
+| C-12 | ☑ | Conclusion — future work | "The study's results should be extended to include..." → "Future work should..." | ~20 kata |
+
+**Total aktual: ~200 kata — ☑ Selesai.**
