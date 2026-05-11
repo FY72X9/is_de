@@ -41,18 +41,18 @@ farrell.yodihartomo@binus.ac.id}}
 %%  ABSTRACT  — structured, 150–250 words (ICIMTech 2026 rule)
 %% ─────────────────────────────────────────────────────────────────────────────
 \begin{abstract}
-Indonesian organizations receive AI through application programming interface (API) mediation of global foundation models. Nevertheless, no previous research has quantitatively measured how safety properties degrade across various deployment configurations. In this research, AI safety asymmetry is measured across three deployment conditions: consumer simulation (C1), raw access (C2), and safety-stripped (C3), resulting in 893 observations across seven models evaluated in both English and Bahasa Indonesia through dual-language ordinal scoring (0-3 scale). Concurrently, regulatory research maps 18 AI safety concepts onto eight Indonesian governance instruments through two independent embedding models.
+Indonesian organizations receive AI through application programming interface (API) mediation of global foundation models. Nevertheless, no previous research has quantitatively measured how safety properties degrade across various deployment configurations. In this research, AI safety asymmetry is measured across three deployment conditions: consumer simulation (C1), raw access (C2), and safety-stripped (C3), resulting in 893 observations across six models evaluated in both English and Bahasa Indonesia through dual-language ordinal scoring (0-3 scale). Concurrently, regulatory research maps 18 AI safety concepts onto eight Indonesian governance instruments through two independent embedding models.
 
-Three out of five preregistered research hypotheses receive support. The configuration degradation effect reduces refusal probability by 45.7\% under the safety-stripped configuration (odds ratio OR = 0.543, p = 0.0008). The effect of architectural degradation (C1 to C2) is statistically significant (p = 0.018, $\Delta$R = 20.5\%). Models from the European Union outperform US models by 8.5\% (p = 0.041). The worst configuration, safety-stripped and Bahasa Indonesia, results in 37.6\% harmful compliance. Regulatory research finds no mentions of Foundation Model Provider liability in 93,293 regulatory words. Critical severity gaps exist in medical and tax-legal AI safety.
+Three out of five preregistered research hypotheses receive support. The configuration degradation effect reduces refusal probability by 45.7\% under the safety-stripped configuration (odds ratio OR = 0.543, p = 0.0008). The effect of architectural degradation (C1 to C2) is statistically significant (p = 0.018, $\Delta$R = 20.5\%). Models from the European Union outperform US models by 8.5\% (p = 0.041). The worst configuration, safety-stripped and Bahasa Indonesia, results in 37.4\% harmful compliance. Regulatory research finds no mentions of Foundation Model Provider liability in 94,293 regulatory words. Critical severity gaps exist in medical and tax-legal AI safety.
 
 This research is the first quantitative evidence of application-layer AI safety asymmetry in Indonesia. The results suggest that the primary safety factor—deployer configuration—operates in a regulatory vacuum.
 
 \end{abstract}
 
+\renewcommand\IEEEkeywordsname{Keywords}
 \begin{IEEEkeywords}
 artificial intelligence safety; large language model evaluation; regulatory gap
-analysis; Indonesian digital governance; foundation model deployment; application
-programming interface
+analysis; Indonesian digital governance; foundation model deployment
 \end{IEEEkeywords}
 
 %% ─────────────────────────────────────────────────────────────────────────────
@@ -310,8 +310,6 @@ $r\!=\!{-}0.099$). Neither the binary (12.8\%) nor the judge-based (20.5\%)
 $\Delta R\!\%$ meets the 40\% architectural degradation threshold drawn from
 adversarial red-teaming literature~\cite{b3,b4}; hence partial support.
 
-The results when deployed in consumer-like conditions outperform results when using API deployment on binary refusal rates by 9.8 percentage points (76.5\% versus 66.7\%), which is equivalent to a binary relative decline of 12.8\%. The judge-based $\Delta R\%$, which is defined as the relative decline in robust refusal rates (using a work score of 3), is 20.5\%. This is calculated using C1 results of 39.4\% versus C2 results of 31.3\%, using the Qwen judge. Which the result yieds below the 40\% threshold. In addition, it is below the threshold defined using architectural degradation via adversarial red-teaming. Mann–Whitney U tests were used to verify statistical significance using both judges (Qwen: $p\!=\!0.018$, $r\!=\!{-}0.093$; SeaLLMs: $p\!=\!0.007$, $r\!=\!{-}0.099$). Neither the binary Delta R\% of 12.8\% nor the judge-based $\Delta R\!\%$ of 20.5\% meets the 40\% architectural degradation threshold defined via adversarial red-teaming~\cite{b3,b4}. This is equivalent to partial support.
-
 \subsection{H2 --- Linguistic Asymmetry (English vs.\ Bahasa Indonesia):
 Partially Supported}
 
@@ -331,7 +329,7 @@ Panels (b) and (c) of Figure \ref{fig:experimental} show the gradient for three 
 
 Table~\ref{tab:actor} presents the actor liability extraction results.
 Foundation Model Provider liability achieves zero mentions across all eight
-instruments and 93{,}293 words. API Developer liability-context mentions appear
+instruments and 94{,}293 words. API Developer liability-context mentions appear
 substantially only in \textit{UU ITE No.\ 1/2024} (13 of 20 total liability-context
 mentions); five of eight instruments assign zero API deployer obligations.
 
@@ -411,13 +409,13 @@ The H2 evaluator reversal implies that judge-model selection in cross-lingual sa
 \subsection{Policy Recommendations}
 
 Four evidence-based reforms are identified. \textbf{(R1)} A binding \textit{Peraturan
-Menteri Kominfo} on system prompt safety standards directly addresses the configuration gap by stipulating a minimum standard for information system prompts. This reform is significant, with an odds ratio of 0.543, $p\!=\!0.0008$. \textbf{(R2)} An update to \textit{UU ITE No. 1/2024} to recognize Foundation Model Providers and API Deployers as separately regulable entities closes the zero-mention gap in Table 1 and is consistent with the liability framework of the EU AI Act. \textbf{(R3)} Elevating a ministerial regulation on \textit{Etika KA} provides AI-native vocabulary without amending the parent legislation. \textbf{(R4)} Annexes on sectoral regulations by \textit{Kemenkes} and OJK cover two of three critical gaps in medical and tax/legal regulations without amending legislation.
+Menteri Kominfo} on system prompt safety standards directly addresses the configuration gap by stipulating a minimum standard for information system prompts. This reform is significant, with an odds ratio of 0.543, $p\!=\!0.0008$. \textbf{(R2)} An update to \textit{UU ITE No. 1/2024} to recognize Foundation Model Providers and API Deployers as separately regulable entities closes the zero-mention gap in Table~\ref{tab:actor} and is consistent with the liability framework of the EU AI Act. \textbf{(R3)} Elevating a ministerial regulation on \textit{Etika KA} provides AI-native vocabulary without amending the parent legislation. \textbf{(R4)} Annexes on sectoral regulations by \textit{Kemenkes} and OJK cover two of three critical gaps in medical and tax/legal regulations without amending legislation.
 
 %% ─────────────────────────────────────────────────────────────────────────────
 \section{Conclusion}
 %% ─────────────────────────────────────────────────────────────────────────────
 
-This study represents the first quantitative examination of the API layer AI safety asymmetry in Indonesia. Three results have relevant policy implications. First, the predictor for safety failure due to deployer configuration was statistically significant and invariant across evaluators (C3 OR = 0.543, $p\!=\!0.0008$). Second, liability for Foundation Model Providers was not present in the eight legal instruments containing 93,293 words. Third, API layer medical and tax/legal AI are situated in a governance vacuum of significant severity, supported by both independent embedding models. While the safety asymmetry is not fixed in nature, as the configuration layer is subject to the nation's regulations, the governance terminology can be found in the draft \textit{Etika KA} regulations. The discrepancy between empirical results and legal frameworks is not technically based.
+This study represents the first quantitative examination of the API layer AI safety asymmetry in Indonesia. Three results have relevant policy implications. First, the predictor for safety failure due to deployer configuration was statistically significant and invariant across evaluators (C3 OR = 0.543, $p\!=\!0.0008$). Second, liability for Foundation Model Providers was not present in the eight legal instruments containing 94,293 words. Third, API layer medical and tax/legal AI are situated in a governance vacuum of significant severity, supported by both independent embedding models. While the safety asymmetry is not fixed in nature, as the configuration layer is subject to the nation's regulations, the governance terminology can be found in the draft \textit{Etika KA} regulations. The discrepancy between empirical results and legal frameworks is not technically based.
 
 The study's results should be extended to include the creation of a gold standard to resolve the discrepancies between the evaluators (H2), a replication of the study with the introduction of new versions of models, and interviews with API integrators in Indonesia to understand the determinants of configuration behavior.
 

@@ -130,14 +130,6 @@ def call_mistral(system_prompt, user_prompt):
         print(f"Error Mistral: {e}")
         return None
 
-def call_opencode(system_prompt, user_prompt):
-    """Call OpenCode (Zen Minmax) API (if key exists)."""
-    if not config.OPENCODE_API_KEY:
-        return None
-
-    print("OpenCode not implemented yet.")
-    return None
-
 def route_request(model, system_prompt, user_prompt):
     """Route request to appropriate client."""
     # Check specific keys first
