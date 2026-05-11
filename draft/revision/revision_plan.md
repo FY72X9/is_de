@@ -33,7 +33,7 @@
 |------|------|------|----------|---------|
 | F1 | ☑ | Fix "seven models" → "six models" in Abstract | Run_log: 3 US + 2 EU + 1 CN = 6 models only | 1 |
 | F2 | ☑ | Fix "93,293" → "94,293" in Abstract, Section IV.D, and Conclusion | Post-cleaning sum from run_log = 94,293; paper off by exactly 1,000 (digit typo) | 1 |
-| F3 | ☐ | Resolve C3 × Bahasa Indonesia compliance rate: 37.4% (H2 body) vs 37.6% (Abstract + para after Table II) | Requires lookup in `data/raw/evaluated_responses.json` for ground-truth value | 4 |
+| F3 | ☑ | Resolve C3 × Bahasa Indonesia compliance rate: 37.4% (H2 body) vs 37.6% (Abstract + para after Table II) | Requires lookup in `data/raw/evaluated_responses.json` for ground-truth value | 4 |
 | F4 | ☑ | Fix "Table 1" → "Table~\ref{tab:actor}" in Discussion Section VI.A | Cross-reference points to deployment conditions table (Table I) instead of actor liability table (Table III) | 1 |
 | F5 | ☑ | Fix typo "result yieds" → "result yields" in Section V.A (resolved via S1) | Reviewer 1, Comment 3; also fix surrounding grammatically broken sentence | 1 |
 
@@ -52,11 +52,11 @@
 
 | Code | Done | Todo | What Is Needed | Session |
 |------|------|------|----------------|---------|
-| M1 | ☐ | Add distribution of 893 observations per harm category and language in Section IV.A | 2–3 compact sentences + inline numbers; no new table (space constraint); data from `data/prompts/battery_v1.json` | 2 |
-| M2 | ☐ | Clarify distinct roles of Qwen (primary evaluator) vs SeaLLMs (cross-validation) + conflict resolution rule in Section IV.B | Reorganize existing text; add 1 sentence on tiebreaker (binary logistic regression over raw scores) | 2 |
-| M3 | ☐ | Add explicit citation for 40% ΔR threshold (H1) and 70% S% threshold (H3) in Section V | If threshold not literally in [b3]/[b18]: state as "preregistered decision threshold, following [b3]'s operationalization of systematic safety failure" | 3 |
-| M4 | ☐ | Add scoring rubric transparency to Section IV.B: judge prompt structure, L1 vs L2 criteria, inter-judge agreement metric, Qwen floor truncation implication | ~3–4 additional sentences; use space freed by S1 | 2 |
-| M5 | ☐ | Explain harm category origin (reference framework) + Bahasa Indonesia prompt construction in Section IV.A | 2–3 sentences; cite framework source (Weidinger [b27] / Röttger [b3] / custom); state whether BI prompts are translated or independently authored | 2 |
+| M1 | ☑ | Add distribution of 893 observations per harm category and language in Section IV.A | 2–3 compact sentences + inline numbers; no new table (space constraint); data from `data/prompts/battery_v1.json` | 2 |
+| M2 | ☑ | Clarify distinct roles of Qwen (primary evaluator) vs SeaLLMs (cross-validation) + conflict resolution rule in Section IV.B | Reorganize existing text; add 1 sentence on tiebreaker (binary logistic regression over raw scores) | 2 |
+| M3 | ☑ | Add explicit citation for 40% ΔR threshold (H1) and 70% S% threshold (H3) in Section V | If threshold not literally in [b3]/[b18]: state as "preregistered decision threshold, following [b3]'s operationalization of systematic safety failure" | 3 |
+| M4 | ☑ | Add scoring rubric transparency to Section IV.B: judge prompt structure, L1 vs L2 criteria, inter-judge agreement metric, Qwen floor truncation implication | ~3–4 additional sentences; use space freed by S1 | 2 |
+| M5 | ☑ | Explain harm category origin (reference framework) + Bahasa Indonesia prompt construction in Section IV.A | 2–3 sentences; cite framework source (Weidinger [b27] / Röttger [b3] / custom); state whether BI prompts are translated or independently authored | 2 |
 
 ---
 
@@ -64,8 +64,8 @@
 
 | Code | Done | Todo | Corpus Evidence | Session |
 |------|------|------|-----------------|---------|
-| C1 | ☐ | Sharpen construct boundaries in Section III opening: state explicitly which dimensions are *directly demonstrated* vs *inferred* | Architectural + configurational: demonstrated by experimental data. Observational + temporal-domain: inferred from pattern + literature | 3 |
-| C2 | ☐ | Replace rhetorical paragraph in Discussion VI.A with explicit 4-row deployment → actor → regulatory blind spot mapping table | Every row grounded in corpus: UU ITE technology-neutral; Etika KA defines actors but non-binding; Permenkes zero AI mentions; FMP = 0 liability mentions across 94,293 words | 3 |
+| C1 | ☑ | Sharpen construct boundaries in Section III opening: state explicitly which dimensions are *directly demonstrated* vs *inferred* | Architectural + configurational: demonstrated by experimental data. Observational + temporal-domain: inferred from pattern + literature | 3 |
+| C2 | ☑ | Replace rhetorical paragraph in Discussion VI.A with explicit 4-row deployment → actor → regulatory blind spot mapping table | Every row grounded in corpus: UU ITE technology-neutral; Etika KA defines actors but non-binding; Permenkes zero AI mentions; FMP = 0 liability mentions across 94,293 words | 3 |
 
 **Proposed C2 table structure:**
 
@@ -82,8 +82,8 @@
 
 | Code | Done | Todo | Pasal Reference | Session |
 |------|------|------|-----------------|---------|
-| B1 | ☐ | Cite Etika KA Draft Bab VII/VIII in Discussion/R3: "Penyedia Sistem KA" already defined but non-binding — strengthens urgency of Policy Recommendation R3 | Etika KA Draft Bab VIII: explicit 4-actor taxonomy (Pengembang KA, Penyedia Sistem KA, Penyelenggara Sistem KA, Pengguna) without per-actor binding obligation | 3 |
-| B2 | ☐ | Cite Permenkes Pasal 7 ayat 1 in H4 discussion: telemedicine *recognized* but AI inference layer *absent* — frame as precision gap, not total regulatory absence | Permenkes 24/2022 line 150: "menyelenggarakan pelayanan telemedisin" with zero mention of AI, chatbot, algoritma, or kecerdasan artifisial in entire document | 3 |
+| B1 | ☑ | Cite Etika KA Draft Bab VII/VIII in Discussion/R3: "Penyedia Sistem KA" already defined but non-binding — strengthens urgency of Policy Recommendation R3 | Etika KA Draft Bab VIII: explicit 4-actor taxonomy (Pengembang KA, Penyedia Sistem KA, Penyelenggara Sistem KA, Pengguna) without per-actor binding obligation | 3 |
+| B2 | ☑ | Cite Permenkes Pasal 7 ayat 1 in H4 discussion: telemedicine *recognized* but AI inference layer *absent* — frame as precision gap, not total regulatory absence | Permenkes 24/2022 line 150: "menyelenggarakan pelayanan telemedisin" with zero mention of AI, chatbot, algoritma, or kecerdasan artifisial in entire document | 3 |
 
 ---
 
@@ -101,6 +101,51 @@
 | Etika KA actor taxonomy | Defines 4 sub-actors explicitly (Bab VIII) | Corpus file lines 259–290 |
 | C3 harmful compliance rate | Conflict: Abstract=37.6%, H2 body=37.4% | Resolve from `evaluated_responses.json` in Session 4 |
 | Critical regulatory gaps (dual-confirmed) | 2: Medical AI (Permenkes), Tax/Legal AI (no instrument) | Both MiniLM + E5 models agree |
+
+---
+
+---
+
+## Session 5 — Second-Pass Audit Findings (post Session 1–4)
+
+Ditemukan setelah audit menyeluruh terhadap full `.tex` + verifikasi data. Semua item di bawah belum ditangani.
+
+### BLOK A2 — Factual Errors (ditemukan di audit kedua)
+
+| Code | Done | Problem | Ground Truth | Priority |
+|------|------|---------|--------------|----------|
+| A1 | ☑ | TikZ node (line 125): `93{,}293 words` | → `94{,}293` (F2 batch hanya fix 3 lokasi, TikZ terlewat) | Critical |
+| A2 | ☑ | Discussion VI.A (line 406): `"resulting in 36.0% in harmful compliance"` | → **36.4%** (dari Table II C3 Comply%) | Critical |
+| A3 | ☑ | Abstract (line 43): `"maps 18 AI safety concepts"` | → **16** (run_log: "API-specific concepts: 16"; 18 tidak ada di data manapun) | Critical |
+| A4 | ☑ | Discussion VI.B: `"Binary invariance is identical at 69.1%"` | → **68.8%** (dari clean dataset N=893; 69.1% dari intermediate run N=902) | High |
+
+### BLOK B2 — Missing Content (dari reviewer feedback, belum dijawab)
+
+| Code | Done | Problem | Action |
+|------|------|---------|--------|
+| P1 | ☑ | R2.3 partial unanswered: tidak ada kalimat tentang human validation / pilot calibration | Tambah 1 kalimat di IV.B: no human validation conducted; binary cross-check (68.8% agreement) serves as inter-rater proxy | High |
+| P2 | ☑ | Argumen "partial support ≠ null result" hilang dari Discussion VI.A (terhapus saat C2 table ditambah Session 3) | Tambah 2 kalimat setelah table: thresholds derived from red-teaming; effects reproducible + policy-actionable | High |
+
+### BLOK G — Grammar / Prose Broken
+
+| Code | Done | Problem | Fix |
+|------|------|---------|-----|
+| G1 | ☑ | H2 body: `"Though, this is cultural calibration of judges is Southeast Asian vs Chinese/English"` — double "is", broken syntax | Rewrite: `"This divergence reflects cultural calibration: Qwen-3B applies Chinese/English refusal norms; SeaLLMs-7B applies Southeast Asian discourse norms."` |
+| G2 | ☑ | Background II.D: frasa `"provides the vocabulary for understanding the regulatory gaps identified in this work"` muncul **verbatim dua kali** berturutan | Hapus kalimat kedua (Diver) atau merge menjadi satu kalimat |
+
+### BLOK D — Style / Redundancy / Minor
+
+| Code | Done | Problem | Fix |
+|------|------|---------|-----|
+| D1 | ☑ | IV.A: `"Table 1 (Table~\ref{tab:conditions})"` — "Table 1" redundant dengan cross-reference | Hapus "Table 1 " → hanya `(Table~\ref{tab:conditions})` |
+| D2 | ☑ | IV.D: `"four actor types: Foundation Model Provider, API Developer, End User, Government)"` — missing opening parenthesis | Tambah `(` sebelum "Foundation" atau hapus `)` |
+| D3 | ☑ | Introduction ¶2: `"a quantification yet to be conducted in the context of Indonesia but not the focus of this research"` — self-contradictory (paper ini justru mengkuantifikasi hal tersebut) | Rewrite: hapus "but not the focus of this research" atau restructure |
+
+### BLOK I — Image (scope terpisah)
+
+| Code | Done | Problem | Action |
+|------|------|---------|--------|
+| I1 | ☐ | R1.4: Font dalam subplot `fig_paper_A_experimental.png` terlalu kecil | Regenerasi via `src/compose_paper_figures.py` atau notebook |
 
 ---
 
